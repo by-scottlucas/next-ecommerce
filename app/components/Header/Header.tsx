@@ -5,6 +5,7 @@ import './Header.css';
 import { useCallback, useState } from 'react';
 
 import { getTranslation } from '../../utils/i18n';
+import Image from 'next/image';
 
 interface HeaderProps {
   locale: string;
@@ -30,7 +31,7 @@ export default function Header({ locale }: HeaderProps) {
 
             <div className="nav-content">
                 <a href="#" className="nav-brand-box">
-                    <img src={logotipo} alt="TechPoint" className="nav-logo" />
+                    <Image width={158} height={110} src={logotipo} alt="TechPoint" className="nav-logo" />
                 </a>
 
                 <button

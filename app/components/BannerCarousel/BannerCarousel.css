@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.carousel-container {
+    @apply relative w-full overflow-hidden;
+}
+
+.carousel-image-container {
+    @apply relative flex transition-all duration-700 ease-in-out;
+}
+
+.carousel-image-box {
+    @apply flex-shrink-0 w-full h-auto lg:h-[580px];
+}
+
+.carousel-image {
+    @apply block w-full h-full md:object-cover;
+}
+
+.carousel-indicators-container {
+    @apply absolute z-30 flex gap-1 -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse;
+}
+
+.carousel-indicators-button {
+    @apply w-2 h-2 rounded-full md:w-4 md:h-4 cursor-pointer;
+}
+
+.carousel-control-button {
+    @apply absolute top-0 z-30 flex items-center justify-center h-full cursor-pointer focus:outline-none;
+}
+
+.carousel-control-content {
+    @apply inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 hover:bg-white/50
+}
