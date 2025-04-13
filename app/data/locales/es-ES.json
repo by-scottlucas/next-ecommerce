@@ -1,0 +1,14 @@
+{
+    "header": {
+      "promoText": "Envío gratis a partir de R$ 199 Reales",
+      "navLinks": [
+        { "title": "Inicio", "link": "#" },
+        { "title": "Productos", "link": "#products" },
+        { "title": "Auriculares", "link": "#menu" },
+        { "title": "Cargadores", "link": "#location" },
+        { "title": "Mi Cuenta", "link": "#location" },
+        { "title": "Contacto", "link": "#contact" }
+      ]
+    }
+  }
+  

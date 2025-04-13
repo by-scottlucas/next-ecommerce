@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+.nav-container {
+    @apply bg-white;
+}
+
+.promo-box{
+    @apply bg-black flex flex-col items-center justify-center h-8 lg:h-10;
+}
+
+.nav-content {
+    @apply max-w-screen flex flex-wrap lg:text-start items-center justify-between mx-auto p-4 2xl:px-12;
+}
+
+.nav-brand-box {
+    @apply flex items-center;
+}
+
+.nav-logo {
+    @apply h-8 2xl:h-10;
+}
+
+.burger-menu-button {
+    @apply inline-flex items-center text-4xl p-2 w-10 h-10 justify-center text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600;
+}
+
+.nav-items-box {
+    @apply overflow-hidden text-center w-full lg:w-auto transition-all duration-500 ease-in-out lg:flex lg:opacity-100 lg:max-h-full;
+}
+
+.nav-items-box.open {
+    @apply max-h-96 opacity-100;
+}
+
+.nav-items-box.close {
+    @apply max-h-0 opacity-0 lg:opacity-100 lg:max-h-full;
+}
+
+.nav-list {
+    @apply font-medium flex flex-col p-4 md:p-0 lg:flex-row lg:space-x-8 md:mt-0 md:border-0 md:bg-white;
+}
+
+.nav-item {
+    @apply block py-3 lg:py-0 text-gray-950 text-lg 2xl:text-2xl font-medium transition-all duration-300 ease-in-out hover:text-white hover:lg:px-4 hover:bg-[#38B6FF];
+}

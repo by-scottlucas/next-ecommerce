@@ -1,0 +1,14 @@
+{
+    "header": {
+      "promoText": "Free shipping on orders over R$ 199",
+      "navLinks": [
+        { "title": "Home", "link": "#" },
+        { "title": "Products", "link": "#products" },
+        { "title": "Headphones", "link": "#menu" },
+        { "title": "Chargers", "link": "#location" },
+        { "title": "My Account", "link": "#location" },
+        { "title": "Contact", "link": "#contact" }
+      ]
+    }
+  }
+  

@@ -1,0 +1,14 @@
+{
+    "header": {
+      "promoText": "Frete grátis a partir de R$ 199 Reais",
+      "navLinks": [
+        { "title": "Home", "link": "#" },
+        { "title": "Produtos", "link": "#products" },
+        { "title": "Fones de Ouvido", "link": "#menu" },
+        { "title": "Carregadores", "link": "#location" },
+        { "title": "Minha Conta", "link": "#location" },
+        { "title": "Contato", "link": "#contact" }
+      ]
+    }
+}
+  
