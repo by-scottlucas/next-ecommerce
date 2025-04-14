@@ -8,13 +8,12 @@ import { getTranslation } from '../../utils/i18n';
 import Image from 'next/image';
 
 interface HeaderProps {
-  locale: string;
+    locale: string;
 }
 
 export default function Header({ locale }: HeaderProps) {
-    const logotipo = "/brand-assets/logo-black.png";
     const translations = getTranslation(locale);
-    const { promoText, navLinks } = translations.header;
+    const { promoText, navLinks, logo } = translations.header;
     const [menuIsOpen, setMenuIsOpen] = useState(false);
 
     const toggleMenu = useCallback(() => {
@@ -31,7 +30,13 @@ export default function Header({ locale }: HeaderProps) {
 
             <div className="nav-content">
                 <a href="#" className="nav-brand-box">
-                    <Image width={158} height={110} src={logotipo} alt="TechPoint" className="nav-logo" />
+                    <Image
+                        width={158}
+                        height={110}
+                        src={logo}
+                        alt="TechPoint"
+                        className="nav-logo"
+                    />
                 </a>
 
                 <button

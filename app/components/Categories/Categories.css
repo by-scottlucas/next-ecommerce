@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.categories-container {
+    @apply grid grid-cols-3 gap-2 md:flex md:justify-evenly;
+}
+
+.category-image {
+    @apply hover:scale-105 cursor-pointer transition-all duration-300 ease-in-out;
+}
+
+.category-label{
+    @apply text-black mt-3 font-semibold;
+}

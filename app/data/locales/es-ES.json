@@ -1,5 +1,6 @@
 {
     "header": {
+      "logo": "/brand-assets/logo-black.png",
       "promoText": "Envío gratis a partir de R$ 199 Reales",
       "navLinks": [
         { "title": "Inicio", "link": "#" },
@@ -9,6 +10,13 @@
         { "title": "Mi Cuenta", "link": "#location" },
         { "title": "Contacto", "link": "#contact" }
       ]
-    }
+    },
+    "bannerCarousel": {
+    "slides": [
+      { "image": "/banner-carousel/1.png" },
+      { "image": "/banner-carousel/2.png" }
+    ],
+    "autoSlideInterval": 5000
+  }
   }
   

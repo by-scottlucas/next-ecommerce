@@ -13,7 +13,6 @@ export default function BannerCarousel() {
 
     const [activeIndex, setActiveIndex] = useState(0);
     const intervalRef = useRef<number | null>(null);
-    const [intervalId, setIntervalId] = useState<NodeJS.Timeout | null>(null);
 
     const startAutoSlide = () => {
         if (intervalRef.current !== null) {
@@ -60,6 +59,7 @@ export default function BannerCarousel() {
                             height={580}
                             src={slide.image}
                             alt={`Slide ${index + 1}`}
+                            priority
                         />
                     </div>
                 ))}

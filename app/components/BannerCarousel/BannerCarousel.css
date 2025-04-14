@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .carousel-container {
-    @apply relative w-full overflow-hidden;
+    @apply relative w-full overflow-hidden mb-10;
 }
 
 .carousel-image-container {
