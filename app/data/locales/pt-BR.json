@@ -3,18 +3,113 @@
     "logo": "/brand-assets/logo-black.png",
     "promoText": "Frete grátis a partir de R$ 199 Reais",
     "navLinks": [
-      { "title": "Home", "link": "#" },
-      { "title": "Produtos", "link": "#products" },
-      { "title": "Fones de Ouvido", "link": "#menu" },
-      { "title": "Carregadores", "link": "#location" },
-      { "title": "Minha Conta", "link": "#location" },
-      { "title": "Contato", "link": "#contact" }
+      {
+        "title": "Home",
+        "link": "#"
+      },
+      {
+        "title": "Produtos",
+        "link": "#products"
+      },
+      {
+        "title": "Fones de Ouvido",
+        "link": "#menu"
+      },
+      {
+        "title": "Carregadores",
+        "link": "#location"
+      },
+      {
+        "title": "Minha Conta",
+        "link": "#location"
+      },
+      {
+        "title": "Contato",
+        "link": "#contact"
+      }
     ]
   },
   "bannerCarousel": {
     "slides": [
-      { "image": "/banner-carousel/1.png" },
-      { "image": "/banner-carousel/2.png" }
+      {
+        "image": "/banner-carousel/1.png"
+      },
+      {
+        "image": "/banner-carousel/2.png"
+      }
     ]
+  },
+  "categoriesCards": [
+    {
+      "image": "/categories/1.png",
+      "title": "Airpods"
+    },
+    {
+      "image": "/categories/2.png",
+      "title": "Smartwatch"
+    },
+    {
+      "image": "/categories/3.png",
+      "title": "Headset"
+    },
+    {
+      "image": "/categories/4.png",
+      "title": "Microfone"
+    },
+    {
+      "image": "/categories/5.png",
+      "title": "Ring Ligth"
+    },
+    {
+      "image": "/categories/6.png",
+      "title": "Tripés"
+    }
+  ],
+  "productsCarousel": {
+    "headerTitle": "Mais Vendidos",
+    "headerButton": "Ver Todos",
+    "bestSellers": [
+      {
+        "image": "/products/1.webp",
+        "title": "Fone Bluetooth Readmi Airdots",
+        "price": 144.90
+      },
+      {
+        "image": "/products/2.webp",
+        "title": "Fone Bluetooth TWS I12",
+        "price": 39.90
+      },
+      {
+        "image": "/products/3.webp",
+        "title": "Headphone JBL Tune 720BT",
+        "price": 315.00
+      },
+      {
+        "image": "/products/4.webp",
+        "title": "Power Bank Pineng 10000mAh",
+        "price": 49.90
+      },
+      {
+        "image": "/products/5.webp",
+        "title": "Microfone Fifine AM8",
+        "price": 269.90
+      },
+      {
+        "image": "/products/6.webp",
+        "title": "Smartwatch Ultra 9 T200",
+        "price": 267.00
+      },
+      {
+        "image": "/products/7.webp",
+        "title": "Headset Logitech H390",
+        "price": 206.90
+      },
+      {
+        "image": "/products/8.webp",
+        "title": "Ring Light Bi-Color 16cm",
+        "price": 54.90
+      }
+    ],
+    "addCartButton": "Adicionar ao Carrinho"
   }
 }

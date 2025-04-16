@@ -1,16 +1,22 @@
 'use client';
 
 import Image from "next/image";
+
 import "./BannerCarousel.css";
 
 import { useEffect, useRef, useState } from 'react';
 
-export default function BannerCarousel() {
-    const slides = [
-        { image: "/banner-carousel/1.png" },
-        { image: "/banner-carousel/2.png" },
-    ];
+interface Slide {
+    image: string;
+    label?: string;
+}
 
+interface BannerCarouselProps {
+    slidesData: Slide[];
+}
+
+export default function BannerCarousel({ slidesData }: BannerCarouselProps) {
+    const slides = slidesData;
     const [activeIndex, setActiveIndex] = useState(0);
     const intervalRef = useRef<number | null>(null);
 
