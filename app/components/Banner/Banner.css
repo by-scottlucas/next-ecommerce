@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.banner-container {
+    @apply w-full px-2 py-6 md:px-6 lg:px-13 2xl:px-16;
+}
+
+.banner-content {
+    @apply w-[100%] flex items-center justify-center bg-white;
+}
+
+.banner-image {
+    @apply object-cover w-full rounded-sm md:rounded-lg shadow-sm hover:shadow-md hover:scale-101 transition-all duration-300 ease-in-out;
+}

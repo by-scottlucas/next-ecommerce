@@ -1,8 +1,8 @@
+import Banner from './components/Banner/Banner';
 import BannerCarousel from './components/BannerCarousel/BannerCarousel';
 import Categories from './components/Categories/Categories';
 import Header from './components/Header/Header';
 import ProductsCarousel from './components/ProductsCarousel/ProductsCarousel';
-
 import data from './data/locales/pt-BR.json';
 
 export default function Home() {
@@ -13,6 +13,7 @@ export default function Home() {
       <BannerCarousel slidesData={data.bannerCarousel.slides} />
       <Categories cardsData={data.categoriesCards} locale={locale} />
       <ProductsCarousel products={data.productsCarousel.bestSellers} locale={locale} />
+      <Banner image={data.bannerImage.image} label={data.bannerImage.label} />
     </main>
   );
 }

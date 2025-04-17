@@ -111,5 +111,9 @@
       }
     ],
     "addCartButton": "Agregar al Carrito"
+  },
+  "bannerImage": {
+    "image": "/banners/3.png",
+    "label": "Promoción de Earpods"
   }
 }

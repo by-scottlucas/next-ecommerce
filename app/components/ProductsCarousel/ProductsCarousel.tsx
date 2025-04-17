@@ -97,7 +97,7 @@ export default function ProductsCarousel({ products, locale }: ProductsCarouselP
         <a href="#" className="container-button">{headerButton}</a>
       </div>
 
-      <div className="relative">
+      <div className="carousel-box relative">
         <button onClick={goToPrev} className="carousel-arrow left" >
           <i className="bi bi-chevron-left"></i>
         </button>
@@ -114,8 +114,8 @@ export default function ProductsCarousel({ products, locale }: ProductsCarouselP
               <div key={index} className="product-card">
                 <Link href="#">
                   <Image
-                    width={275}
-                    height={275}
+                    width={1000}
+                    height={1000}
                     src={card.image}
                     alt={card.title}
                     priority

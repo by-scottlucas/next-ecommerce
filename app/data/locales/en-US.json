@@ -32,10 +32,10 @@
   "bannerCarousel": {
     "slides": [
       {
-        "image": "/banner-carousel/1.png"
+        "image": "/banners/1.png"
       },
       {
-        "image": "/banner-carousel/2.png"
+        "image": "/banners/2.png"
       }
     ]
   },
@@ -111,5 +111,9 @@
       }
     ],
     "addCartButton": "Add to Cart"
+  },
+  "bannerImage": {
+    "image": "/banners/3.png",
+    "label": "Earpods Promotion"
   }
 }

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .products-carousel-container {
-    @apply relative w-full overflow-hidden my-25 lg:px-10;
+    @apply relative w-full overflow-hidden mt-18 mb-10 lg:px-10 lg:my-10 2xl:mt-25 2xl:mb-18;
 }
 
 .container-header {
@@ -9,31 +9,35 @@
 }
 
 .container-title {
-    @apply text-2xl font-semibold text-black lg:text-3xl underline underline-offset-8;
+    @apply text-2xl font-semibold text-black lg:text-3xl underline underline-offset-8 2xl:text-4xl;
 }
 
 .container-button {
-    @apply bg-blue-400 hover:bg-blue-500 transition-all duration-300 ease-in-out py-1.5 px-3;
+    @apply bg-blue-400 hover:bg-blue-500 transition-all duration-300 ease-in-out py-1.5 px-3 2xl:px-5 2xl:py-3 2xl:text-2xl;
+}
+
+.carousel-box{
+    @apply w-[100%] overflow-hidden m-auto;
 }
 
 .products-carousel-content {
-    @apply relative transition-transform duration-500 ease-in-out flex mb-4;
+    @apply relative transition-transform duration-500 ease-in-out flex justify-around mb-4;
 }
 
 .product-card {
-    @apply flex flex-col justify-between p-5 gap-2 lg:gap-3 w-full max-w-sm border border-gray-200 rounded-md shadow-sm hover:shadow-md bg-white mx-5 my-3 lg:mx-3 hover:scale-101 transition-all duration-300 ease-in-out;
+    @apply w-full flex flex-col justify-between p-5 gap-2 lg:gap-3 max-w-sm border border-gray-200 rounded-md shadow-sm hover:shadow-md bg-white mx-5 my-3 lg:mx-3 hover:scale-101 transition-all duration-300 ease-in-out 2xl:mx-0 2xl:min-w-[410px];
 }
 
 .product-title {
-    @apply text-xl lg:text-base font-semibold text-[#696969] mb-1 text-nowrap;
+    @apply text-xl lg:text-base font-semibold text-[#696969] mb-1 text-nowrap 2xl:text-xl 2xl:mb-2;
 }
 
 .product-price {
-    @apply text-3xl font-extrabold text-blue-700;
+    @apply text-3xl font-extrabold text-blue-700 2xl:text-4xl;
 }
 
 .add-cart-button {
-    @apply w-full text-white text-base lg:text-sm bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm py-3 text-center transition-all duration-300 ease-in-out;
+    @apply w-full text-white text-base lg:text-sm bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm py-3 text-center transition-all duration-300 ease-in-out 2xl:text-xl 2xl:py-3.5;
 }
 
 .carousel-indicators {
