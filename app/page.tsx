@@ -12,8 +12,17 @@ export default function Home() {
       <Header locale={locale} />
       <BannerCarousel slidesData={data.bannerCarousel.slides} />
       <Categories cardsData={data.categoriesCards} locale={locale} />
-      <ProductsCarousel products={data.productsCarousel.bestSellers} locale={locale} />
+      <ProductsCarousel
+        locale={locale}
+        sectionKey='productsCarousel'
+        products={data.productsCarousel.products}
+      />
       <Banner image={data.bannerImage.image} label={data.bannerImage.label} />
+      <ProductsCarousel
+        locale={locale}
+        sectionKey="headphones"
+        products={data.headphones.products}
+      />
     </main>
   );
 }

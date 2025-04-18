@@ -1,11 +1,9 @@
 "use client";
 
 import './ProductsCarousel.css';
-
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
-
 import { getTranslation } from '../../utils/i18n';
 
 interface Product {
@@ -17,38 +15,49 @@ interface Product {
 interface ProductsCarouselProps {
   products: Product[];
   locale: string;
+  sectionKey: string;
 }
 
-export default function ProductsCarousel({ products, locale }: ProductsCarouselProps) {
-  const translations = getTranslation(locale);
-  const { headerTitle, headerButton, addCartButton } = translations.productsCarousel;
+export default function ProductsCarousel({ products, locale, sectionKey }: ProductsCarouselProps) {
+  const translations: any = getTranslation(locale);
+  const sectionTranslations = translations[sectionKey];
 
   const [itemsToShow, setItemsToShow] = useState(1);
   const [cardIndex, setCardIndex] = useState(0);
   const autoSlideInterval = useRef<NodeJS.Timeout | null>(null);
-  const maxCardIndex = products.length - itemsToShow;
+
+  const headerTitle = sectionTranslations?.headerTitle;
+  const headerButton = sectionTranslations?.headerButton;
+  const addCartButton = sectionTranslations?.addCartButton;
+
+  const updateItemsToShow = () => {
+    let count = 1;
+
+    if (window.innerWidth < 768) {
+      count = 1;
+    } else if (window.innerWidth < 1024) {
+      count = 2;
+    } else {
+      count = 4;
+    }
+
+    // Nunca mostrar mais cards do que produtos disponíveis
+    setItemsToShow(Math.min(count, products.length));
+    setCardIndex(0); // resetar índice
+  };
 
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setItemsToShow(1);
-      } else if (window.innerWidth < 1024) {
-        setItemsToShow(2);
-      } else {
-        setItemsToShow(4);
-      }
-      setCardIndex(0);
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+    updateItemsToShow();
+    window.addEventListener("resize", updateItemsToShow);
+    return () => window.removeEventListener("resize", updateItemsToShow);
+  }, [products.length]);
 
   useEffect(() => {
     startAutoSlide();
     return () => stopAutoSlide();
   }, [itemsToShow]);
+
+  const maxCardIndex = Math.max(0, products.length - itemsToShow);
 
   const startAutoSlide = () => {
     stopAutoSlide();
@@ -98,7 +107,7 @@ export default function ProductsCarousel({ products, locale }: ProductsCarouselP
       </div>
 
       <div className="carousel-box relative">
-        <button onClick={goToPrev} className="carousel-arrow left" >
+        <button onClick={goToPrev} className="carousel-arrow left">
           <i className="bi bi-chevron-left"></i>
         </button>
 
@@ -142,15 +151,17 @@ export default function ProductsCarousel({ products, locale }: ProductsCarouselP
         </button>
       </div>
 
-      <div className="carousel-indicators">
-        {Array.from({ length: maxCardIndex + 1 }, (_, index) => (
-          <button
-            key={index}
-            onClick={() => goToIndex(index)}
-            className={`indicator-circle ${cardIndex === index ? "active" : "deactive"}`}
-          ></button>
-        ))}
-      </div>
+      {maxCardIndex > 0 && (
+        <div className="carousel-indicators">
+          {Array.from({ length: maxCardIndex + 1 }, (_, index) => (
+            <button
+              key={index}
+              onClick={() => goToIndex(index)}
+              className={`indicator-circle ${cardIndex === index ? "active" : "deactive"}`}
+            ></button>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

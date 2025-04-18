@@ -68,7 +68,7 @@
   "productsCarousel": {
     "headerTitle": "Mais Vendidos",
     "headerButton": "Ver Todos",
-    "bestSellers": [
+    "products": [
       {
         "image": "/products/1.webp",
         "title": "Fone Bluetooth Readmi Airdots",
@@ -115,5 +115,37 @@
   "bannerImage": {
     "image": "/banners/3.png",
     "label": "Earpods Promoção"
+  },
+  "headphones": {
+    "headerTitle": "Fones de Ouvido",
+    "headerButton": "Ver Todos",
+    "products": [
+      {
+        "image": "/products/1.webp",
+        "title": "Fone Bluetooth Readmi Airdots",
+        "price": 144.90
+      },
+      {
+        "image": "/products/2.webp",
+        "title": "Fone Bluetooth TWS I12",
+        "price": 39.90
+      },
+      {
+        "image": "/products/3.webp",
+        "title": "Headphone JBL Tune 720BT",
+        "price": 315.00
+      },
+      {
+        "image": "/products/4.webp",
+        "title": "Power Bank Pineng 10000mAh",
+        "price": 49.90
+      },
+      {
+        "image": "/products/7.webp",
+        "title": "Headset Logitech H390",
+        "price": 206.90
+      }
+    ],
+    "addCartButton": "Adicionar ao Carrinho"
   }
 }
