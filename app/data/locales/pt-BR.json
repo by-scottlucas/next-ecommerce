@@ -157,5 +157,22 @@
       "image": "/banners/5.png",
       "label": "Smartwatch Promo"
     }
+  ],
+  "benefitsCards": [
+    {
+      "icon": "bi bi-truck",
+      "title": "Entrega Garantida",
+      "subtitle": "Enviamos para todo Brasil"
+    },
+    {
+      "icon": "bi bi-telephone-outbound",
+      "title": "Suporte ao Cliente",
+      "subtitle": "Atendimento de Seg a Sex: 7h às 18h"
+    },
+    {
+      "icon": "bi bi-credit-card",
+      "title": "Pagamento Seguro",
+      "subtitle": "Aceitamos pix, cartões e boleto"
+    }
   ]
 }

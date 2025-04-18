@@ -1,5 +1,6 @@
 import Banner from './components/Banner/Banner';
 import BannerCarousel from './components/BannerCarousel/BannerCarousel';
+import Benefits from './components/Benefits/Benefits';
 import Categories from './components/Categories/Categories';
 import Header from './components/Header/Header';
 import ProductsCarousel from './components/ProductsCarousel/ProductsCarousel';
@@ -47,6 +48,7 @@ export default function Home() {
           </div>
         ))}
       </div>
+      <Benefits locale={locale} benefitsProps={data.benefitsCards} />
     </main>
   );
 }

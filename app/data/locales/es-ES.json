@@ -3,40 +3,112 @@
     "logo": "/brand-assets/logo-black.png",
     "promoText": "Envío gratis a partir de R$ 199 Reales",
     "navLinks": [
-      { "title": "Inicio", "link": "#" },
-      { "title": "Productos", "link": "#products" },
-      { "title": "Auriculares", "link": "#menu" },
-      { "title": "Cargadores", "link": "#location" },
-      { "title": "Mi Cuenta", "link": "#location" },
-      { "title": "Contacto", "link": "#contact" }
+      {
+        "title": "Inicio",
+        "link": "#"
+      },
+      {
+        "title": "Productos",
+        "link": "#products"
+      },
+      {
+        "title": "Auriculares",
+        "link": "#menu"
+      },
+      {
+        "title": "Cargadores",
+        "link": "#location"
+      },
+      {
+        "title": "Mi Cuenta",
+        "link": "#location"
+      },
+      {
+        "title": "Contacto",
+        "link": "#contact"
+      }
     ]
   },
   "bannerCarousel": {
     "slides": [
-      { "image": "/banner-carousel/1.png" },
-      { "image": "/banner-carousel/2.png" }
+      {
+        "image": "/banner-carousel/1.png"
+      },
+      {
+        "image": "/banner-carousel/2.png"
+      }
     ]
   },
   "categoriesCards": [
-    { "image": "/categories/1.png", "title": "Airpods" },
-    { "image": "/categories/2.png", "title": "Smartwatch" },
-    { "image": "/categories/3.png", "title": "Auricular" },
-    { "image": "/categories/4.png", "title": "Micrófono" },
-    { "image": "/categories/5.png", "title": "Aro de Luz" },
-    { "image": "/categories/6.png", "title": "Trípodes" }
+    {
+      "image": "/categories/1.png",
+      "title": "Airpods"
+    },
+    {
+      "image": "/categories/2.png",
+      "title": "Smartwatch"
+    },
+    {
+      "image": "/categories/3.png",
+      "title": "Auricular"
+    },
+    {
+      "image": "/categories/4.png",
+      "title": "Micrófono"
+    },
+    {
+      "image": "/categories/5.png",
+      "title": "Aro de Luz"
+    },
+    {
+      "image": "/categories/6.png",
+      "title": "Trípodes"
+    }
   ],
   "productsCarousel": {
     "headerTitle": "Más Vendidos",
     "headerButton": "Ver Todos",
     "bestSellers": [
-      { "image": "/products/1.webp", "title": "Auricular Bluetooth Readmi Airdots", "price": 144.90 },
-      { "image": "/products/2.webp", "title": "Auricular Bluetooth TWS I12", "price": 39.90 },
-      { "image": "/products/3.webp", "title": "Auriculares JBL Tune 720BT", "price": 315.00 },
-      { "image": "/products/4.webp", "title": "Power Bank Pineng 10000mAh", "price": 49.90 },
-      { "image": "/products/5.webp", "title": "Micrófono Fifine AM8", "price": 269.90 },
-      { "image": "/products/6.webp", "title": "Smartwatch Ultra 9 T200", "price": 267.00 },
-      { "image": "/products/7.webp", "title": "Auriculares Logitech H390", "price": 206.90 },
-      { "image": "/products/8.webp", "title": "Aro de Luz Bi-Color 16cm", "price": 54.90 }
+      {
+        "image": "/products/1.webp",
+        "title": "Auricular Bluetooth Readmi Airdots",
+        "price": 144.90
+      },
+      {
+        "image": "/products/2.webp",
+        "title": "Auricular Bluetooth TWS I12",
+        "price": 39.90
+      },
+      {
+        "image": "/products/3.webp",
+        "title": "Auriculares JBL Tune 720BT",
+        "price": 315.00
+      },
+      {
+        "image": "/products/4.webp",
+        "title": "Power Bank Pineng 10000mAh",
+        "price": 49.90
+      },
+      {
+        "image": "/products/5.webp",
+        "title": "Micrófono Fifine AM8",
+        "price": 269.90
+      },
+      {
+        "image": "/products/6.webp",
+        "title": "Smartwatch Ultra 9 T200",
+        "price": 267.00
+      },
+      {
+        "image": "/products/7.webp",
+        "title": "Auriculares Logitech H390",
+        "price": 206.90
+      },
+      {
+        "image": "/products/8.webp",
+        "title": "Aro de Luz Bi-Color 16cm",
+        "price": 54.90
+      }
     ],
     "addCartButton": "Agregar al Carrito"
   },
@@ -48,11 +120,31 @@
     "headerTitle": "Auriculares",
     "headerButton": "Ver Todos",
     "bestSellers": [
-      { "image": "/products/1.webp", "title": "Auricular Bluetooth Readmi Airdots", "price": 144.90 },
-      { "image": "/products/2.webp", "title": "Auricular Bluetooth TWS I12", "price": 39.90 },
-      { "image": "/products/3.webp", "title": "Auriculares JBL Tune 720BT", "price": 315.00 },
-      { "image": "/products/4.webp", "title": "Power Bank Pineng 10000mAh", "price": 49.90 },
-      { "image": "/products/7.webp", "title": "Auriculares Logitech H390", "price": 206.90 }
+      {
+        "image": "/products/1.webp",
+        "title": "Auricular Bluetooth Readmi Airdots",
+        "price": 144.90
+      },
+      {
+        "image": "/products/2.webp",
+        "title": "Auricular Bluetooth TWS I12",
+        "price": 39.90
+      },
+      {
+        "image": "/products/3.webp",
+        "title": "Auriculares JBL Tune 720BT",
+        "price": 315.00
+      },
+      {
+        "image": "/products/4.webp",
+        "title": "Power Bank Pineng 10000mAh",
+        "price": 49.90
+      },
+      {
+        "image": "/products/7.webp",
+        "title": "Auriculares Logitech H390",
+        "price": 206.90
+      }
     ],
     "addCartButton": "Agregar al Carrito"
   },
@@ -64,6 +156,23 @@
     {
       "image": "/banners/5.png",
       "label": "Promoción de Smartwatch"
+    }
+  ],
+  "benefitsCards": [
+    {
+      "icon": "bi bi-truck",
+      "title": "Entrega Garantizada",
+      "subtitle": "Enviamos a todo Brasil"
+    },
+    {
+      "icon": "bi bi-telephone-outbound",
+      "title": "Atención al Cliente",
+      "subtitle": "Atención de lunes a viernes: 7h a 18h"
+    },
+    {
+      "icon": "bi bi-credit-card",
+      "title": "Pago Seguro",
+      "subtitle": "Aceptamos pix, tarjetas y boleto"
     }
   ]
 }
