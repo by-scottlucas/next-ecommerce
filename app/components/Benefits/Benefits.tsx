@@ -18,15 +18,17 @@ export default function Benefits({ locale, benefitsProps }: BenefitsProps) {
 
     return (
         <div className="benefits-container">
-            {benefitsCards.map((card, index) => (
-                <div key={index} className="benefit-card">
-                    <i className={`benefit-icon ${card.icon}`}></i>
-                    <div>
-                        <h5 className="benefit-title">{translations.benefitsCards[index].title}</h5>
-                        <p className="benefit-subtitle">{translations.benefitsCards[index].subtitle}</p>
+            <div className="benefits-content">
+                {benefitsCards.map((card, index) => (
+                    <div key={index} className="benefit-card">
+                        <i className={`benefit-icon ${card.icon}`}></i>
+                        <div>
+                            <h5 className="benefit-title">{translations.benefitsCards[index].title}</h5>
+                            <p className="benefit-subtitle">{translations.benefitsCards[index].subtitle}</p>
+                        </div>
                     </div>
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
     )
 }

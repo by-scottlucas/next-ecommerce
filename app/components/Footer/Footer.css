@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.footer-container {
+    @apply bg-white w-full flex justify-center mt-3;
+}
+
+.footer-content {
+    @apply w-full;
+}
+
+.footer-top {
+    @apply grid grid-cols-1 text-center md:text-start gap-8 px-4 py-6 lg:py-8 md:grid-cols-3 md:max-w-[90%] mx-auto;
+}
+
+.footer-list-title {
+    @apply mb-3 text-base font-extrabold text-blue-600 uppercase;
+}
+
+.footer-list {
+    @apply text-gray-500 dark:text-gray-400 font-medium flex flex-col gap-0.5;
+}
+
+.footer-list-item {
+    @apply hover:underline hover:text-gray-600 duration-300 transition-all ease-in-out;
+}
+
+.footer-bottom {
+    @apply px-4 py-4 bg-blue-500 text-center;
+}
+
+.footer-bottom-title {
+    @apply text-sm text-white sm:text-center lg:text-base;
+}

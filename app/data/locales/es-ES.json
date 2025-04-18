@@ -174,5 +174,63 @@
       "title": "Pago Seguro",
       "subtitle": "Aceptamos pix, tarjetas y boleto"
     }
+  ],
+  "footer": [
+    {
+      "sections": [
+        {
+          "title": "Empresa",
+          "list": [
+            {
+              "label": "Sobre Nosotros",
+              "path": "#"
+            },
+            {
+              "label": "Contacto",
+              "path": "#"
+            },
+            {
+              "label": "Blog",
+              "path": "#"
+            }
+          ]
+        },
+        {
+          "title": "Redes Sociales",
+          "list": [
+            {
+              "label": "Twitter",
+              "path": "#"
+            },
+            {
+              "label": "Facebook",
+              "path": "#"
+            },
+            {
+              "label": "Instagram",
+              "path": "#"
+            }
+          ]
+        },
+        {
+          "title": "Nuestras Políticas",
+          "list": [
+            {
+              "label": "Política de Privacidad",
+              "path": "#"
+            },
+            {
+              "label": "Política de Devoluciones y Cambios",
+              "path": "#"
+            },
+            {
+              "label": "Política de Entrega y Plazos",
+              "path": "#"
+            }
+          ]
+        }
+      ],
+      "bottomTitle": "© 2025 TechPoint. Todos los derechos reservados."
+    }
   ]
 }

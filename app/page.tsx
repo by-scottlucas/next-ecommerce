@@ -2,6 +2,7 @@ import Banner from './components/Banner/Banner';
 import BannerCarousel from './components/BannerCarousel/BannerCarousel';
 import Benefits from './components/Benefits/Benefits';
 import Categories from './components/Categories/Categories';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import ProductsCarousel from './components/ProductsCarousel/ProductsCarousel';
 import data from './data/locales/pt-BR.json';
@@ -49,6 +50,7 @@ export default function Home() {
         ))}
       </div>
       <Benefits locale={locale} benefitsProps={data.benefitsCards} />
+      <Footer locale={locale} footerData={data.footer[0]} />
     </main>
   );
 }
