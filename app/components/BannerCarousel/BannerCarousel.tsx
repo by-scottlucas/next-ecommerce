@@ -61,7 +61,7 @@ export default function BannerCarousel({ slidesData }: BannerCarouselProps) {
                 {slides.map((slide, index) => (
                     <div key={index} className="carousel-image-box">
                         <Image
-                            width={1920}
+                            width={1900}
                             height={580}
                             src={slide.image}
                             alt={`Slide ${index + 1}`}

@@ -3,22 +3,22 @@ import './Banner.css';
 import Image from 'next/image';
 
 interface BannerProps {
+    width: number;
+    height:number;
     image: string;
     label: string;
 }
 
-export default function Banner({ image, label }: BannerProps) {
+export default function Banner({ image, label, width, height }: BannerProps) {
     return (
-        <div className='banner-container'>
-            <a href="#" className="banner-content">
-                <Image
-                    width={1280}
-                    height={500}
-                    alt={label}
-                    src={image}
-                    className="banner-image"
-                />
-            </a>
-        </div>
+        <a href="#" className="banner-content">
+            <Image
+                width={width}
+                height={height}
+                alt={label}
+                src={image}
+                className="banner-image"
+            />
+        </a>
     );
 }

@@ -55,5 +55,15 @@
       { "image": "/products/7.webp", "title": "Auriculares Logitech H390", "price": 206.90 }
     ],
     "addCartButton": "Agregar al Carrito"
-  }
+  },
+  "banners": [
+    {
+      "image": "/banners/4.png",
+      "label": "Promoción de Auricular"
+    },
+    {
+      "image": "/banners/5.png",
+      "label": "Promoción de Smartwatch"
+    }
+  ]
 }

@@ -55,5 +55,15 @@
       { "image": "/products/7.webp", "title": "Headset Logitech H390", "price": 206.90 }
     ],
     "addCartButton": "Add to Cart"
-  }
+  },
+  "banners": [
+    {
+      "image": "/banners/4.png",
+      "label": "Earbuds Promotion"
+    },
+    {
+      "image": "/banners/5.png",
+      "label": "Smartwatch Promotion"
+    }
+  ]
 }

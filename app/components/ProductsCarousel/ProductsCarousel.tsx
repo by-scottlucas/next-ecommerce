@@ -41,9 +41,8 @@ export default function ProductsCarousel({ products, locale, sectionKey }: Produ
       count = 4;
     }
 
-    // Nunca mostrar mais cards do que produtos disponíveis
     setItemsToShow(Math.min(count, products.length));
-    setCardIndex(0); // resetar índice
+    setCardIndex(0);
   };
 
   useEffect(() => {
@@ -107,7 +106,7 @@ export default function ProductsCarousel({ products, locale, sectionKey }: Produ
       </div>
 
       <div className="carousel-box relative">
-        <button onClick={goToPrev} className="carousel-arrow left">
+        <button onClick={goToPrev} className="carousel-arrow left" aria-label="Prev Button">
           <i className="bi bi-chevron-left"></i>
         </button>
 
@@ -146,7 +145,7 @@ export default function ProductsCarousel({ products, locale, sectionKey }: Produ
           </div>
         </div>
 
-        <button onClick={goToNext} className="carousel-arrow right">
+        <button onClick={goToNext} className="carousel-arrow right" aria-label="Next Button">
           <i className="bi bi-chevron-right"></i>
         </button>
       </div>
@@ -157,6 +156,7 @@ export default function ProductsCarousel({ products, locale, sectionKey }: Produ
             <button
               key={index}
               onClick={() => goToIndex(index)}
+              aria-label={`Slide ${index + 1}`}
               className={`indicator-circle ${cardIndex === index ? "active" : "deactive"}`}
             ></button>
           ))}
