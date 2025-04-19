@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js - TechPoint E-commerce
 
-## Getting Started
+Este projeto é uma plataforma de e-commerce desenvolvida com **Next.js**. O objetivo principal é disponibilizar um ambiente moderno, intuitivo e responsivo para que os usuários possam visualizar e adquirir acessórios eletrônicos com facilidade. A plataforma oferece aos usuários a capacidade de:
 
-First, run the development server:
+- Visualizar banners promocionais e destaques de produtos;
+- Navegar por carrosséis de produtos;
+- Filtrar e explorar produtos na loja;
+- Acessar páginas individuais de produtos;
+- Adicionar e gerenciar itens no carrinho de compras.
+
+## **Funcionalidades**
+
+### **Página Inicial**
+
+- Apresenta banners promocionais com ofertas especiais.
+- Exibe carrosséis com os principais produtos da loja.
+- Mostra informações como pagamento seguro, entrega rápida e suporte ao cliente.
+
+### **Catálogo de Produtos**
+
+- Lista todos os produtos disponíveis para compra.
+- Permite que o usuário filtre produtos por categorias, preços ou outros critérios.
+
+### **Página de Produto**
+
+- Apresenta os detalhes de um produto específico.
+- Exibe informações como imagens, preço, descrição e avaliações (se implementado).
+- Oferece a opção de adicionar o item ao carrinho.
+
+### **Carrinho de Compras**
+
+- Exibe todos os produtos adicionados pelo usuário.
+- Permite alterar a quantidade ou remover produtos.
+- Exibe o valor total da compra e direciona para finalização (checkout).
+
+
+## **Estrutura do Projeto**
+
+- **/app/pages/**: Contém as rotas do projeto, como index (home), produtos, carrinho e detalhes de produto.
+- **/app/components/**: Componentes reutilizáveis de UI, como carrosséis, cards de produto, header e footer.
+- **/app/utils/**: Funções utilitárias e auxiliares do projeto.
+- **/app/data/** (se presente): Dados mockados ou estáticos para simulação de produtos.
+- **/public/**: Imagens, ícones e outros arquivos públicos.
+- **next.config.js**: Configurações do Next.js.
+- **package.json**: Arquivo de dependências e scripts do projeto.
+
+## **Como Rodar o Projeto**
+
+### **1. Pré-requisitos**
+
+Certifique-se de que o **Node.js** esteja instalado corretamente em seu sistema. Você pode verificar com:
+
+```bash
+node -v
+```
+
+Você também precisará do **npm** (instalado junto com o Node.js) ou **yarn** para gerenciar as dependências.
+
+### **2. Instalação das Dependências**
+
+Usando npm:
+
+```bash
+npm install
+```
+
+Ou usando yarn:
+
+```bash
+yarn install
+```
+
+### **3. Configurações Adicionais**
+
+- Verifique se todas as imagens e produtos estão devidamente adicionados em `/public`.
+- Ajuste qualquer URL de API ou recurso externo conforme o ambiente de desenvolvimento.
+
+### **4. Execução do Projeto**
+
+Para iniciar o projeto em modo de desenvolvimento:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O projeto estará disponível em:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## **Tecnologias Utilizadas**
 
-## Learn More
+- **[Next.js](https://nextjs.org/)**: Framework React para aplicações web com renderização híbrida (SSR e SSG).
+- **[Tailwind CSS](https://tailwindcss.com/)**: Framework utilitário para estilos rápidos e responsivos.
+- **[Bootstrap Icons](https://icons.getbootstrap.com/)**: Ícones vetoriais para uso direto em HTML/CSS.
+- **[TypeScript](https://www.typescriptlang.org/)**: Superset de JavaScript com tipagem estática opcional.
 
-To learn more about Next.js, take a look at the following resources:
+## **Autor**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Este projeto foi desenvolvido por **Lucas Santos Silva**, Desenvolvedor Full Stack, graduado pela **Escola Técnica do Estado de São Paulo (ETEC)** nos cursos de **Informática (Suporte)** e **Informática para Internet**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bylucasss/)
 
-## Deploy on Vercel
+## **Licença**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este projeto está licenciado sob a [**MIT License**](./LICENSE).
