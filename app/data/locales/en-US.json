@@ -146,7 +146,7 @@
         "price": 206.90
       }
     ],
-    "addCartButton": "Add to Cart"
+    "labelButton": "Add to Cart"
   },
   "banners": [
     {
@@ -232,5 +232,82 @@
       ],
       "bottomTitle": "© 2025 TechPoint. All rights reserved."
     }
-  ]
+  ],
+  "productsPage": {
+    "titlePage":"Discover our products",
+    "products": [
+      {
+        "image": "/products/1.webp",
+        "title": "Readmi Airdots Bluetooth Earbuds",
+        "description": "Compact Bluetooth earbuds with great battery life and sound quality.",
+        "category": "Earphones",
+        "color": "black",
+        "brand": "Xiaomi",
+        "price": 144.90
+      },
+      {
+        "image": "/products/2.webp",
+        "title": "TWS I12 Bluetooth Earbuds",
+        "description": "Bluetooth earbuds with ergonomic design.",
+        "category": "Earphones",
+        "color": "white",
+        "brand": "TWS",
+        "price": 39.90
+      },
+      {
+        "image": "/products/3.webp",
+        "title": "JBL Tune 720BT Headphones",
+        "description": "Headphones with powerful bass and JBL Pure Bass technology.",
+        "category": "Headphones",
+        "color": "black",
+        "brand": "JBL",
+        "price": 315.00
+      },
+      {
+        "image": "/products/4.webp",
+        "title": "Pineng Power Bank 10000mAh",
+        "description": "Portable charger with high capacity and multiple inputs.",
+        "category": "Power banks",
+        "color": "black",
+        "brand": "Pineng",
+        "price": 49.90
+      },
+      {
+        "image": "/products/5.webp",
+        "title": "Fifine AM8 Microphone",
+        "description": "Professional microphone for streaming, podcasts, and recordings.",
+        "category": "Microphones",
+        "color": "black",
+        "brand": "Fifine",
+        "price": 269.90
+      },
+      {
+        "image": "/products/6.webp",
+        "title": "Ultra 9 T200 Smartwatch",
+        "description": "Smartwatch with health features and notifications.",
+        "category": "Smartwatches",
+        "color": "orange",
+        "brand": "Ultra",
+        "price": 267.00
+      },
+      {
+        "image": "/products/7.webp",
+        "title": "Logitech H390 Headset",
+        "description": "Headset with microphone and USB connection, ideal for remote work.",
+        "category": "Headsets",
+        "color": "black",
+        "brand": "Logitech",
+        "price": 206.90
+      },
+      {
+        "image": "/products/8.webp",
+        "title": "Bi-Color Ring Light 16cm",
+        "description": "Perfect lighting for video recordings and calls.",
+        "category": "Lighting",
+        "color": "white",
+        "brand": "Generic",
+        "price": 54.90
+      }
+    ]
+  }
 }

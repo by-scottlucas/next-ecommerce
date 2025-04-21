@@ -1,11 +1,7 @@
 @import "tailwindcss";
 
 .searchbar-container {
-    @apply max-w-md mx-auto;
-}
-
-.searchbar-label {
-    @apply mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white;
+    @apply w-full md:max-w-[280px] lg:max-w-[306px];
 }
 
 .search-icon-box {

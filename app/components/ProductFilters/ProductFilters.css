@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+.sidebar {
+    @apply md:w-50 lg:w-70 shrink-0 hidden md:block;
+}
+
+.filters-card {
+    @apply block p-6 bg-white border border-gray-200 rounded-sm shadow-sm;
+}
+
+.filters-card-title {
+    @apply mb-3 text-2xl font-bold tracking-tight text-gray-900;
+}
+
+.filter-box {
+    @apply mb-4;
+}
+
+.filter-title {
+    @apply text-sm font-semibold text-gray-700 mb-2;
+}
+
+.filter-options {
+    @apply space-y-1 text-sm text-gray-600;
+}
+
+.checkbox-input {
+    @apply mr-2 cursor-pointer;
+}
+
+.color-input {
+    @apply w-5 h-5 rounded-full border border-gray-300 cursor-pointer;
+}
+
+.apply-filter-btn {
+    @apply cursor-pointer mt-3 w-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded;
+}

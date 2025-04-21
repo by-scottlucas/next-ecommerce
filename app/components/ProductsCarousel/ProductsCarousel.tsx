@@ -1,10 +1,11 @@
 "use client";
 
 import './ProductsCarousel.css';
-import Image from 'next/image';
-import Link from 'next/link';
+
 import { useEffect, useRef, useState } from 'react';
+
 import { getTranslation } from '../../utils/i18n';
+import ProductCard from '../ProductCard/ProductCard';
 
 interface Product {
   image: string;
@@ -28,7 +29,7 @@ export default function ProductsCarousel({ products, locale, sectionKey }: Produ
 
   const headerTitle = sectionTranslations?.headerTitle;
   const headerButton = sectionTranslations?.headerButton;
-  const addCartButton = sectionTranslations?.addCartButton;
+  const labelButton = sectionTranslations?.labelButton;
 
   const updateItemsToShow = () => {
     let count = 1;
@@ -91,13 +92,6 @@ export default function ProductsCarousel({ products, locale, sectionKey }: Produ
     resetAutoSlide();
   };
 
-  const formatCurrencyBRL = (value: number) => {
-    return new Intl.NumberFormat("pt-BR", {
-      style: "currency",
-      currency: "BRL",
-    }).format(value);
-  };
-
   return (
     <div className="products-carousel-container">
       <div className="container-header">
@@ -111,36 +105,21 @@ export default function ProductsCarousel({ products, locale, sectionKey }: Produ
         </button>
 
         <div className="products-carousel-wrapper">
-          <div
-            className="products-carousel-content"
+          <div className="products-carousel-content"
             style={{
               transform: `translateX(-${(100 / products.length) * cardIndex}%)`,
               width: `${(products.length * 100) / itemsToShow}%`,
             }}
           >
-            {products.map((card, index) => (
-              <div key={index} className="product-card">
-                <Link href="#">
-                  <Image
-                    width={1000}
-                    height={1000}
-                    src={card.image}
-                    alt={card.title}
-                    priority
-                  />
-                </Link>
-
-                <div className="px-5 pb-5">
-                  <Link href="#">
-                    <h5 className="product-title">{card.title}</h5>
-                  </Link>
-                  <span className="product-price">{formatCurrencyBRL(card.price)}</span>
-                </div>
-
-                <Link href="#" className="add-cart-button">
-                  {addCartButton}
-                </Link>
-              </div>
+            {products.map((product, index) => (
+              <ProductCard
+                key={index}
+                image={product.image}
+                title={product.title}
+                price={product.price}
+                productLink="#"
+                labelButton={labelButton}
+              />
             ))}
           </div>
         </div>

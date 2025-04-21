@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+.products-container {
+    @apply bg-gray-50 pb-15;
+}
+
+.content-page {
+    @apply px-4 mt-10 md:mt-15 md:px-10;
+}
+
+.products-header {
+    @apply w-full flex flex-col md:flex-row md:items-center md:justify-between;
+}
+
+.products-header-title {
+    @apply text-blue-600 text-2xl font-black mb-1 md:mb-0 md:text-3xl;
+}
+
+.products-content {
+    @apply mt-8 flex gap-6;
+}
+
+.products-cards {
+    @apply flex-1 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6;
+}

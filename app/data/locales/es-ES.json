@@ -146,7 +146,7 @@
         "price": 206.90
       }
     ],
-    "addCartButton": "Agregar al Carrito"
+    "labelButton": "Agregar al Carrito"
   },
   "banners": [
     {
@@ -232,5 +232,82 @@
       ],
       "bottomTitle": "© 2025 TechPoint. Todos los derechos reservados."
     }
-  ]
+  ],
+  "productsPage": {
+    "titlePage":"Descubra nuestros productos",
+    "products": [
+      {
+        "image": "/products/1.webp",
+        "title": "Auriculares Bluetooth Readmi Airdots",
+        "description": "Auriculares compactos con buena autonomía y sonido de calidad.",
+        "category": "Auriculares",
+        "color": "negro",
+        "brand": "Xiaomi",
+        "price": 144.90
+      },
+      {
+        "image": "/products/2.webp",
+        "title": "Auriculares Bluetooth TWS I12",
+        "description": "Auriculares Bluetooth con diseño ergonómico.",
+        "category": "Auriculares",
+        "color": "blanco",
+        "brand": "TWS",
+        "price": 39.90
+      },
+      {
+        "image": "/products/3.webp",
+        "title": "Auriculares JBL Tune 720BT",
+        "description": "Auriculares con graves potentes y tecnología Pure Bass de JBL.",
+        "category": "Auriculares grandes",
+        "color": "negro",
+        "brand": "JBL",
+        "price": 315.00
+      },
+      {
+        "image": "/products/4.webp",
+        "title": "Power Bank Pineng 10000mAh",
+        "description": "Cargador portátil de gran capacidad con múltiples entradas.",
+        "category": "Baterías portátiles",
+        "color": "negro",
+        "brand": "Pineng",
+        "price": 49.90
+      },
+      {
+        "image": "/products/5.webp",
+        "title": "Micrófono Fifine AM8",
+        "description": "Micrófono profesional para streaming, podcasts y grabaciones.",
+        "category": "Micrófonos",
+        "color": "negro",
+        "brand": "Fifine",
+        "price": 269.90
+      },
+      {
+        "image": "/products/6.webp",
+        "title": "Smartwatch Ultra 9 T200",
+        "description": "Reloj inteligente con funciones de salud y notificaciones.",
+        "category": "Smartwatches",
+        "color": "naranja",
+        "brand": "Ultra",
+        "price": 267.00
+      },
+      {
+        "image": "/products/7.webp",
+        "title": "Auriculares con Micrófono Logitech H390",
+        "description": "Auriculares con micrófono y conexión USB, ideales para oficina en casa.",
+        "category": "Auriculares con micrófono",
+        "color": "negro",
+        "brand": "Logitech",
+        "price": 206.90
+      },
+      {
+        "image": "/products/8.webp",
+        "title": "Anillo de Luz Bi-Color 16cm",
+        "description": "Iluminación ideal para grabaciones y videollamadas.",
+        "category": "Iluminación",
+        "color": "blanco",
+        "brand": "Genérico",
+        "price": 54.90
+      }
+    ]
+  }
 }

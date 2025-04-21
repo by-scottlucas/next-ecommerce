@@ -7,7 +7,7 @@ import Header from './components/Header/Header';
 import ProductsCarousel from './components/ProductsCarousel/ProductsCarousel';
 import data from './data/locales/pt-BR.json';
 
-export default function Home() {
+export default function HomePage() {
   const locale = "pt-BR";
   return (
     <main className="bg-white">

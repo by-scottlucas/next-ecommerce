@@ -5,7 +5,7 @@
 }
 
 .container-header {
-    @apply flex items-center justify-between px-5 mb-2 lg:px-3.5 lg:mb-6;
+    @apply flex items-center justify-between px-5 mb-6 lg:px-3.5 lg:mb-6;
 }
 
 .container-title {
@@ -16,28 +16,12 @@
     @apply bg-blue-400 hover:bg-blue-500 transition-all duration-300 ease-in-out py-1.5 px-3 2xl:px-5 2xl:py-3 2xl:text-2xl font-semibold;
 }
 
-.carousel-box{
-    @apply w-[100%] overflow-hidden m-auto;
+.carousel-box {
+    @apply w-[92%] overflow-hidden m-auto lg:w-[100%];
 }
 
 .products-carousel-content {
-    @apply relative transition-transform duration-500 ease-in-out flex justify-around mb-4;
-}
-
-.product-card {
-    @apply w-full flex flex-col justify-between p-5 gap-2 lg:gap-3 max-w-sm border border-gray-200 rounded-md shadow-sm hover:shadow-md bg-white mx-5 my-3 lg:mx-3 hover:scale-101 transition-all duration-300 ease-in-out 2xl:mx-0 2xl:min-w-[410px];
-}
-
-.product-title {
-    @apply text-xl lg:text-base font-semibold text-[#696969] mb-1 text-nowrap 2xl:text-xl 2xl:mb-2;
-}
-
-.product-price {
-    @apply text-3xl font-extrabold text-blue-700 2xl:text-4xl;
-}
-
-.add-cart-button {
-    @apply w-full text-white text-base lg:text-sm bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm py-3 text-center transition-all duration-300 ease-in-out 2xl:text-xl 2xl:py-3.5;
+    @apply relative transition-transform duration-500 ease-in-out flex justify-around mb-4 md:gap-5;
 }
 
 .carousel-indicators {
@@ -61,9 +45,9 @@
 }
 
 .carousel-arrow.left {
-    @apply left-0 ml-2 lg:ml-0;
+    @apply left-0 lg:ml-0;
 }
 
 .carousel-arrow.right {
-    @apply right-0 mr-2 lg:mr-0;
+    @apply right-0 lg:mr-0;
 }
