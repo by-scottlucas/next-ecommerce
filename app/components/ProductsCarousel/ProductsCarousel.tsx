@@ -1,10 +1,8 @@
-"use client";
+'use client';
 
 import './ProductsCarousel.css';
-
 import { useEffect, useRef, useState } from 'react';
-
-import { getTranslation } from '../../utils/i18n';
+import { useLanguage } from '@/app/contexts/LanguageContext';
 import ProductCard from '../ProductCard/ProductCard';
 
 interface Product {
@@ -15,12 +13,11 @@ interface Product {
 
 interface ProductsCarouselProps {
   products: Product[];
-  locale: string;
   sectionKey: string;
 }
 
-export default function ProductsCarousel({ products, locale, sectionKey }: ProductsCarouselProps) {
-  const translations: any = getTranslation(locale);
+export default function ProductsCarousel({ products, sectionKey }: ProductsCarouselProps) {
+  const { translations }: any = useLanguage();
   const sectionTranslations = translations[sectionKey];
 
   const [itemsToShow, setItemsToShow] = useState(1);

@@ -1,26 +1,25 @@
+"use client";
+
+import Header from './components/Header/Header';
 import Banner from './components/Banner/Banner';
 import BannerCarousel from './components/BannerCarousel/BannerCarousel';
 import Benefits from './components/Benefits/Benefits';
 import Categories from './components/Categories/Categories';
 import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
 import ProductsCarousel from './components/ProductsCarousel/ProductsCarousel';
-import data from './data/locales/pt-BR.json';
+import LanguageSelector from './components/LanguageSelector/LanguageSelector';
+import { useLanguage } from './contexts/LanguageContext';
 
 export default function HomePage() {
-  const locale = "pt-BR";
+  const { locale, translations: data } = useLanguage();
+
   return (
     <main className="bg-white">
-      <Header locale={locale} />
-      <BannerCarousel
-        slidesData={data.bannerCarousel.slides}
-      />
-      <Categories
-        locale={locale}
-        cardsData={data.categoriesCards}
-      />
+      <LanguageSelector />
+      <Header />
+      <BannerCarousel slidesData={data.bannerCarousel.slides} />
+      <Categories cardsData={data.categoriesCards} />
       <ProductsCarousel
-        locale={locale}
         sectionKey='productsCarousel'
         products={data.productsCarousel.products}
       />
@@ -33,7 +32,6 @@ export default function HomePage() {
         />
       </div>
       <ProductsCarousel
-        locale={locale}
         sectionKey="headphones"
         products={data.headphones.products}
       />
@@ -49,8 +47,8 @@ export default function HomePage() {
           </div>
         ))}
       </div>
-      <Benefits locale={locale} benefitsProps={data.benefitsCards} />
-      <Footer locale={locale} footerData={data.footer[0]} />
+      <Benefits benefitsProps={data.benefitsCards} />
+      <Footer footerData={data.footer[0]} />
     </main>
   );
 }

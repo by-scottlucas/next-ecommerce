@@ -1,22 +1,21 @@
+"use client";
+
+import LanguageSelector from '@/app/components/LanguageSelector/LanguageSelector';
 import './ProductsPage.css';
 
 import Header from '@/app/components/Header/Header';
 import ProductCard from '@/app/components/ProductCard/ProductCard';
 import ProductFilters from '@/app/components/ProductFilters/ProductFilters';
 import Searchbar from '@/app/components/Searchbar/Searchbar';
-import { getTranslation } from '@/app/utils/i18n';
-
-import data from '../../data/locales/pt-BR.json';
-
-const products = data.productsPage.products;
+import { useLanguage } from '@/app/contexts/LanguageContext';
 
 const getUniqueValues = (array: any[], key: string) => {
     return [...new Set(array.map(item => item[key]))];
 };
 
 export default function ProductsPage() {
-    const locale = "pt-BR";
-    const translations = getTranslation(locale);
+    const { translations } = useLanguage();
+    const products = translations.productsPage.products;
 
     const colors = getUniqueValues(products, "color");
     const brands = getUniqueValues(products, "brand");
@@ -33,7 +32,8 @@ export default function ProductsPage() {
 
     return (
         <div className="products-container">
-            <Header locale={locale} />
+            <Header />
+            <LanguageSelector />
             <div className="content-page">
                 <div className="products-header">
                     <h2 className="products-header-title">
@@ -58,10 +58,11 @@ export default function ProductsPage() {
                                 title={product.title}
                                 price={product.price}
                                 productLink={"#"}
-                                labelButton={"Adicionar ao carrinho"}
+                                labelButton={translations.productsPage.products[index].labelButton}
                             />
                         ))}
                     </section>
+
                 </div>
             </div>
         </div>

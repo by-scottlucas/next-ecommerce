@@ -1,5 +1,7 @@
+"use client";
+
 import "./Benefits.css";
-import { getTranslation } from '../../utils/i18n';
+import { useLanguage } from '@/app/contexts/LanguageContext';
 
 interface Benefits {
     icon: string;
@@ -8,12 +10,11 @@ interface Benefits {
 }
 
 interface BenefitsProps {
-    locale: string;
     benefitsProps: Benefits[];
 }
 
-export default function Benefits({ locale, benefitsProps }: BenefitsProps) {
-    const translations = getTranslation(locale);
+export default function Benefits({ benefitsProps }: BenefitsProps) {
+    const { translations } = useLanguage();
     const benefitsCards = benefitsProps;
 
     return (
@@ -30,5 +31,5 @@ export default function Benefits({ locale, benefitsProps }: BenefitsProps) {
                 ))}
             </div>
         </div>
-    )
+    );
 }

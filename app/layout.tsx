@@ -1,9 +1,11 @@
+// app/layout.tsx
 import './globals.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import { Geist, Geist_Mono } from 'next/font/google';
 import type { Metadata } from 'next';
 import Head from 'next/head';
+import { LanguageProvider } from './contexts/LanguageContext'; // <= Adicione essa linha
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -69,7 +71,9 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

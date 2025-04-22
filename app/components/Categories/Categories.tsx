@@ -1,8 +1,8 @@
+'use client';
 import './Categories.css';
 
 import Image from 'next/image';
-
-import { getTranslation } from '../../utils/i18n';
+import { useLanguage } from '@/app/contexts/LanguageContext';
 
 interface Card {
     image: string;
@@ -11,11 +11,10 @@ interface Card {
 
 interface CategoriesProps {
     cardsData: Card[];
-    locale: string;
 }
 
-export default function Categories({ cardsData, locale }: CategoriesProps) {
-    const translations = getTranslation(locale);
+export default function Categories({ cardsData }: CategoriesProps) {
+    const { translations } = useLanguage();
 
     return (
         <section className="categories-container">
@@ -28,7 +27,6 @@ export default function Categories({ cardsData, locale }: CategoriesProps) {
                         alt={card.title}
                         className="category-image"
                     />
-
                     <span className="category-label">
                         {translations.categoriesCards[index]?.title}
                     </span>

@@ -2,7 +2,7 @@ import "./ProductCard.css";
 import Image from "next/image";
 import Link from "next/link";
 
-interface Product {
+interface ProductCardProps {
     image: string;
     title: string;
     price: number;
@@ -10,7 +10,7 @@ interface Product {
     labelButton: string;
 }
 
-export default function ProductCard({ image, title, price, productLink, labelButton }: Product) {
+export default function ProductCard({ image, title, price, productLink, labelButton }: ProductCardProps) {
     const formatCurrencyBRL = (value: number) => {
         return new Intl.NumberFormat("pt-BR", {
             style: "currency",
