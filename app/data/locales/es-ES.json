@@ -73,48 +73,56 @@
         "image": "/products/1.webp",
         "title": "Auricular Bluetooth Readmi Airdots",
         "price": 144.90,
+        "link": "#",
         "labelButton": "Añadir al Carrito"
       },
       {
         "image": "/products/2.webp",
         "title": "Auricular Bluetooth TWS I12",
         "price": 39.90,
+        "link": "#",
         "labelButton": "Añadir al Carrito"
       },
       {
         "image": "/products/3.webp",
         "title": "Auricular JBL Tune 720BT",
         "price": 315.00,
+        "link": "#",
         "labelButton": "Añadir al Carrito"
       },
       {
         "image": "/products/4.webp",
         "title": "Power Bank Pineng 10000mAh",
         "price": 49.90,
+        "link": "#",
         "labelButton": "Añadir al Carrito"
       },
       {
         "image": "/products/5.webp",
         "title": "Micrófono Fifine AM8",
         "price": 269.90,
+        "link": "#",
         "labelButton": "Añadir al Carrito"
       },
       {
         "image": "/products/6.webp",
         "title": "Smartwatch Ultra 9 T200",
         "price": 267.00,
+        "link": "#",
         "labelButton": "Añadir al Carrito"
       },
       {
         "image": "/products/7.webp",
         "title": "Auricular Logitech H390",
         "price": 206.90,
+        "link": "#",
         "labelButton": "Añadir al Carrito"
       },
       {
         "image": "/products/8.webp",
         "title": "Ring Light Bi-Color 16cm",
         "price": 54.90,
+        "link": "#",
         "labelButton": "Añadir al Carrito"
       }
     ]
@@ -246,46 +254,66 @@
   ],
   "productsPage": {
     "titlePage": "Conoce nuestros productos",
+    "colorMap": {
+      "negro": "bg-black",
+      "blanco": "bg-white",
+      "azul": "bg-blue-500",
+      "rojo": "bg-red-500",
+      "verde": "bg-green-500",
+      "naranja": "bg-orange-500"
+    },
+    "colorLabels": {
+      "negro": "Negro",
+      "blanco": "Blanco",
+      "azul": "Azul",
+      "rojo": "Rojo",
+      "verde": "Verde",
+      "naranja": "Naranja"
+    },
     "products": [
       {
         "image": "/products/1.webp",
-        "title": "Auricular Bluetooth Readmi Airdots",
-        "description": "Auricular bluetooth compacto con gran autonomía y sonido de calidad.",
+        "title": "Auriculares Bluetooth Readmi Airdots",
+        "description": "Auriculares compactos con gran autonomía y calidad de sonido.",
         "category": "Auriculares",
         "color": "negro",
         "brand": "Xiaomi",
         "price": 144.90,
-        "labelButton": "Añadir al Carrito"
+        "link": "#",
+        "labelButton": "Añadir al carrito"
       },
       {
         "image": "/products/2.webp",
-        "title": "Auricular Bluetooth TWS I12",
-        "description": "Auricular bluetooth con diseño ergonómico.",
+        "title": "Auriculares Bluetooth TWS I12",
+        "description": "Auriculares Bluetooth con diseño ergonómico.",
         "category": "Auriculares",
         "color": "blanco",
         "brand": "TWS",
         "price": 39.90,
-        "labelButton": "Añadir al Carrito"
+        "link": "#",
+        "labelButton": "Añadir al carrito"
       },
       {
         "image": "/products/3.webp",
-        "title": "Auricular JBL Tune 720BT",
-        "description": "Auricular con graves potentes y tecnología Pure Bass de JBL.",
+        "title": "Auriculares JBL Tune 720BT",
+        "description": "Auriculares con graves potentes y tecnología Pure Bass de JBL.",
         "category": "Auriculares",
         "color": "negro",
         "brand": "JBL",
         "price": 315.00,
-        "labelButton": "Añadir al Carrito"
+        "link": "#",
+        "labelButton": "Añadir al carrito"
       },
       {
         "image": "/products/4.webp",
         "title": "Power Bank Pineng 10000mAh",
-        "description": "Cargador portátil de alta capacidad y múltiples entradas.",
-        "category": "Power Banks",
+        "description": "Cargador portátil con gran capacidad y múltiples entradas.",
+        "category": "Power banks",
         "color": "negro",
         "brand": "Pineng",
         "price": 49.90,
-        "labelButton": "Añadir al Carrito"
+        "link": "#",
+        "labelButton": "Añadir al carrito"
       },
       {
         "image": "/products/5.webp",
@@ -295,37 +323,41 @@
         "color": "negro",
         "brand": "Fifine",
         "price": 269.90,
-        "labelButton": "Añadir al Carrito"
+        "link": "#",
+        "labelButton": "Añadir al carrito"
       },
       {
         "image": "/products/6.webp",
         "title": "Smartwatch Ultra 9 T200",
-        "description": "Reloj inteligente con diversas funcionalidades de salud y notificaciones.",
-        "category": "Smartwatches",
+        "description": "Reloj inteligente con múltiples funciones de salud y notificaciones.",
+        "category": "Relojes inteligentes",
         "color": "naranja",
         "brand": "Ultra",
         "price": 267.00,
-        "labelButton": "Añadir al Carrito"
+        "link": "#",
+        "labelButton": "Añadir al carrito"
       },
       {
         "image": "/products/7.webp",
-        "title": "Auricular Logitech H390",
-        "description": "Auricular con micrófono y conexión USB, ideal para trabajo remoto.",
-        "category": "Headsets",
+        "title": "Auriculares con micrófono Logitech H390",
+        "description": "Auriculares USB ideales para oficina en casa.",
+        "category": "Auriculares con micrófono",
         "color": "negro",
         "brand": "Logitech",
         "price": 206.90,
-        "labelButton": "Añadir al Carrito"
+        "link": "#",
+        "labelButton": "Añadir al carrito"
       },
       {
         "image": "/products/8.webp",
-        "title": "Ring Light Bi-Color 16cm",
+        "title": "Aro de Luz Bi-Color 16cm",
         "description": "Iluminación ideal para grabaciones y videollamadas.",
         "category": "Iluminación",
         "color": "blanco",
         "brand": "Genérico",
         "price": 54.90,
-        "labelButton": "Añadir al Carrito"
+        "link": "#",
+        "labelButton": "Añadir al carrito"
       }
     ]
   }

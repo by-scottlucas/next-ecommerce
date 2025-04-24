@@ -13,5 +13,5 @@
 }
 
 .search-input {
-    @apply block w-full p-2.5 ps-10 text-sm text-gray-900 border border-gray-300 rounded-sm bg-gray-50 focus:ring-blue-500 focus:border-blue-500;
+    @apply block w-full p-2.5 ps-10 text-sm text-gray-900 border border-gray-300 rounded-sm bg-white focus:ring-blue-500 focus:border-blue-500;
 }

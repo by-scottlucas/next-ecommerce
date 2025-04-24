@@ -6,11 +6,11 @@ interface ProductCardProps {
     image: string;
     title: string;
     price: number;
-    productLink: string;
+    link: string;
     labelButton: string;
 }
 
-export default function ProductCard({ image, title, price, productLink, labelButton }: ProductCardProps) {
+export default function ProductCard(props: ProductCardProps) {
     const formatCurrencyBRL = (value: number) => {
         return new Intl.NumberFormat("pt-BR", {
             style: "currency",
@@ -20,25 +20,27 @@ export default function ProductCard({ image, title, price, productLink, labelBut
 
     return (
         <div className="product-card">
-            <Link href={productLink}>
+            <Link href={String(props.link)}>
                 <Image
                     width={1000}
                     height={1000}
-                    src={image}
-                    alt={title}
+                    src={props.image}
+                    alt={props.title}
                     priority
                 />
             </Link>
 
             <div className="px-5 pb-5">
-                <Link href={productLink}>
-                    <h5 className="product-title">{title}</h5>
+                <Link href={String(props.link)}>
+                    <h5 className="product-title">{props.title}</h5>
                 </Link>
-                <span className="product-price">{formatCurrencyBRL(price)}</span>
+                <span className="product-price">
+                    {formatCurrencyBRL(props.price)}
+                </span>
             </div>
 
-            <Link href={productLink} className="add-cart-button">
-                {labelButton}
+            <Link href={String(props.link)} className="add-cart-button">
+                {props.labelButton}
             </Link>
         </div>
     );

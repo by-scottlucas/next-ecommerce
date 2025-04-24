@@ -17,9 +17,13 @@
 }
 
 .products-content {
-    @apply mt-8 flex gap-6;
+    @apply mt-8 flex gap-6 items-start;
 }
 
 .products-cards {
     @apply flex-1 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.not-found-container{
+    @apply flex items-center justify-center w-full h-[420px];
 }

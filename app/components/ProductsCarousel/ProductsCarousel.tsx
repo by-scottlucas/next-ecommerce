@@ -9,6 +9,8 @@ interface Product {
   image: string;
   title: string;
   price: number;
+  link: string;
+  labelButton: string;
 }
 
 interface ProductsCarouselProps {
@@ -109,14 +111,7 @@ export default function ProductsCarousel({ products, sectionKey }: ProductsCarou
             }}
           >
             {products.map((product, index) => (
-              <ProductCard
-                key={index}
-                image={product.image}
-                title={product.title}
-                price={product.price}
-                productLink="#"
-                labelButton={labelButton}
-              />
+              <ProductCard key={index}{...product} />
             ))}
           </div>
         </div>

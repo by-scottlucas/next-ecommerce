@@ -32,10 +32,10 @@
   "bannerCarousel": {
     "slides": [
       {
-        "image": "/banner-carousel/1.png"
+        "image": "/banners/1.png"
       },
       {
-        "image": "/banner-carousel/2.png"
+        "image": "/banners/2.png"
       }
     ]
   },
@@ -73,48 +73,56 @@
         "image": "/products/1.webp",
         "title": "Fone Bluetooth Readmi Airdots",
         "price": 144.90,
+        "link": "#",
         "labelButton": "Adicionar ao Carrinho"
       },
       {
         "image": "/products/2.webp",
         "title": "Fone Bluetooth TWS I12",
         "price": 39.90,
+        "link": "#",
         "labelButton": "Adicionar ao Carrinho"
       },
       {
         "image": "/products/3.webp",
         "title": "Headphone JBL Tune 720BT",
         "price": 315.00,
+        "link": "#",
         "labelButton": "Adicionar ao Carrinho"
       },
       {
         "image": "/products/4.webp",
         "title": "Power Bank Pineng 10000mAh",
         "price": 49.90,
+        "link": "#",
         "labelButton": "Adicionar ao Carrinho"
       },
       {
         "image": "/products/5.webp",
         "title": "Microfone Fifine AM8",
         "price": 269.90,
+        "link": "#",
         "labelButton": "Adicionar ao Carrinho"
       },
       {
         "image": "/products/6.webp",
         "title": "Smartwatch Ultra 9 T200",
         "price": 267.00,
+        "link": "#",
         "labelButton": "Adicionar ao Carrinho"
       },
       {
         "image": "/products/7.webp",
         "title": "Headset Logitech H390",
         "price": 206.90,
+        "link": "#",
         "labelButton": "Adicionar ao Carrinho"
       },
       {
         "image": "/products/8.webp",
         "title": "Ring Light Bi-Color 16cm",
         "price": 54.90,
+        "link": "#",
         "labelButton": "Adicionar ao Carrinho"
       }
     ]
@@ -245,7 +253,23 @@
     }
   ],
   "productsPage": {
-    "titlePage":"Conheça nossos produtos",
+    "titlePage": "Conheça nossos produtos",
+    "colorMap": {
+      "preto": "bg-black",
+      "branco": "bg-white",
+      "azul": "bg-blue-500",
+      "vermelho": "bg-red-500",
+      "verde": "bg-green-500",
+      "laranja": "bg-orange-500"
+    },
+    "colorLabels": {
+      "preto": "Preto",
+      "branco": "Branco",
+      "azul": "Azul",
+      "vermelho": "Vermelho",
+      "verde": "Verde",
+      "laranja": "Laranja"
+    },
     "products": [
       {
         "image": "/products/1.webp",
@@ -255,6 +279,7 @@
         "color": "preto",
         "brand": "Xiaomi",
         "price": 144.90,
+        "link": "#",
         "labelButton": "Adicionar ao Carrinho"
       },
       {
@@ -265,6 +290,7 @@
         "color": "branco",
         "brand": "TWS",
         "price": 39.90,
+        "link": "#",
         "labelButton": "Adicionar ao Carrinho"
       },
       {
@@ -275,6 +301,7 @@
         "color": "preto",
         "brand": "JBL",
         "price": 315.00,
+        "link": "#",
         "labelButton": "Adicionar ao Carrinho"
       },
       {
@@ -285,6 +312,7 @@
         "color": "preto",
         "brand": "Pineng",
         "price": 49.90,
+        "link": "#",
         "labelButton": "Adicionar ao Carrinho"
       },
       {
@@ -295,6 +323,7 @@
         "color": "preto",
         "brand": "Fifine",
         "price": 269.90,
+        "link": "#",
         "labelButton": "Adicionar ao Carrinho"
       },
       {
@@ -305,6 +334,7 @@
         "color": "laranja",
         "brand": "Ultra",
         "price": 267.00,
+        "link": "#",
         "labelButton": "Adicionar ao Carrinho"
       },
       {
@@ -315,6 +345,7 @@
         "color": "preto",
         "brand": "Logitech",
         "price": 206.90,
+        "link": "#",
         "labelButton": "Adicionar ao Carrinho"
       },
       {
@@ -325,6 +356,7 @@
         "color": "branco",
         "brand": "Genérico",
         "price": 54.90,
+        "link": "#",
         "labelButton": "Adicionar ao Carrinho"
       }
     ]

@@ -245,46 +245,66 @@
     }
   ],
   "productsPage": {
-    "titlePage":"Discover our products",
+    "titlePage": "Check out our products",
+    "colorMap": {
+      "black": "bg-black",
+      "white": "bg-white",
+      "blue": "bg-blue-500",
+      "red": "bg-red-500",
+      "green": "bg-green-500",
+      "orange": "bg-orange-500"
+    },
+    "colorLabels": {
+      "black": "Black",
+      "white": "White",
+      "blue": "Blue",
+      "red": "Red",
+      "green": "Green",
+      "orange": "Orange"
+    },
     "products": [
       {
         "image": "/products/1.webp",
-        "title": "Readmi Airdots Bluetooth Earbuds",
-        "description": "Compact Bluetooth earbuds with great battery life and sound quality.",
-        "category": "Earphones",
+        "title": "Readmi Airdots Bluetooth Headphones",
+        "description": "Compact Bluetooth headphones with great battery life and sound quality.",
+        "category": "Headphones",
         "color": "black",
         "brand": "Xiaomi",
         "price": 144.90,
+        "link": "#",
         "labelButton": "Add to Cart"
       },
       {
         "image": "/products/2.webp",
         "title": "TWS I12 Bluetooth Earbuds",
         "description": "Bluetooth earbuds with ergonomic design.",
-        "category": "Earphones",
+        "category": "Headphones",
         "color": "white",
         "brand": "TWS",
         "price": 39.90,
+        "link": "#",
         "labelButton": "Add to Cart"
       },
       {
         "image": "/products/3.webp",
-        "title": "JBL Tune 720BT Headphones",
+        "title": "JBL Tune 720BT Headphone",
         "description": "Headphones with powerful bass and JBL Pure Bass technology.",
         "category": "Headphones",
         "color": "black",
         "brand": "JBL",
         "price": 315.00,
+        "link": "#",
         "labelButton": "Add to Cart"
       },
       {
         "image": "/products/4.webp",
-        "title": "Pineng Power Bank 10000mAh",
+        "title": "Pineng 10000mAh Power Bank",
         "description": "Portable charger with high capacity and multiple inputs.",
         "category": "Power banks",
         "color": "black",
         "brand": "Pineng",
         "price": 49.90,
+        "link": "#",
         "labelButton": "Add to Cart"
       },
       {
@@ -295,36 +315,40 @@
         "color": "black",
         "brand": "Fifine",
         "price": 269.90,
+        "link": "#",
         "labelButton": "Add to Cart"
       },
       {
         "image": "/products/6.webp",
         "title": "Ultra 9 T200 Smartwatch",
-        "description": "Smartwatch with health features and notifications.",
+        "description": "Smartwatch with various health features and notifications.",
         "category": "Smartwatches",
         "color": "orange",
         "brand": "Ultra",
         "price": 267.00,
+        "link": "#",
         "labelButton": "Add to Cart"
       },
       {
         "image": "/products/7.webp",
         "title": "Logitech H390 Headset",
-        "description": "Headset with microphone and USB connection, ideal for remote work.",
+        "description": "USB headset with microphone, perfect for home office.",
         "category": "Headsets",
         "color": "black",
         "brand": "Logitech",
         "price": 206.90,
+        "link": "#",
         "labelButton": "Add to Cart"
       },
       {
         "image": "/products/8.webp",
         "title": "Bi-Color Ring Light 16cm",
-        "description": "Perfect lighting for video recordings and calls.",
+        "description": "Ideal lighting for recordings and video calls.",
         "category": "Lighting",
         "color": "white",
         "brand": "Generic",
         "price": 54.90,
+        "link": "#",
         "labelButton": "Add to Cart"
       }
     ]
