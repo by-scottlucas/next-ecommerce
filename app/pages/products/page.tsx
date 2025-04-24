@@ -30,6 +30,7 @@ export default function ProductsPage() {
     const [selectedBrand, setSelectedBrand] = useState<string | null>(null);
     const [selectedColor, setSelectedColor] = useState<string | null>(null);
     const [maxPrice, setMaxPrice] = useState<number>(prices[prices.length - 1]);
+    const [searchTerm, setSearchTerm] = useState<string>("");
 
     const filterProps = {
         colors,
@@ -50,7 +51,10 @@ export default function ProductsPage() {
     };
 
     const filteredProducts = products.filter(product => {
+        const matchesSearchTerm = product.title.toLowerCase().includes(searchTerm.toLowerCase());
+
         return (
+            matchesSearchTerm &&
             (!selectedCategory || product.category === selectedCategory) &&
             (!selectedBrand || product.brand === selectedBrand) &&
             (!selectedColor || product.color === selectedColor) &&
@@ -74,7 +78,7 @@ export default function ProductsPage() {
                     <h2 className="products-header-title">
                         {translations.productsPage.titlePage}
                     </h2>
-                    <Searchbar />
+                    <Searchbar setSearchTerm={setSearchTerm} />
                 </div>
 
                 <div className="products-content">
@@ -93,7 +97,6 @@ export default function ProductsPage() {
                             </span>
                         </div>
                     )}
-
                 </div>
             </div>
         </div>
