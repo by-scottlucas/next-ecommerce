@@ -272,6 +272,7 @@
     },
     "products": [
       {
+        "id": 1,
         "image": "/products/1.webp",
         "title": "Auriculares Bluetooth Readmi Airdots",
         "description": "Auriculares compactos con gran autonomía y calidad de sonido.",
@@ -283,6 +284,7 @@
         "labelButton": "Añadir al carrito"
       },
       {
+        "id": 2,
         "image": "/products/2.webp",
         "title": "Auriculares Bluetooth TWS I12",
         "description": "Auriculares Bluetooth con diseño ergonómico.",
@@ -294,6 +296,7 @@
         "labelButton": "Añadir al carrito"
       },
       {
+        "id": 3,
         "image": "/products/3.webp",
         "title": "Auriculares JBL Tune 720BT",
         "description": "Auriculares con graves potentes y tecnología Pure Bass de JBL.",
@@ -305,6 +308,7 @@
         "labelButton": "Añadir al carrito"
       },
       {
+        "id": 4,
         "image": "/products/4.webp",
         "title": "Power Bank Pineng 10000mAh",
         "description": "Cargador portátil con gran capacidad y múltiples entradas.",
@@ -316,6 +320,7 @@
         "labelButton": "Añadir al carrito"
       },
       {
+        "id": 5,
         "image": "/products/5.webp",
         "title": "Micrófono Fifine AM8",
         "description": "Micrófono profesional para streaming, podcasts y grabaciones.",
@@ -327,6 +332,7 @@
         "labelButton": "Añadir al carrito"
       },
       {
+        "id": 6,
         "image": "/products/6.webp",
         "title": "Smartwatch Ultra 9 T200",
         "description": "Reloj inteligente con múltiples funciones de salud y notificaciones.",
@@ -338,6 +344,7 @@
         "labelButton": "Añadir al carrito"
       },
       {
+        "id": 7,
         "image": "/products/7.webp",
         "title": "Auriculares con micrófono Logitech H390",
         "description": "Auriculares USB ideales para oficina en casa.",
@@ -349,6 +356,7 @@
         "labelButton": "Añadir al carrito"
       },
       {
+        "id": 8,
         "image": "/products/8.webp",
         "title": "Aro de Luz Bi-Color 16cm",
         "description": "Iluminación ideal para grabaciones y videollamadas.",

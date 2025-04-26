@@ -272,6 +272,7 @@
     },
     "products": [
       {
+        "id": 1,
         "image": "/products/1.webp",
         "title": "Fone Bluetooth Readmi Airdots",
         "description": "Fone bluetooth compacto com ótima autonomia e som de qualidade.",
@@ -283,6 +284,7 @@
         "labelButton": "Adicionar ao Carrinho"
       },
       {
+        "id": 2,
         "image": "/products/2.webp",
         "title": "Fone Bluetooth TWS I12",
         "description": "Fone de ouvido bluetooth com design ergonômico.",
@@ -294,6 +296,7 @@
         "labelButton": "Adicionar ao Carrinho"
       },
       {
+        "id": 3,
         "image": "/products/3.webp",
         "title": "Headphone JBL Tune 720BT",
         "description": "Headphone com graves potentes e tecnologia Pure Bass da JBL.",
@@ -305,6 +308,7 @@
         "labelButton": "Adicionar ao Carrinho"
       },
       {
+        "id": 4,
         "image": "/products/4.webp",
         "title": "Power Bank Pineng 10000mAh",
         "description": "Carregador portátil com alta capacidade e múltiplas entradas.",
@@ -316,6 +320,7 @@
         "labelButton": "Adicionar ao Carrinho"
       },
       {
+        "id": 5,
         "image": "/products/5.webp",
         "title": "Microfone Fifine AM8",
         "description": "Microfone profissional para streaming, podcasts e gravações.",
@@ -327,6 +332,7 @@
         "labelButton": "Adicionar ao Carrinho"
       },
       {
+        "id": 6,
         "image": "/products/6.webp",
         "title": "Smartwatch Ultra 9 T200",
         "description": "Relógio inteligente com diversos recursos de saúde e notificações.",
@@ -338,6 +344,7 @@
         "labelButton": "Adicionar ao Carrinho"
       },
       {
+        "id": 7,
         "image": "/products/7.webp",
         "title": "Headset Logitech H390",
         "description": "Headset com microfone e conexão USB, ideal para home office.",
@@ -349,6 +356,7 @@
         "labelButton": "Adicionar ao Carrinho"
       },
       {
+        "id": 8,
         "image": "/products/8.webp",
         "title": "Ring Light Bi-Color 16cm",
         "description": "Iluminação ideal para gravações e chamadas de vídeo.",

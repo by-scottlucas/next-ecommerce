@@ -264,6 +264,7 @@
     },
     "products": [
       {
+        "id": 1,
         "image": "/products/1.webp",
         "title": "Readmi Airdots Bluetooth Headphones",
         "description": "Compact Bluetooth headphones with great battery life and sound quality.",
@@ -275,6 +276,7 @@
         "labelButton": "Add to Cart"
       },
       {
+        "id": 2,
         "image": "/products/2.webp",
         "title": "TWS I12 Bluetooth Earbuds",
         "description": "Bluetooth earbuds with ergonomic design.",
@@ -286,6 +288,7 @@
         "labelButton": "Add to Cart"
       },
       {
+        "id": 3,
         "image": "/products/3.webp",
         "title": "JBL Tune 720BT Headphone",
         "description": "Headphones with powerful bass and JBL Pure Bass technology.",
@@ -297,6 +300,7 @@
         "labelButton": "Add to Cart"
       },
       {
+        "id": 4,
         "image": "/products/4.webp",
         "title": "Pineng 10000mAh Power Bank",
         "description": "Portable charger with high capacity and multiple inputs.",
@@ -308,6 +312,7 @@
         "labelButton": "Add to Cart"
       },
       {
+        "id": 5,
         "image": "/products/5.webp",
         "title": "Fifine AM8 Microphone",
         "description": "Professional microphone for streaming, podcasts, and recordings.",
@@ -319,6 +324,7 @@
         "labelButton": "Add to Cart"
       },
       {
+        "id": 6,
         "image": "/products/6.webp",
         "title": "Ultra 9 T200 Smartwatch",
         "description": "Smartwatch with various health features and notifications.",
@@ -330,6 +336,7 @@
         "labelButton": "Add to Cart"
       },
       {
+        "id": 7,
         "image": "/products/7.webp",
         "title": "Logitech H390 Headset",
         "description": "USB headset with microphone, perfect for home office.",
@@ -341,6 +348,7 @@
         "labelButton": "Add to Cart"
       },
       {
+        "id": 8,
         "image": "/products/8.webp",
         "title": "Bi-Color Ring Light 16cm",
         "description": "Ideal lighting for recordings and video calls.",

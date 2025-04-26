@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.quantity-label {
+    @apply block mb-1 text-sm font-medium text-gray-900;
+}
+
+.quantity-controls {
+    @apply flex items-center border border-gray-200 rounded-md;
+}
+
+.quantity-button {
+    @apply bg-gray-100 text-gray-600 hover:text-black h-10 w-10 rounded-l-lg;
+}
+
+.quantity-icon {
+    @apply text-gray-900;
+}
+
+.quantity-input {
+    @apply h-10 w-12 border-0 text-center focus:ring-0 focus:outline-none text-gray-800;
+}
