@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+.product-details-container {
+    @apply mt-12 mb-16 lg:mt-18;
+}
+
+.tabs-list {
+    @apply w-full grid grid-cols-2 lg:mb-4;
+}
+
+.tab-button {
+    @apply cursor-pointer;
+}
+
+.tabs-content {
+    @apply pt-4;
+}
+
+.tabs-box {
+    @apply bg-white rounded-md shadow-sm p-6;
+}
+
+.tabs-title {
+    @apply text-2xl font-bold mb-6;
+}
+
+.specs-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6;
+}
+
+.spec-item {
+    @apply py-3;
+}
+
+.spec-item-bordered {
+    @apply border-b border-gray-100;
+}
+
+.spec-line {
+    @apply flex justify-between;
+}
+
+.spec-label {
+    @apply text-gray-600;
+}
+
+.spec-value {
+    @apply font-medium text-gray-900;
+}
+
+.tabs-placeholder {
+    @apply p-8 text-center;
+}
+
+.tabs-placeholder-text {
+    @apply text-gray-600;
+}

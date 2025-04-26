@@ -4,6 +4,8 @@ import "./ProductPage.css";
 import { useState } from "react";
 import QuantitySelector from "@/app/pages/products/[id]/components/QuantitySelector/QuantitySelector";
 import ColorSelector from "./components/ColorSelector/ColorSelector";
+import ProductDetailsTabs from "./components/ProductDetailsTabs/ProductDetailsTabs";
+import AdditionalInfo from "./components/AdditionalInfo/AdditionalInfo";
 
 interface ProductSpec {
     label: string;
@@ -132,9 +134,13 @@ export default function ProductPage() {
                                         Adicionar aos Favoritos
                                     </button>
                                 </div>
+
+                                <AdditionalInfo />
                             </div>
                         </div>
                     </div>
+
+                    <ProductDetailsTabs product={product} />
                 </main>
             </div>
         </>

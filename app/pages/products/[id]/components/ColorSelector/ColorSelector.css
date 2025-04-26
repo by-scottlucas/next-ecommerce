@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .selector-container {
-    @apply mt-7 mb-10 lg:mb-0 lg:mt-0;
+    @apply mt-7 mb-10 lg:mb-6 lg:mt-6;
 }
 
 .color-label {
