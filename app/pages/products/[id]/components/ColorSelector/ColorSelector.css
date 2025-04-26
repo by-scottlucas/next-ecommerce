@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.selector-container {
+    @apply mt-7 mb-10 lg:mb-0 lg:mt-0;
+}
+
+.color-label {
+    @apply font-bold text-base text-gray-900 mb-2;
+}
+
+.color-grid {
+    @apply flex flex-wrap gap-1;
+}
+
+.color-button {
+    @apply cursor-pointer w-10 h-10 rounded-full border-2 p-0.5 transition-all;
+}
+
+.color-selected {
+    @apply border-blue-600;
+}
+
+.color-unselected {
+    @apply border-transparent hover:border-gray-300;
+}
+
+.color-circle {
+    @apply block w-full h-full rounded-full;
+}
+
+.color-description {
+    @apply text-sm text-gray-500 mt-3;
+}
