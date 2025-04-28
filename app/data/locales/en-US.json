@@ -186,64 +186,62 @@
       "subtitle": "We accept Pix, cards, and boleto"
     }
   ],
-  "footer": [
-    {
-      "sections": [
-        {
-          "title": "Company",
-          "list": [
-            {
-              "label": "About Us",
-              "path": "#"
-            },
-            {
-              "label": "Contact",
-              "path": "#"
-            },
-            {
-              "label": "Blog",
-              "path": "#"
-            }
-          ]
-        },
-        {
-          "title": "Social Media",
-          "list": [
-            {
-              "label": "Twitter",
-              "path": "#"
-            },
-            {
-              "label": "Facebook",
-              "path": "#"
-            },
-            {
-              "label": "Instagram",
-              "path": "#"
-            }
-          ]
-        },
-        {
-          "title": "Our Policies",
-          "list": [
-            {
-              "label": "Privacy Policy",
-              "path": "#"
-            },
-            {
-              "label": "Return and Exchange Policy",
-              "path": "#"
-            },
-            {
-              "label": "Delivery and Timeframe Policy",
-              "path": "#"
-            }
-          ]
-        }
-      ],
-      "bottomTitle": "© 2025 TechPoint. All rights reserved."
-    }
-  ],
+  "footer": {
+    "sections": [
+      {
+        "title": "Company",
+        "list": [
+          {
+            "label": "About Us",
+            "path": "#"
+          },
+          {
+            "label": "Contact",
+            "path": "#"
+          },
+          {
+            "label": "Blog",
+            "path": "#"
+          }
+        ]
+      },
+      {
+        "title": "Social Media",
+        "list": [
+          {
+            "label": "Twitter",
+            "path": "#"
+          },
+          {
+            "label": "Facebook",
+            "path": "#"
+          },
+          {
+            "label": "Instagram",
+            "path": "#"
+          }
+        ]
+      },
+      {
+        "title": "Our Policies",
+        "list": [
+          {
+            "label": "Privacy Policy",
+            "path": "#"
+          },
+          {
+            "label": "Return and Exchange Policy",
+            "path": "#"
+          },
+          {
+            "label": "Delivery and Timeframe Policy",
+            "path": "#"
+          }
+        ]
+      }
+    ],
+    "bottomTitle": "© 2025 TechPoint. All rights reserved."
+  },
   "productsPage": {
     "titlePage": "Check out our products",
     "colorMap": {

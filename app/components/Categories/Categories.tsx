@@ -1,8 +1,7 @@
-'use client';
 import './Categories.css';
 
-import Image from 'next/image';
 import { useLanguage } from '@/app/contexts/LanguageContext';
+import Image from 'next/image';
 
 interface Card {
     image: string;
@@ -26,6 +25,7 @@ export default function Categories({ cardsData }: CategoriesProps) {
                         src={card.image}
                         alt={card.title}
                         className="category-image"
+                        priority={index === 0}
                     />
                     <span className="category-label">
                         {translations.categoriesCards[index]?.title}

@@ -1,13 +1,12 @@
 "use client";
-
-import Header from './components/Header/Header';
 import Banner from './components/Banner/Banner';
 import BannerCarousel from './components/BannerCarousel/BannerCarousel';
 import Benefits from './components/Benefits/Benefits';
 import Categories from './components/Categories/Categories';
 import Footer from './components/Footer/Footer';
-import ProductsCarousel from './components/ProductsCarousel/ProductsCarousel';
+import Header from './components/Header/Header';
 import LanguageSelector from './components/LanguageSelector/LanguageSelector';
+import ProductsCarousel from './components/ProductsCarousel/ProductsCarousel';
 import { useLanguage } from './contexts/LanguageContext';
 
 export default function HomePage() {
@@ -48,7 +47,7 @@ export default function HomePage() {
         ))}
       </div>
       <Benefits benefitsProps={data.benefitsCards} />
-      <Footer footerData={data.footer[0]} />
+      <Footer footerData={data.footer} />
     </main>
   );
 }

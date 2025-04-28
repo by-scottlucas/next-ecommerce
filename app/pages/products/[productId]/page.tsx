@@ -2,7 +2,7 @@
 import Header from "@/app/components/Header/Header";
 import "./ProductPage.css";
 import { useState } from "react";
-import QuantitySelector from "@/app/pages/products/[id]/components/QuantitySelector/QuantitySelector";
+import QuantitySelector from "@/app/pages/products/[productId]/components/QuantitySelector/QuantitySelector";
 import ColorSelector from "./components/ColorSelector/ColorSelector";
 import ProductDetailsTabs from "./components/ProductDetailsTabs/ProductDetailsTabs";
 import AdditionalInfo from "./components/AdditionalInfo/AdditionalInfo";
@@ -64,6 +64,14 @@ export default function ProductPage() {
     const [selectedColor, setSelectedColor] = useState(product.colors?.[0] || null);
 
     const handleAddToCart = () => { };
+
+    if (!product) {
+        return (
+            <div className="product-not-found flex items-center justify-center h-[84dvh]">
+                <h1>Produto não encontrado</h1>
+            </div>
+        )
+    }
 
     return (
         <>

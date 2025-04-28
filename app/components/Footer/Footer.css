@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .footer-container {
-    @apply bg-white w-full flex justify-center mt-3;
+    @apply bg-white w-full flex items-baseline justify-center mt-3;
 }
 
 .footer-content {
@@ -9,7 +9,7 @@
 }
 
 .footer-top {
-    @apply grid grid-cols-1 text-center md:text-start gap-8 px-4 py-6 lg:py-8 md:grid-cols-3 md:max-w-[90%] mx-auto;
+    @apply grid grid-cols-1 text-center md:text-start gap-8 px-4 py-6 lg:p-8 md:grid-cols-3 md:max-w-[90%] mx-auto;
 }
 
 .footer-list-title {

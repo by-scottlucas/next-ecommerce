@@ -1,7 +1,6 @@
-"use client";
+import './Footer.css';
 
-import "./Footer.css";
-import { useLanguage } from "@/app/contexts/LanguageContext";
+import { useLanguage } from '@/app/contexts/LanguageContext';
 
 interface FooterLink {
   label: string;
@@ -24,23 +23,24 @@ interface FooterProps {
 
 export default function Footer({ footerData }: FooterProps) {
   const { translations } = useLanguage();
-  const translatedSections = translations.footer[0].sections;
-  const translatedBottomTitle = translations.footer[0].bottomTitle;
+  const translatedSections = translations.footer.sections;
+  const translatedBottomTitle = translations.footer.bottomTitle;
 
   return (
     <footer className="footer-container">
       <div className="footer-content">
         <div className="footer-top">
-          {footerData.sections.map((section, index) => (
-            <div key={index}>
+          {footerData.sections.map((section, sectionIndex) => (
+            <div key={sectionIndex}>
               <h2 className="footer-list-title">
-                {translatedSections[index]?.title}
+                {translatedSections[sectionIndex]?.title}
               </h2>
+
               <ul className="footer-list">
-                {section.list.map((item, idx) => (
-                  <li className="mb-4" key={idx}>
+                {section.list.map((item, itemIndex) => (
+                  <li className="mb-4" key={itemIndex}>
                     <a href={item.path} className="footer-list-item">
-                      {translatedSections[index]?.list[idx]?.label}
+                      {translatedSections[sectionIndex]?.list?.[itemIndex]?.label}
                     </a>
                   </li>
                 ))}
@@ -50,9 +50,7 @@ export default function Footer({ footerData }: FooterProps) {
         </div>
 
         <div className="footer-bottom">
-          <span className="footer-bottom-title">
-            {translatedBottomTitle}
-          </span>
+          <span className="footer-bottom-title">{translatedBottomTitle}</span>
         </div>
       </div>
     </footer>

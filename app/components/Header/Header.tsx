@@ -1,8 +1,8 @@
-"use client";
 import './Header.css';
-import { useCallback, useState } from 'react';
-import Image from 'next/image';
+
 import { useLanguage } from '@/app/contexts/LanguageContext';
+import Image from 'next/image';
+import { useCallback, useState } from 'react';
 
 export default function Header() {
     const { translations } = useLanguage();
@@ -14,8 +14,9 @@ export default function Header() {
     return (
         <nav className="nav-container">
             <div className='promo-box'>
-                <span className='font-semibold'>{promoText}</span>
+                <span className='text-white font-semibold'>{promoText}</span>
             </div>
+            
             <div className="nav-content">
                 <a href="#" className="nav-brand-box">
                     <Image
@@ -24,8 +25,10 @@ export default function Header() {
                         src={logo}
                         alt="TechPoint"
                         className="nav-logo"
+                        priority
                     />
                 </a>
+
                 <button
                     type="button"
                     onClick={toggleMenu}
@@ -35,8 +38,9 @@ export default function Header() {
                     aria-label='Menu Button'
                     aria-expanded={menuIsOpen ? "true" : "false"}
                 >
-                    <i className="bi bi-list text-black"></i>
+                    <i className="bi bi-list text-black" aria-hidden="true"></i>
                 </button>
+
                 <div className={`nav-items-box ${menuIsOpen ? "open" : "close"}`} id="navbar">
                     <ul className="nav-list">
                         {navLinks.map((navItem, index) => (

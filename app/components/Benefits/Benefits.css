@@ -5,7 +5,7 @@
 }
 
 .benefits-content {
-    @apply flex flex-col justify-around max-w-[92%] md:flex-row md:grid md:grid-cols-2 lg:flex lg:justify-between gap-10 mx-auto mt-10;
+    @apply flex flex-col justify-around max-w-[92%] md:flex-row md:grid md:grid-cols-2 lg:flex lg:justify-between gap-10 mx-auto mt-10 lg:py-8;
 }
 
 .benefit-card {

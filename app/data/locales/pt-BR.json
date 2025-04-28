@@ -1,7 +1,7 @@
 {
   "header": {
     "logo": "/brand-assets/logo-black.png",
-    "promoText": "Frete grátis a partir de R$ 199 Reais",
+    "promoText": "Frete grátis a partir de R$ 199",
     "navLinks": [
       {
         "title": "Home",
@@ -10,14 +10,6 @@
       {
         "title": "Produtos",
         "link": "/pages/products"
-      },
-      {
-        "title": "Fones de Ouvido",
-        "link": "#menu"
-      },
-      {
-        "title": "Carregadores",
-        "link": "#location"
       },
       {
         "title": "Minha Conta",
@@ -42,7 +34,7 @@
   "categoriesCards": [
     {
       "image": "/categories/1.png",
-      "title": "Airpods"
+      "title": "AirPods"
     },
     {
       "image": "/categories/2.png",
@@ -58,7 +50,7 @@
     },
     {
       "image": "/categories/5.png",
-      "title": "Ring Ligth"
+      "title": "Ring Light"
     },
     {
       "image": "/categories/6.png",
@@ -71,7 +63,7 @@
     "products": [
       {
         "image": "/products/1.webp",
-        "title": "Fone Bluetooth Readmi Airdots",
+        "title": "Fone Bluetooth Redmi Airdots",
         "price": 144.90,
         "link": "#",
         "labelButton": "Adicionar ao Carrinho"
@@ -129,7 +121,7 @@
   },
   "bannerImage": {
     "image": "/banners/3.png",
-    "label": "Earpods Promoção"
+    "label": "Earpods em Promoção"
   },
   "headphones": {
     "headerTitle": "Fones de Ouvido",
@@ -137,7 +129,7 @@
     "products": [
       {
         "image": "/products/1.webp",
-        "title": "Fone Bluetooth Readmi Airdots",
+        "title": "Fone Bluetooth Redmi Airdots",
         "price": 144.90,
         "labelButton": "Adicionar ao Carrinho"
       },
@@ -154,12 +146,6 @@
         "labelButton": "Adicionar ao Carrinho"
       },
       {
-        "image": "/products/4.webp",
-        "title": "Power Bank Pineng 10000mAh",
-        "price": 49.90,
-        "labelButton": "Adicionar ao Carrinho"
-      },
-      {
         "image": "/products/7.webp",
         "title": "Headset Logitech H390",
         "price": 206.90,
@@ -170,88 +156,86 @@
   "banners": [
     {
       "image": "/banners/4.png",
-      "label": "Fone de Ouvido Promo"
+      "label": "Fone de Ouvido em Promoção"
     },
     {
       "image": "/banners/5.png",
-      "label": "Smartwatch Promo"
+      "label": "Smartwatch em Promoção"
     }
   ],
   "benefitsCards": [
     {
       "icon": "bi bi-truck",
       "title": "Entrega Garantida",
-      "subtitle": "Enviamos para todo Brasil"
+      "subtitle": "Enviamos para todo o Brasil"
     },
     {
       "icon": "bi bi-telephone-outbound",
       "title": "Suporte ao Cliente",
-      "subtitle": "Atendimento de Seg a Sex: 7h às 18h"
+      "subtitle": "Atendimento de segunda a sexta: 7h às 18h"
     },
     {
       "icon": "bi bi-credit-card",
       "title": "Pagamento Seguro",
-      "subtitle": "Aceitamos pix, cartões e boleto"
+      "subtitle": "Aceitamos Pix, cartões e boleto"
     }
   ],
-  "footer": [
-    {
-      "sections": [
-        {
-          "title": "Empresa",
-          "list": [
-            {
-              "label": "Sobre Nós",
-              "path": "#"
-            },
-            {
-              "label": "Contato",
-              "path": "#"
-            },
-            {
-              "label": "Blog",
-              "path": "#"
-            }
-          ]
-        },
-        {
-          "title": "Redes Sociais",
-          "list": [
-            {
-              "label": "Twitter",
-              "path": "#"
-            },
-            {
-              "label": "Facebook",
-              "path": "#"
-            },
-            {
-              "label": "Instagram",
-              "path": "#"
-            }
-          ]
-        },
-        {
-          "title": "Nossas Políticas",
-          "list": [
-            {
-              "label": "Políticas de Privacidade",
-              "path": "#"
-            },
-            {
-              "label": "Políticas de Devolução e Trocas",
-              "path": "#"
-            },
-            {
-              "label": "Políticas de Entrega e Prazos",
-              "path": "#"
-            }
-          ]
-        }
-      ],
-      "bottomTitle": "© 2025 TechPoint. Todos os direitos reservados."
-    }
-  ],
+  "footer": {
+    "sections": [
+      {
+        "title": "Empresa",
+        "list": [
+          {
+            "label": "Sobre Nós",
+            "path": "#"
+          },
+          {
+            "label": "Contato",
+            "path": "#"
+          },
+          {
+            "label": "Blog",
+            "path": "#"
+          }
+        ]
+      },
+      {
+        "title": "Redes Sociais",
+        "list": [
+          {
+            "label": "Twitter",
+            "path": "#"
+          },
+          {
+            "label": "Facebook",
+            "path": "#"
+          },
+          {
+            "label": "Instagram",
+            "path": "#"
+          }
+        ]
+      },
+      {
+        "title": "Nossas Políticas",
+        "list": [
+          {
+            "label": "Política de Privacidade",
+            "path": "#"
+          },
+          {
+            "label": "Trocas e Devoluções",
+            "path": "#"
+          },
+          {
+            "label": "Entrega e Prazos",
+            "path": "#"
+          }
+        ]
+      }
+    ],
+    "bottomTitle": "© 2025 TechPoint. Todos os direitos reservados."
+  },
   "productsPage": {
     "titlePage": "Conheça nossos produtos",
     "colorMap": {
@@ -274,13 +258,13 @@
       {
         "id": 1,
         "image": "/products/1.webp",
-        "title": "Fone Bluetooth Readmi Airdots",
+        "title": "Fone Bluetooth Redmi Airdots",
         "description": "Fone bluetooth compacto com ótima autonomia e som de qualidade.",
         "category": "Fones de ouvido",
         "color": "preto",
         "brand": "Xiaomi",
         "price": 144.90,
-        "link": "#",
+        "link": "/pages/products/1",
         "labelButton": "Adicionar ao Carrinho"
       },
       {
@@ -292,7 +276,7 @@
         "color": "branco",
         "brand": "TWS",
         "price": 39.90,
-        "link": "#",
+        "link": "/pages/products/2",
         "labelButton": "Adicionar ao Carrinho"
       },
       {
@@ -304,7 +288,7 @@
         "color": "preto",
         "brand": "JBL",
         "price": 315.00,
-        "link": "#",
+        "link": "/pages/products/3",
         "labelButton": "Adicionar ao Carrinho"
       },
       {
@@ -312,11 +296,11 @@
         "image": "/products/4.webp",
         "title": "Power Bank Pineng 10000mAh",
         "description": "Carregador portátil com alta capacidade e múltiplas entradas.",
-        "category": "Power banks",
+        "category": "Power Banks",
         "color": "preto",
         "brand": "Pineng",
         "price": 49.90,
-        "link": "#",
+        "link": "/pages/products/4",
         "labelButton": "Adicionar ao Carrinho"
       },
       {
@@ -328,7 +312,7 @@
         "color": "preto",
         "brand": "Fifine",
         "price": 269.90,
-        "link": "#",
+        "link": "/pages/products/5",
         "labelButton": "Adicionar ao Carrinho"
       },
       {
@@ -340,7 +324,7 @@
         "color": "laranja",
         "brand": "Ultra",
         "price": 267.00,
-        "link": "#",
+        "link": "/pages/products/6",
         "labelButton": "Adicionar ao Carrinho"
       },
       {
@@ -352,19 +336,7 @@
         "color": "preto",
         "brand": "Logitech",
         "price": 206.90,
-        "link": "#",
-        "labelButton": "Adicionar ao Carrinho"
-      },
-      {
-        "id": 8,
-        "image": "/products/8.webp",
-        "title": "Ring Light Bi-Color 16cm",
-        "description": "Iluminação ideal para gravações e chamadas de vídeo.",
-        "category": "Iluminação",
-        "color": "branco",
-        "brand": "Genérico",
-        "price": 54.90,
-        "link": "#",
+        "link": "/pages/products/7",
         "labelButton": "Adicionar ao Carrinho"
       }
     ]

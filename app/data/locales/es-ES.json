@@ -194,64 +194,62 @@
       "subtitle": "Aceptamos pix, tarjetas y boleto"
     }
   ],
-  "footer": [
-    {
-      "sections": [
-        {
-          "title": "Empresa",
-          "list": [
-            {
-              "label": "Sobre Nosotros",
-              "path": "#"
-            },
-            {
-              "label": "Contacto",
-              "path": "#"
-            },
-            {
-              "label": "Blog",
-              "path": "#"
-            }
-          ]
-        },
-        {
-          "title": "Redes Sociales",
-          "list": [
-            {
-              "label": "Twitter",
-              "path": "#"
-            },
-            {
-              "label": "Facebook",
-              "path": "#"
-            },
-            {
-              "label": "Instagram",
-              "path": "#"
-            }
-          ]
-        },
-        {
-          "title": "Nuestras Políticas",
-          "list": [
-            {
-              "label": "Políticas de Privacidad",
-              "path": "#"
-            },
-            {
-              "label": "Políticas de Devoluciones y Cambios",
-              "path": "#"
-            },
-            {
-              "label": "Políticas de Entrega y Plazos",
-              "path": "#"
-            }
-          ]
-        }
-      ],
-      "bottomTitle": "© 2025 TechPoint. Todos los derechos reservados."
-    }
-  ],
+  "footer": {
+    "sections": [
+      {
+        "title": "Empresa",
+        "list": [
+          {
+            "label": "Sobre Nosotros",
+            "path": "#"
+          },
+          {
+            "label": "Contacto",
+            "path": "#"
+          },
+          {
+            "label": "Blog",
+            "path": "#"
+          }
+        ]
+      },
+      {
+        "title": "Redes Sociales",
+        "list": [
+          {
+            "label": "Twitter",
+            "path": "#"
+          },
+          {
+            "label": "Facebook",
+            "path": "#"
+          },
+          {
+            "label": "Instagram",
+            "path": "#"
+          }
+        ]
+      },
+      {
+        "title": "Nuestras Políticas",
+        "list": [
+          {
+            "label": "Política de Privacidad",
+            "path": "#"
+          },
+          {
+            "label": "Cambios y Devoluciones",
+            "path": "#"
+          },
+          {
+            "label": "Entrega y Plazos",
+            "path": "#"
+          }
+        ]
+      }
+    ],
+    "bottomTitle": "© 2025 TechPoint. Todos los derechos reservados."
+  },
   "productsPage": {
     "titlePage": "Conoce nuestros productos",
     "colorMap": {
