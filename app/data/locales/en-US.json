@@ -70,52 +70,272 @@
     "headerButton": "View All",
     "products": [
       {
-        "image": "/products/1.webp",
-        "title": "Bluetooth Earbuds Readmi Airdots",
-        "price": 144.90,
-        "labelButton": "Add to Cart"
+        "id": 1,
+        "name": "Redmi Airdots Bluetooth Headphones",
+        "description": "Compact Bluetooth headphones with great battery life and quality sound.",
+        "category": "Headphones",
+        "brand": "Xiaomi",
+        "images": [
+          "/products/1.webp"
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "value": "#000000"
+          }
+        ],
+        "price": "$144.90",
+        "originalPrice": "$169.90",
+        "specs": [
+          {
+            "label": "Type",
+            "value": "In-ear"
+          },
+          {
+            "label": "Connectivity",
+            "value": "Bluetooth 5.0"
+          },
+          {
+            "label": "Battery Life",
+            "value": "Up to 4 hours"
+          }
+        ],
+        "rating": 4.7,
+        "reviewCount": 185,
+        "stock": 25,
+        "badges": [
+          "Popular",
+          "New"
+        ],
+        "link": "/pages/products/1"
       },
       {
-        "image": "/products/2.webp",
-        "title": "Bluetooth Earbuds TWS I12",
-        "price": 39.90,
-        "labelButton": "Add to Cart"
+        "id": 2,
+        "name": "TWS I12 Bluetooth Headphones",
+        "description": "Bluetooth headphones with ergonomic design.",
+        "category": "Headphones",
+        "brand": "TWS",
+        "images": [
+          "/products/2.webp"
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "value": "#FFFFFF"
+          }
+        ],
+        "price": "$39.90",
+        "originalPrice": "$59.90",
+        "specs": [
+          {
+            "label": "Type",
+            "value": "In-ear"
+          },
+          {
+            "label": "Connectivity",
+            "value": "Bluetooth 5.0"
+          },
+          {
+            "label": "Design",
+            "value": "Ergonomic"
+          }
+        ],
+        "rating": 4.2,
+        "reviewCount": 92,
+        "stock": 50,
+        "badges": [
+          "Sale"
+        ],
+        "link": "/pages/products/2"
       },
       {
-        "image": "/products/3.webp",
-        "title": "Headphones JBL Tune 720BT",
-        "price": 315.00,
-        "labelButton": "Add to Cart"
+        "id": 3,
+        "name": "JBL Tune 720BT Headphones",
+        "description": "Over-ear headphones with powerful bass and JBL Pure Bass technology.",
+        "category": "Over-Ear Headphones",
+        "brand": "JBL",
+        "images": [
+          "/products/3.webp"
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "value": "#000000"
+          }
+        ],
+        "price": "$315.00",
+        "originalPrice": "$349.00",
+        "specs": [
+          {
+            "label": "Type",
+            "value": "Over-ear"
+          },
+          {
+            "label": "Connectivity",
+            "value": "Bluetooth 5.3"
+          },
+          {
+            "label": "Technology",
+            "value": "Pure Bass"
+          }
+        ],
+        "rating": 4.9,
+        "reviewCount": 210,
+        "stock": 15,
+        "badges": [
+          "Recommended"
+        ],
+        "link": "/pages/products/3"
       },
       {
-        "image": "/products/4.webp",
-        "title": "Power Bank Pineng 10000mAh",
-        "price": 49.90,
-        "labelButton": "Add to Cart"
+        "id": 4,
+        "name": "Pineng 10000mAh Power Bank",
+        "description": "Portable charger with high capacity and multiple inputs.",
+        "category": "Power Banks",
+        "brand": "Pineng",
+        "images": [
+          "/products/4.webp"
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "value": "#000000"
+          }
+        ],
+        "price": "$49.90",
+        "originalPrice": null,
+        "specs": [
+          {
+            "label": "Capacity",
+            "value": "10000mAh"
+          },
+          {
+            "label": "Inputs",
+            "value": "Micro USB, USB-C"
+          },
+          {
+            "label": "Outputs",
+            "value": "2 x USB-A"
+          }
+        ],
+        "rating": 4.5,
+        "reviewCount": 130,
+        "stock": 30,
+        "badges": [],
+        "link": "/pages/products/4"
       },
       {
-        "image": "/products/5.webp",
-        "title": "Microphone Fifine AM8",
-        "price": 269.90,
-        "labelButton": "Add to Cart"
+        "id": 5,
+        "name": "Fifine AM8 Microphone",
+        "description": "Professional microphone for streaming, podcasts, and recordings.",
+        "category": "Microphones",
+        "brand": "Fifine",
+        "images": [
+          "/products/5.webp"
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "value": "#000000"
+          }
+        ],
+        "price": "$269.90",
+        "originalPrice": "$299.90",
+        "specs": [
+          {
+            "label": "Type",
+            "value": "Condenser"
+          },
+          {
+            "label": "Polar Pattern",
+            "value": "Cardioid"
+          },
+          {
+            "label": "Connection",
+            "value": "USB"
+          }
+        ],
+        "rating": 4.8,
+        "reviewCount": 155,
+        "stock": 10,
+        "badges": [
+          "Best Seller"
+        ],
+        "link": "/pages/products/5"
       },
       {
-        "image": "/products/6.webp",
-        "title": "Smartwatch Ultra 9 T200",
-        "price": 267.00,
-        "labelButton": "Add to Cart"
+        "id": 6,
+        "name": "Ultra 9 T200 Smartwatch",
+        "description": "Smartwatch with various health features and notifications.",
+        "category": "Smartwatches",
+        "brand": "Ultra",
+        "images": [
+          "/products/6.webp"
+        ],
+        "colors": [
+          {
+            "name": "Orange",
+            "value": "#F97316"
+          }
+        ],
+        "price": "$267.00",
+        "originalPrice": "$320.00",
+        "specs": [
+          {
+            "label": "Screen",
+            "value": "AMOLED Touchscreen"
+          },
+          {
+            "label": "Battery",
+            "value": "Up to 7 days"
+          },
+          {
+            "label": "Features",
+            "value": "Heart rate monitoring, GPS"
+          }
+        ],
+        "rating": 4.6,
+        "reviewCount": 112,
+        "stock": 20,
+        "badges": [],
+        "link": "/pages/products/6"
       },
       {
-        "image": "/products/7.webp",
-        "title": "Headset Logitech H390",
-        "price": 206.90,
-        "labelButton": "Add to Cart"
-      },
-      {
-        "image": "/products/8.webp",
-        "title": "Ring Light Bi-Color 16cm",
-        "price": 54.90,
-        "labelButton": "Add to Cart"
+        "id": 7,
+        "name": "Logitech H390 Headset",
+        "description": "Headset with microphone and USB connection, ideal for home office.",
+        "category": "Headsets",
+        "brand": "Logitech",
+        "images": [
+          "/products/7.webp"
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "value": "#000000"
+          }
+        ],
+        "price": "$206.90",
+        "originalPrice": null,
+        "specs": [
+          {
+            "label": "Type",
+            "value": "Over-ear"
+          },
+          {
+            "label": "Connection",
+            "value": "USB"
+          },
+          {
+            "label": "Microphone",
+            "value": "Noise-canceling"
+          }
+        ],
+        "rating": 4.4,
+        "reviewCount": 88,
+        "stock": 35,
+        "badges": [],
+        "link": "/pages/products/7"
       }
     ]
   },
@@ -128,34 +348,159 @@
     "headerButton": "View All",
     "products": [
       {
-        "image": "/products/1.webp",
-        "title": "Bluetooth Earbuds Readmi Airdots",
-        "price": 144.90,
-        "labelButton": "Add to Cart"
+        "id": 1,
+        "name": "Redmi Airdots Bluetooth Headphones",
+        "description": "Compact Bluetooth headphones with great battery life and quality sound.",
+        "category": "Headphones",
+        "brand": "Xiaomi",
+        "images": [
+          "/products/1.webp"
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "value": "#000000"
+          }
+        ],
+        "price": "$144.90",
+        "originalPrice": "$169.90",
+        "specs": [
+          {
+            "label": "Type",
+            "value": "In-ear"
+          },
+          {
+            "label": "Connectivity",
+            "value": "Bluetooth 5.0"
+          },
+          {
+            "label": "Battery Life",
+            "value": "Up to 4 hours"
+          }
+        ],
+        "rating": 4.7,
+        "reviewCount": 185,
+        "stock": 25,
+        "badges": [
+          "Popular",
+          "New"
+        ],
+        "link": "/pages/products/1"
       },
       {
-        "image": "/products/2.webp",
-        "title": "Bluetooth Earbuds TWS I12",
-        "price": 39.90,
-        "labelButton": "Add to Cart"
+        "id": 2,
+        "name": "TWS I12 Bluetooth Headphones",
+        "description": "Bluetooth headphones with ergonomic design.",
+        "category": "Headphones",
+        "brand": "TWS",
+        "images": [
+          "/products/2.webp"
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "value": "#FFFFFF"
+          }
+        ],
+        "price": "$39.90",
+        "originalPrice": "$59.90",
+        "specs": [
+          {
+            "label": "Type",
+            "value": "In-ear"
+          },
+          {
+            "label": "Connectivity",
+            "value": "Bluetooth 5.0"
+          },
+          {
+            "label": "Design",
+            "value": "Ergonomic"
+          }
+        ],
+        "rating": 4.2,
+        "reviewCount": 92,
+        "stock": 50,
+        "badges": [
+          "Sale"
+        ],
+        "link": "/pages/products/2"
       },
       {
-        "image": "/products/3.webp",
-        "title": "Headphones JBL Tune 720BT",
-        "price": 315.00,
-        "labelButton": "Add to Cart"
+        "id": 3,
+        "name": "JBL Tune 720BT Headphones",
+        "description": "Over-ear headphones with powerful bass and JBL Pure Bass technology.",
+        "category": "Headphones",
+        "brand": "JBL",
+        "images": [
+          "/products/3.webp"
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "value": "#000000"
+          }
+        ],
+        "price": "$315.00",
+        "originalPrice": "$349.00",
+        "specs": [
+          {
+            "label": "Type",
+            "value": "Over-ear"
+          },
+          {
+            "label": "Connectivity",
+            "value": "Bluetooth 5.3"
+          },
+          {
+            "label": "Technology",
+            "value": "Pure Bass"
+          }
+        ],
+        "rating": 4.9,
+        "reviewCount": 210,
+        "stock": 15,
+        "badges": [
+          "Recommended"
+        ],
+        "link": "/pages/products/3"
       },
       {
-        "image": "/products/4.webp",
-        "title": "Power Bank Pineng 10000mAh",
-        "price": 49.90,
-        "labelButton": "Add to Cart"
-      },
-      {
-        "image": "/products/7.webp",
-        "title": "Headset Logitech H390",
-        "price": 206.90,
-        "labelButton": "Add to Cart"
+        "id": 7,
+        "name": "Logitech H390 Headset",
+        "description": "Headset with microphone and USB connection, ideal for home office.",
+        "category": "Headsets",
+        "brand": "Logitech",
+        "images": [
+          "/products/7.webp"
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "value": "#000000"
+          }
+        ],
+        "price": "$206.90",
+        "originalPrice": null,
+        "specs": [
+          {
+            "label": "Type",
+            "value": "Over-ear"
+          },
+          {
+            "label": "Connection",
+            "value": "USB"
+          },
+          {
+            "label": "Microphone",
+            "value": "Noise-canceling"
+          }
+        ],
+        "rating": 4.4,
+        "reviewCount": 88,
+        "stock": 35,
+        "badges": [],
+        "link": "/pages/products/7"
       }
     ]
   },
@@ -243,119 +588,291 @@
     "bottomTitle": "© 2025 TechPoint. All rights reserved."
   },
   "productsPage": {
-    "titlePage": "Check out our products",
+    "titlePage": "Discover our products",
     "colorMap": {
-      "black": "bg-black",
-      "white": "bg-white",
-      "blue": "bg-blue-500",
-      "red": "bg-red-500",
-      "green": "bg-green-500",
-      "orange": "bg-orange-500"
+      "preto": "#000000",
+      "branco": "#FFFFFF",
+      "azul": "#3B82F6",
+      "vermelho": "#EF4444",
+      "verde": "#22C55E",
+      "laranja": "#F97316"
     },
     "colorLabels": {
-      "black": "Black",
-      "white": "White",
-      "blue": "Blue",
-      "red": "Red",
-      "green": "Green",
-      "orange": "Orange"
+      "preto": "Black",
+      "branco": "White",
+      "azul": "Blue",
+      "vermelho": "Red",
+      "verde": "Green",
+      "laranja": "Orange"
     },
     "products": [
       {
         "id": 1,
-        "image": "/products/1.webp",
-        "title": "Readmi Airdots Bluetooth Headphones",
-        "description": "Compact Bluetooth headphones with great battery life and sound quality.",
+        "name": "Redmi Airdots Bluetooth Headphones",
+        "description": "Compact Bluetooth headphones with great battery life and quality sound.",
         "category": "Headphones",
-        "color": "black",
         "brand": "Xiaomi",
-        "price": 144.90,
-        "link": "#",
-        "labelButton": "Add to Cart"
+        "images": [
+          "/products/1.webp"
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "value": "#000000"
+          }
+        ],
+        "price": "$144.90",
+        "originalPrice": "$169.90",
+        "specs": [
+          {
+            "label": "Type",
+            "value": "In-ear"
+          },
+          {
+            "label": "Connectivity",
+            "value": "Bluetooth 5.0"
+          },
+          {
+            "label": "Battery Life",
+            "value": "Up to 4 hours"
+          }
+        ],
+        "rating": 4.7,
+        "reviewCount": 185,
+        "stock": 25,
+        "badges": [
+          "Popular",
+          "New"
+        ],
+        "link": "/pages/products/1"
       },
       {
         "id": 2,
-        "image": "/products/2.webp",
-        "title": "TWS I12 Bluetooth Earbuds",
-        "description": "Bluetooth earbuds with ergonomic design.",
+        "name": "TWS I12 Bluetooth Headphones",
+        "description": "Bluetooth headphones with ergonomic design.",
         "category": "Headphones",
-        "color": "white",
         "brand": "TWS",
-        "price": 39.90,
-        "link": "#",
-        "labelButton": "Add to Cart"
+        "images": [
+          "/products/2.webp"
+        ],
+        "colors": [
+          {
+            "name": "White",
+            "value": "#FFFFFF"
+          }
+        ],
+        "price": "$39.90",
+        "originalPrice": "$59.90",
+        "specs": [
+          {
+            "label": "Type",
+            "value": "In-ear"
+          },
+          {
+            "label": "Connectivity",
+            "value": "Bluetooth 5.0"
+          },
+          {
+            "label": "Design",
+            "value": "Ergonomic"
+          }
+        ],
+        "rating": 4.2,
+        "reviewCount": 92,
+        "stock": 50,
+        "badges": [
+          "Sale"
+        ],
+        "link": "/pages/products/2"
       },
       {
         "id": 3,
-        "image": "/products/3.webp",
-        "title": "JBL Tune 720BT Headphone",
-        "description": "Headphones with powerful bass and JBL Pure Bass technology.",
-        "category": "Headphones",
-        "color": "black",
+        "name": "JBL Tune 720BT Headphones",
+        "description": "Over-ear headphones with powerful bass and JBL Pure Bass technology.",
+        "category": "Over-Ear Headphones",
         "brand": "JBL",
-        "price": 315.00,
-        "link": "#",
-        "labelButton": "Add to Cart"
+        "images": [
+          "/products/3.webp"
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "value": "#000000"
+          }
+        ],
+        "price": "$315.00",
+        "originalPrice": "$349.00",
+        "specs": [
+          {
+            "label": "Type",
+            "value": "Over-ear"
+          },
+          {
+            "label": "Connectivity",
+            "value": "Bluetooth 5.3"
+          },
+          {
+            "label": "Technology",
+            "value": "Pure Bass"
+          }
+        ],
+        "rating": 4.9,
+        "reviewCount": 210,
+        "stock": 15,
+        "badges": [
+          "Recommended"
+        ],
+        "link": "/pages/products/3"
       },
       {
         "id": 4,
-        "image": "/products/4.webp",
-        "title": "Pineng 10000mAh Power Bank",
+        "name": "Pineng 10000mAh Power Bank",
         "description": "Portable charger with high capacity and multiple inputs.",
-        "category": "Power banks",
-        "color": "black",
+        "category": "Power Banks",
         "brand": "Pineng",
-        "price": 49.90,
-        "link": "#",
-        "labelButton": "Add to Cart"
+        "images": [
+          "/products/4.webp"
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "value": "#000000"
+          }
+        ],
+        "price": "$49.90",
+        "originalPrice": null,
+        "specs": [
+          {
+            "label": "Capacity",
+            "value": "10000mAh"
+          },
+          {
+            "label": "Inputs",
+            "value": "Micro USB, USB-C"
+          },
+          {
+            "label": "Outputs",
+            "value": "2 x USB-A"
+          }
+        ],
+        "rating": 4.5,
+        "reviewCount": 130,
+        "stock": 30,
+        "badges": [],
+        "link": "/pages/products/4"
       },
       {
         "id": 5,
-        "image": "/products/5.webp",
-        "title": "Fifine AM8 Microphone",
+        "name": "Fifine AM8 Microphone",
         "description": "Professional microphone for streaming, podcasts, and recordings.",
         "category": "Microphones",
-        "color": "black",
         "brand": "Fifine",
-        "price": 269.90,
-        "link": "#",
-        "labelButton": "Add to Cart"
+        "images": [
+          "/products/5.webp"
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "value": "#000000"
+          }
+        ],
+        "price": "$269.90",
+        "originalPrice": "$299.90",
+        "specs": [
+          {
+            "label": "Type",
+            "value": "Condenser"
+          },
+          {
+            "label": "Polar Pattern",
+            "value": "Cardioid"
+          },
+          {
+            "label": "Connection",
+            "value": "USB"
+          }
+        ],
+        "rating": 4.8,
+        "reviewCount": 155,
+        "stock": 10,
+        "badges": [
+          "Best Seller"
+        ],
+        "link": "/pages/products/5"
       },
       {
         "id": 6,
-        "image": "/products/6.webp",
-        "title": "Ultra 9 T200 Smartwatch",
+        "name": "Ultra 9 T200 Smartwatch",
         "description": "Smartwatch with various health features and notifications.",
         "category": "Smartwatches",
-        "color": "orange",
         "brand": "Ultra",
-        "price": 267.00,
-        "link": "#",
-        "labelButton": "Add to Cart"
+        "images": [
+          "/products/6.webp"
+        ],
+        "colors": [
+          {
+            "name": "Orange",
+            "value": "#F97316"
+          }
+        ],
+        "price": "$267.00",
+        "originalPrice": "$320.00",
+        "specs": [
+          {
+            "label": "Screen",
+            "value": "AMOLED Touchscreen"
+          },
+          {
+            "label": "Battery",
+            "value": "Up to 7 days"
+          },
+          {
+            "label": "Features",
+            "value": "Heart rate monitoring, GPS"
+          }
+        ],
+        "rating": 4.6,
+        "reviewCount": 112,
+        "stock": 20,
+        "badges": [],
+        "link": "/pages/products/6"
       },
       {
         "id": 7,
-        "image": "/products/7.webp",
-        "title": "Logitech H390 Headset",
-        "description": "USB headset with microphone, perfect for home office.",
+        "name": "Logitech H390 Headset",
+        "description": "Headset with microphone and USB connection, ideal for home office.",
         "category": "Headsets",
-        "color": "black",
         "brand": "Logitech",
-        "price": 206.90,
-        "link": "#",
-        "labelButton": "Add to Cart"
-      },
-      {
-        "id": 8,
-        "image": "/products/8.webp",
-        "title": "Bi-Color Ring Light 16cm",
-        "description": "Ideal lighting for recordings and video calls.",
-        "category": "Lighting",
-        "color": "white",
-        "brand": "Generic",
-        "price": 54.90,
-        "link": "#",
-        "labelButton": "Add to Cart"
+        "images": [
+          "/products/7.webp"
+        ],
+        "colors": [
+          {
+            "name": "Black",
+            "value": "#000000"
+          }
+        ],
+        "price": "$206.90",
+        "originalPrice": null,
+        "specs": [
+          {
+            "label": "Type",
+            "value": "Over-ear"
+          },
+          {
+            "label": "Connection",
+            "value": "USB"
+          },
+          {
+            "label": "Microphone",
+            "value": "Noise-canceling"
+          }
+        ],
+        "rating": 4.4,
+        "reviewCount": 88,
+        "stock": 35,
+        "badges": [],
+        "link": "/pages/products/7"
       }
     ]
   }

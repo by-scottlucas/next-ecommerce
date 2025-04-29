@@ -1,4 +1,5 @@
 "use client";
+
 import Banner from './components/Banner/Banner';
 import BannerCarousel from './components/BannerCarousel/BannerCarousel';
 import Benefits from './components/Benefits/Benefits';
@@ -18,34 +19,22 @@ export default function HomePage() {
       <Header />
       <BannerCarousel slidesData={data.bannerCarousel.slides} />
       <Categories cardsData={data.categoriesCards} />
-      <ProductsCarousel
-        sectionKey='productsCarousel'
-        products={data.productsCarousel.products}
-      />
+      <ProductsCarousel sectionKey='productsCarousel' products={data.productsCarousel.products} />
+
       <div className='banner-container'>
-        <Banner
-          width={1280}
-          height={720}
-          image={data.bannerImage.image}
-          label={data.bannerImage.label}
-        />
+        <Banner width={1280} height={720} image={data.bannerImage.image} label={data.bannerImage.label} />
       </div>
-      <ProductsCarousel
-        sectionKey="headphones"
-        products={data.headphones.products}
-      />
+
+      <ProductsCarousel sectionKey="headphones" products={data.headphones.products} />
+
       <div className='banner-container flex flex-col md:flex-row md:justify-center gap-7'>
         {data.banners.map((banner, index) => (
           <div key={index} className='w-full'>
-            <Banner
-              width={550}
-              height={365}
-              image={banner.image}
-              label={banner.label}
-            />
+            <Banner width={550} height={365} image={banner.image} label={banner.label} />
           </div>
         ))}
       </div>
+
       <Benefits benefitsProps={data.benefitsCards} />
       <Footer footerData={data.footer} />
     </main>

@@ -70,60 +70,272 @@
     "headerButton": "Ver Todos",
     "products": [
       {
-        "image": "/products/1.webp",
-        "title": "Auricular Bluetooth Readmi Airdots",
-        "price": 144.90,
-        "link": "#",
-        "labelButton": "Añadir al Carrito"
+        "id": 1,
+        "name": "Auriculares Bluetooth Redmi Airdots",
+        "description": "Auriculares Bluetooth compactos con gran autonomía y sonido de calidad.",
+        "category": "Auriculares",
+        "brand": "Xiaomi",
+        "images": [
+          "/products/1.webp"
+        ],
+        "colors": [
+          {
+            "name": "Negro",
+            "value": "#000000"
+          }
+        ],
+        "price": "144,90 R$",
+        "originalPrice": "169,90 R$",
+        "specs": [
+          {
+            "label": "Tipo",
+            "value": "Intraural"
+          },
+          {
+            "label": "Conectividad",
+            "value": "Bluetooth 5.0"
+          },
+          {
+            "label": "Autonomía",
+            "value": "Hasta 4 horas"
+          }
+        ],
+        "rating": 4.7,
+        "reviewCount": 185,
+        "stock": 25,
+        "badges": [
+          "Popular",
+          "Nuevo"
+        ],
+        "link": "/pages/products/1"
       },
       {
-        "image": "/products/2.webp",
-        "title": "Auricular Bluetooth TWS I12",
-        "price": 39.90,
-        "link": "#",
-        "labelButton": "Añadir al Carrito"
+        "id": 2,
+        "name": "Auriculares Bluetooth TWS I12",
+        "description": "Auriculares Bluetooth con diseño ergonómico.",
+        "category": "Auriculares",
+        "brand": "TWS",
+        "images": [
+          "/products/2.webp"
+        ],
+        "colors": [
+          {
+            "name": "Blanco",
+            "value": "#FFFFFF"
+          }
+        ],
+        "price": "39,90 R$",
+        "originalPrice": "59,90 R$",
+        "specs": [
+          {
+            "label": "Tipo",
+            "value": "Intraural"
+          },
+          {
+            "label": "Conectividad",
+            "value": "Bluetooth 5.0"
+          },
+          {
+            "label": "Diseño",
+            "value": "Ergonómico"
+          }
+        ],
+        "rating": 4.2,
+        "reviewCount": 92,
+        "stock": 50,
+        "badges": [
+          "Promoción"
+        ],
+        "link": "/pages/products/2"
       },
       {
-        "image": "/products/3.webp",
-        "title": "Auricular JBL Tune 720BT",
-        "price": 315.00,
-        "link": "#",
-        "labelButton": "Añadir al Carrito"
+        "id": 3,
+        "name": "Auriculares de diadema JBL Tune 720BT",
+        "description": "Auriculares de diadema con graves potentes y tecnología Pure Bass de JBL.",
+        "category": "Auriculares de diadema",
+        "brand": "JBL",
+        "images": [
+          "/products/3.webp"
+        ],
+        "colors": [
+          {
+            "name": "Negro",
+            "value": "#000000"
+          }
+        ],
+        "price": "315,00 R$",
+        "originalPrice": "349,00 R$",
+        "specs": [
+          {
+            "label": "Tipo",
+            "value": "Supraaural"
+          },
+          {
+            "label": "Conectividad",
+            "value": "Bluetooth 5.3"
+          },
+          {
+            "label": "Tecnología",
+            "value": "Pure Bass"
+          }
+        ],
+        "rating": 4.9,
+        "reviewCount": 210,
+        "stock": 15,
+        "badges": [
+          "Recomendado"
+        ],
+        "link": "/pages/products/3"
       },
       {
-        "image": "/products/4.webp",
-        "title": "Power Bank Pineng 10000mAh",
-        "price": 49.90,
-        "link": "#",
-        "labelButton": "Añadir al Carrito"
+        "id": 4,
+        "name": "Power Bank Pineng 10000mAh",
+        "description": "Cargador portátil de alta capacidad y múltiples entradas.",
+        "category": "Bancos de energía",
+        "brand": "Pineng",
+        "images": [
+          "/products/4.webp"
+        ],
+        "colors": [
+          {
+            "name": "Negro",
+            "value": "#000000"
+          }
+        ],
+        "price": "49,90 R$",
+        "originalPrice": null,
+        "specs": [
+          {
+            "label": "Capacidad",
+            "value": "10000mAh"
+          },
+          {
+            "label": "Entradas",
+            "value": "Micro USB, USB-C"
+          },
+          {
+            "label": "Salidas",
+            "value": "2 x USB-A"
+          }
+        ],
+        "rating": 4.5,
+        "reviewCount": 130,
+        "stock": 30,
+        "badges": [],
+        "link": "/pages/products/4"
       },
       {
-        "image": "/products/5.webp",
-        "title": "Micrófono Fifine AM8",
-        "price": 269.90,
-        "link": "#",
-        "labelButton": "Añadir al Carrito"
+        "id": 5,
+        "name": "Micrófono Fifine AM8",
+        "description": "Micrófono profesional para streaming, podcasts y grabaciones.",
+        "category": "Micrófonos",
+        "brand": "Fifine",
+        "images": [
+          "/products/5.webp"
+        ],
+        "colors": [
+          {
+            "name": "Negro",
+            "value": "#000000"
+          }
+        ],
+        "price": "269,90 R$",
+        "originalPrice": "299,90 R$",
+        "specs": [
+          {
+            "label": "Tipo",
+            "value": "Condensador"
+          },
+          {
+            "label": "Patrón Polar",
+            "value": "Cardioide"
+          },
+          {
+            "label": "Conexión",
+            "value": "USB"
+          }
+        ],
+        "rating": 4.8,
+        "reviewCount": 155,
+        "stock": 10,
+        "badges": [
+          "Más Vendido"
+        ],
+        "link": "/pages/products/5"
       },
       {
-        "image": "/products/6.webp",
-        "title": "Smartwatch Ultra 9 T200",
-        "price": 267.00,
-        "link": "#",
-        "labelButton": "Añadir al Carrito"
+        "id": 6,
+        "name": "Smartwatch Ultra 9 T200",
+        "description": "Reloj inteligente con diversas funciones de salud y notificaciones.",
+        "category": "Smartwatches",
+        "brand": "Ultra",
+        "images": [
+          "/products/6.webp"
+        ],
+        "colors": [
+          {
+            "name": "Naranja",
+            "value": "#F97316"
+          }
+        ],
+        "price": "267,00 R$",
+        "originalPrice": "320,00 R$",
+        "specs": [
+          {
+            "label": "Pantalla",
+            "value": "AMOLED Táctil"
+          },
+          {
+            "label": "Batería",
+            "value": "Hasta 7 días"
+          },
+          {
+            "label": "Funciones",
+            "value": "Monitorización cardíaca, GPS"
+          }
+        ],
+        "rating": 4.6,
+        "reviewCount": 112,
+        "stock": 20,
+        "badges": [],
+        "link": "/pages/products/6"
       },
       {
-        "image": "/products/7.webp",
-        "title": "Auricular Logitech H390",
-        "price": 206.90,
-        "link": "#",
-        "labelButton": "Añadir al Carrito"
-      },
-      {
-        "image": "/products/8.webp",
-        "title": "Ring Light Bi-Color 16cm",
-        "price": 54.90,
-        "link": "#",
-        "labelButton": "Añadir al Carrito"
+        "id": 7,
+        "name": "Auriculares con micrófono Logitech H390",
+        "description": "Auriculares con micrófono y conexión USB, ideal para la oficina en casa.",
+        "category": "Auriculares con micrófono",
+        "brand": "Logitech",
+        "images": [
+          "/products/7.webp"
+        ],
+        "colors": [
+          {
+            "name": "Negro",
+            "value": "#000000"
+          }
+        ],
+        "price": "206,90 R$",
+        "originalPrice": null,
+        "specs": [
+          {
+            "label": "Tipo",
+            "value": "Supraaural"
+          },
+          {
+            "label": "Conexión",
+            "value": "USB"
+          },
+          {
+            "label": "Micrófono",
+            "value": "Con cancelación de ruido"
+          }
+        ],
+        "rating": 4.4,
+        "reviewCount": 88,
+        "stock": 35,
+        "badges": [],
+        "link": "/pages/products/7"
       }
     ]
   },
@@ -136,34 +348,159 @@
     "headerButton": "Ver Todos",
     "products": [
       {
-        "image": "/products/1.webp",
-        "title": "Auricular Bluetooth Readmi Airdots",
-        "price": 144.90,
-        "labelButton": "Añadir al Carrito"
+        "id": 1,
+        "name": "Auriculares Bluetooth Redmi Airdots",
+        "description": "Auriculares Bluetooth compactos con gran autonomía y sonido de calidad.",
+        "category": "Auriculares",
+        "brand": "Xiaomi",
+        "images": [
+          "/products/1.webp"
+        ],
+        "colors": [
+          {
+            "name": "Negro",
+            "value": "#000000"
+          }
+        ],
+        "price": "144,90 R$",
+        "originalPrice": "169,90 R$",
+        "specs": [
+          {
+            "label": "Tipo",
+            "value": "Intraural"
+          },
+          {
+            "label": "Conectividad",
+            "value": "Bluetooth 5.0"
+          },
+          {
+            "label": "Autonomía",
+            "value": "Hasta 4 horas"
+          }
+        ],
+        "rating": 4.7,
+        "reviewCount": 185,
+        "stock": 25,
+        "badges": [
+          "Popular",
+          "Nuevo"
+        ],
+        "link": "/pages/products/1"
       },
       {
-        "image": "/products/2.webp",
-        "title": "Auricular Bluetooth TWS I12",
-        "price": 39.90,
-        "labelButton": "Añadir al Carrito"
+        "id": 2,
+        "name": "Auriculares Bluetooth TWS I12",
+        "description": "Auriculares Bluetooth con diseño ergonómico.",
+        "category": "Auriculares",
+        "brand": "TWS",
+        "images": [
+          "/products/2.webp"
+        ],
+        "colors": [
+          {
+            "name": "Blanco",
+            "value": "#FFFFFF"
+          }
+        ],
+        "price": "39,90 R$",
+        "originalPrice": "59,90 R$",
+        "specs": [
+          {
+            "label": "Tipo",
+            "value": "Intraural"
+          },
+          {
+            "label": "Conectividad",
+            "value": "Bluetooth 5.0"
+          },
+          {
+            "label": "Diseño",
+            "value": "Ergonómico"
+          }
+        ],
+        "rating": 4.2,
+        "reviewCount": 92,
+        "stock": 50,
+        "badges": [
+          "Promoción"
+        ],
+        "link": "/pages/products/2"
       },
       {
-        "image": "/products/3.webp",
-        "title": "Auricular JBL Tune 720BT",
-        "price": 315.00,
-        "labelButton": "Añadir al Carrito"
+        "id": 3,
+        "name": "Auriculares de diadema JBL Tune 720BT",
+        "description": "Auriculares de diadema con graves potentes y tecnología Pure Bass de JBL.",
+        "category": "Auriculares de diadema",
+        "brand": "JBL",
+        "images": [
+          "/products/3.webp"
+        ],
+        "colors": [
+          {
+            "name": "Negro",
+            "value": "#000000"
+          }
+        ],
+        "price": "315,00 R$",
+        "originalPrice": "349,00 R$",
+        "specs": [
+          {
+            "label": "Tipo",
+            "value": "Supraaural"
+          },
+          {
+            "label": "Conectividad",
+            "value": "Bluetooth 5.3"
+          },
+          {
+            "label": "Tecnología",
+            "value": "Pure Bass"
+          }
+        ],
+        "rating": 4.9,
+        "reviewCount": 210,
+        "stock": 15,
+        "badges": [
+          "Recomendado"
+        ],
+        "link": "/pages/products/3"
       },
       {
-        "image": "/products/4.webp",
-        "title": "Power Bank Pineng 10000mAh",
-        "price": 49.90,
-        "labelButton": "Añadir al Carrito"
-      },
-      {
-        "image": "/products/7.webp",
-        "title": "Auricular Logitech H390",
-        "price": 206.90,
-        "labelButton": "Añadir al Carrito"
+        "id": 7,
+        "name": "Auriculares con micrófono Logitech H390",
+        "description": "Auriculares con micrófono y conexión USB, ideal para la oficina en casa.",
+        "category": "Auriculares con micrófono",
+        "brand": "Logitech",
+        "images": [
+          "/products/7.webp"
+        ],
+        "colors": [
+          {
+            "name": "Negro",
+            "value": "#000000"
+          }
+        ],
+        "price": "206,90 R$",
+        "originalPrice": null,
+        "specs": [
+          {
+            "label": "Tipo",
+            "value": "Supraaural"
+          },
+          {
+            "label": "Conexión",
+            "value": "USB"
+          },
+          {
+            "label": "Micrófono",
+            "value": "Con cancelación de ruido"
+          }
+        ],
+        "rating": 4.4,
+        "reviewCount": 88,
+        "stock": 35,
+        "badges": [],
+        "link": "/pages/products/7"
       }
     ]
   },
@@ -251,119 +588,291 @@
     "bottomTitle": "© 2025 TechPoint. Todos los derechos reservados."
   },
   "productsPage": {
-    "titlePage": "Conoce nuestros productos",
+    "titlePage": "Descubre nuestros productos",
     "colorMap": {
-      "negro": "bg-black",
-      "blanco": "bg-white",
-      "azul": "bg-blue-500",
-      "rojo": "bg-red-500",
-      "verde": "bg-green-500",
-      "naranja": "bg-orange-500"
+      "preto": "#000000",
+      "branco": "#FFFFFF",
+      "azul": "#3B82F6",
+      "vermelho": "#EF4444",
+      "verde": "#22C55E",
+      "laranja": "#F97316"
     },
     "colorLabels": {
-      "negro": "Negro",
-      "blanco": "Blanco",
+      "preto": "Negro",
+      "branco": "Blanco",
       "azul": "Azul",
-      "rojo": "Rojo",
+      "vermelho": "Rojo",
       "verde": "Verde",
-      "naranja": "Naranja"
+      "laranja": "Naranja"
     },
     "products": [
       {
         "id": 1,
-        "image": "/products/1.webp",
-        "title": "Auriculares Bluetooth Readmi Airdots",
-        "description": "Auriculares compactos con gran autonomía y calidad de sonido.",
+        "name": "Auriculares Bluetooth Redmi Airdots",
+        "description": "Auriculares Bluetooth compactos con gran autonomía y sonido de calidad.",
         "category": "Auriculares",
-        "color": "negro",
         "brand": "Xiaomi",
-        "price": 144.90,
-        "link": "#",
-        "labelButton": "Añadir al carrito"
+        "images": [
+          "/products/1.webp"
+        ],
+        "colors": [
+          {
+            "name": "Negro",
+            "value": "#000000"
+          }
+        ],
+        "price": "144,90 R$",
+        "originalPrice": "169,90 R$",
+        "specs": [
+          {
+            "label": "Tipo",
+            "value": "Intraural"
+          },
+          {
+            "label": "Conectividad",
+            "value": "Bluetooth 5.0"
+          },
+          {
+            "label": "Autonomía",
+            "value": "Hasta 4 horas"
+          }
+        ],
+        "rating": 4.7,
+        "reviewCount": 185,
+        "stock": 25,
+        "badges": [
+          "Popular",
+          "Nuevo"
+        ],
+        "link": "/pages/products/1"
       },
       {
         "id": 2,
-        "image": "/products/2.webp",
-        "title": "Auriculares Bluetooth TWS I12",
+        "name": "Auriculares Bluetooth TWS I12",
         "description": "Auriculares Bluetooth con diseño ergonómico.",
         "category": "Auriculares",
-        "color": "blanco",
         "brand": "TWS",
-        "price": 39.90,
-        "link": "#",
-        "labelButton": "Añadir al carrito"
+        "images": [
+          "/products/2.webp"
+        ],
+        "colors": [
+          {
+            "name": "Blanco",
+            "value": "#FFFFFF"
+          }
+        ],
+        "price": "39,90 R$",
+        "originalPrice": "59,90 R$",
+        "specs": [
+          {
+            "label": "Tipo",
+            "value": "Intraural"
+          },
+          {
+            "label": "Conectividad",
+            "value": "Bluetooth 5.0"
+          },
+          {
+            "label": "Diseño",
+            "value": "Ergonómico"
+          }
+        ],
+        "rating": 4.2,
+        "reviewCount": 92,
+        "stock": 50,
+        "badges": [
+          "Promoción"
+        ],
+        "link": "/pages/products/2"
       },
       {
         "id": 3,
-        "image": "/products/3.webp",
-        "title": "Auriculares JBL Tune 720BT",
-        "description": "Auriculares con graves potentes y tecnología Pure Bass de JBL.",
-        "category": "Auriculares",
-        "color": "negro",
+        "name": "Auriculares de diadema JBL Tune 720BT",
+        "description": "Auriculares de diadema con graves potentes y tecnología Pure Bass de JBL.",
+        "category": "Auriculares de diadema",
         "brand": "JBL",
-        "price": 315.00,
-        "link": "#",
-        "labelButton": "Añadir al carrito"
+        "images": [
+          "/products/3.webp"
+        ],
+        "colors": [
+          {
+            "name": "Negro",
+            "value": "#000000"
+          }
+        ],
+        "price": "315,00 R$",
+        "originalPrice": "349,00 R$",
+        "specs": [
+          {
+            "label": "Tipo",
+            "value": "Supraaural"
+          },
+          {
+            "label": "Conectividad",
+            "value": "Bluetooth 5.3"
+          },
+          {
+            "label": "Tecnología",
+            "value": "Pure Bass"
+          }
+        ],
+        "rating": 4.9,
+        "reviewCount": 210,
+        "stock": 15,
+        "badges": [
+          "Recomendado"
+        ],
+        "link": "/pages/products/3"
       },
       {
         "id": 4,
-        "image": "/products/4.webp",
-        "title": "Power Bank Pineng 10000mAh",
-        "description": "Cargador portátil con gran capacidad y múltiples entradas.",
-        "category": "Power banks",
-        "color": "negro",
+        "name": "Power Bank Pineng 10000mAh",
+        "description": "Cargador portátil de alta capacidad y múltiples entradas.",
+        "category": "Bancos de energía",
         "brand": "Pineng",
-        "price": 49.90,
-        "link": "#",
-        "labelButton": "Añadir al carrito"
+        "images": [
+          "/products/4.webp"
+        ],
+        "colors": [
+          {
+            "name": "Negro",
+            "value": "#000000"
+          }
+        ],
+        "price": "49,90 R$",
+        "originalPrice": null,
+        "specs": [
+          {
+            "label": "Capacidad",
+            "value": "10000mAh"
+          },
+          {
+            "label": "Entradas",
+            "value": "Micro USB, USB-C"
+          },
+          {
+            "label": "Salidas",
+            "value": "2 x USB-A"
+          }
+        ],
+        "rating": 4.5,
+        "reviewCount": 130,
+        "stock": 30,
+        "badges": [],
+        "link": "/pages/products/4"
       },
       {
         "id": 5,
-        "image": "/products/5.webp",
-        "title": "Micrófono Fifine AM8",
+        "name": "Micrófono Fifine AM8",
         "description": "Micrófono profesional para streaming, podcasts y grabaciones.",
         "category": "Micrófonos",
-        "color": "negro",
         "brand": "Fifine",
-        "price": 269.90,
-        "link": "#",
-        "labelButton": "Añadir al carrito"
+        "images": [
+          "/products/5.webp"
+        ],
+        "colors": [
+          {
+            "name": "Negro",
+            "value": "#000000"
+          }
+        ],
+        "price": "269,90 R$",
+        "originalPrice": "299,90 R$",
+        "specs": [
+          {
+            "label": "Tipo",
+            "value": "Condensador"
+          },
+          {
+            "label": "Patrón Polar",
+            "value": "Cardioide"
+          },
+          {
+            "label": "Conexión",
+            "value": "USB"
+          }
+        ],
+        "rating": 4.8,
+        "reviewCount": 155,
+        "stock": 10,
+        "badges": [
+          "Más Vendido"
+        ],
+        "link": "/pages/products/5"
       },
       {
         "id": 6,
-        "image": "/products/6.webp",
-        "title": "Smartwatch Ultra 9 T200",
-        "description": "Reloj inteligente con múltiples funciones de salud y notificaciones.",
-        "category": "Relojes inteligentes",
-        "color": "naranja",
+        "name": "Smartwatch Ultra 9 T200",
+        "description": "Reloj inteligente con diversas funciones de salud y notificaciones.",
+        "category": "Smartwatches",
         "brand": "Ultra",
-        "price": 267.00,
-        "link": "#",
-        "labelButton": "Añadir al carrito"
+        "images": [
+          "/products/6.webp"
+        ],
+        "colors": [
+          {
+            "name": "Naranja",
+            "value": "#F97316"
+          }
+        ],
+        "price": "267,00 R$",
+        "originalPrice": "320,00 R$",
+        "specs": [
+          {
+            "label": "Pantalla",
+            "value": "AMOLED Táctil"
+          },
+          {
+            "label": "Batería",
+            "value": "Hasta 7 días"
+          },
+          {
+            "label": "Funciones",
+            "value": "Monitorización cardíaca, GPS"
+          }
+        ],
+        "rating": 4.6,
+        "reviewCount": 112,
+        "stock": 20,
+        "badges": [],
+        "link": "/pages/products/6"
       },
       {
         "id": 7,
-        "image": "/products/7.webp",
-        "title": "Auriculares con micrófono Logitech H390",
-        "description": "Auriculares USB ideales para oficina en casa.",
+        "name": "Auriculares con micrófono Logitech H390",
+        "description": "Auriculares con micrófono y conexión USB, ideal para la oficina en casa.",
         "category": "Auriculares con micrófono",
-        "color": "negro",
         "brand": "Logitech",
-        "price": 206.90,
-        "link": "#",
-        "labelButton": "Añadir al carrito"
-      },
-      {
-        "id": 8,
-        "image": "/products/8.webp",
-        "title": "Aro de Luz Bi-Color 16cm",
-        "description": "Iluminación ideal para grabaciones y videollamadas.",
-        "category": "Iluminación",
-        "color": "blanco",
-        "brand": "Genérico",
-        "price": 54.90,
-        "link": "#",
-        "labelButton": "Añadir al carrito"
+        "images": [
+          "/products/7.webp"
+        ],
+        "colors": [
+          {
+            "name": "Negro",
+            "value": "#000000"
+          }
+        ],
+        "price": "206,90 R$",
+        "originalPrice": null,
+        "specs": [
+          {
+            "label": "Tipo",
+            "value": "Supraaural"
+          },
+          {
+            "label": "Conexión",
+            "value": "USB"
+          },
+          {
+            "label": "Micrófono",
+            "value": "Con cancelación de ruido"
+          }
+        ],
+        "rating": 4.4,
+        "reviewCount": 88,
+        "stock": 35,
+        "badges": [],
+        "link": "/pages/products/7"
       }
     ]
   }

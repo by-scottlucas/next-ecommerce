@@ -1,20 +1,12 @@
 import { useState } from "react";
 import "./ProductFilters.css";
 
-type Product = {
-    category: string;
-    brand: string;
-    color: string;
-    price: number;
-};
-
 type ProductFiltersProps = {
-    colors: string[];
+    colors: Color[];
     brands: string[];
     categories: string[];
-    colorMap: Record<string, string>;
     prices: number[];
-    products: Product[];
+    products: ProductProps[];
     selectedCategory: string | null;
     setSelectedCategory: (value: string | null) => void;
     selectedBrand: string | null;
@@ -26,7 +18,8 @@ type ProductFiltersProps = {
 };
 
 export default function ProductFilters(props: ProductFiltersProps) {
-    const minPrice = props.prices[0];
+    const minPrice = props.prices[0] || 0;
+    const maxPossiblePrice = props.prices[props.prices.length - 1] || 0;
     const [tempMaxPrice, setTempMaxPrice] = useState(props.maxPrice);
 
     const applyFilters = () => {
@@ -41,8 +34,11 @@ export default function ProductFilters(props: ProductFiltersProps) {
                 <div className="filter-box">
                     <h6 className="filter-title">Categoria</h6>
                     <div className="filter-options">
-                        <label className={`filter-item ${props.selectedCategory === null ? "selected" : ""}`} onClick={() => props.setSelectedCategory(null)}>
-                            Todos ({props.products.length})
+                        <label
+                            className={`filter-item ${props.selectedCategory === null ? "selected" : ""}`}
+                            onClick={() => props.setSelectedCategory(null)}
+                        >
+                            Todas ({props.products.length})
                         </label>
                         {props.categories.map(category => {
                             const count = props.products.filter(p => p.category === category).length;
@@ -50,7 +46,9 @@ export default function ProductFilters(props: ProductFiltersProps) {
                                 <label
                                     key={category}
                                     className={`filter-item ${props.selectedCategory === category ? "selected" : ""}`}
-                                    onClick={() => props.setSelectedCategory(props.selectedCategory === category ? null : category)}
+                                    onClick={() =>
+                                        props.setSelectedCategory(props.selectedCategory === category ? null : category)
+                                    }
                                 >
                                     {category} ({count})
                                 </label>
@@ -62,12 +60,13 @@ export default function ProductFilters(props: ProductFiltersProps) {
                 <div className="filter-box">
                     <h6 className="filter-title">Cor</h6>
                     <div className="flex gap-2 items-center flex-wrap">
-                        {props.colors.map(color => (
+                        {props.colors.map(colorObj => (
                             <span
-                                key={color}
-                                title={color}
-                                className={`color-input ${props.colorMap[color]} ${props.selectedColor === color ? "selected" : ""}`}
-                                onClick={() => props.setSelectedColor(props.selectedColor === color ? null : color)}
+                                key={colorObj.name}
+                                title={colorObj.name}
+                                className={`color-input ${props.selectedColor === colorObj.name ? "selected" : ""}`}
+                                onClick={() => props.setSelectedColor(props.selectedColor === colorObj.name ? null : colorObj.name)}
+                                style={{ backgroundColor: colorObj.value }}
                             ></span>
                         ))}
                     </div>
@@ -102,7 +101,7 @@ export default function ProductFilters(props: ProductFiltersProps) {
                     <input
                         type="range"
                         min={minPrice}
-                        max={props.prices[props.prices.length - 1]}
+                        max={maxPossiblePrice}
                         value={tempMaxPrice}
                         onChange={(e) => setTempMaxPrice(Number(e.target.value))}
                         className="input-price"

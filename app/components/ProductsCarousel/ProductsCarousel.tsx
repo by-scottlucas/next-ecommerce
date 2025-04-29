@@ -5,16 +5,16 @@ import { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '@/app/contexts/LanguageContext';
 import ProductCard from '../ProductCard/ProductCard';
 
-interface Product {
-  image: string;
-  title: string;
-  price: number;
-  link: string;
-  labelButton: string;
-}
+// interface Product {
+//   image: string;
+//   title: string;
+//   price: number;
+//   link: string;
+//   labelButton: string;
+// }
 
 interface ProductsCarouselProps {
-  products: Product[];
+  products: any[];
   sectionKey: string;
 }
 
@@ -111,7 +111,7 @@ export default function ProductsCarousel({ products, sectionKey }: ProductsCarou
             }}
           >
             {products.map((product, index) => (
-              <ProductCard key={index}{...product} />
+              <ProductCard key={index} images={[product.image]} {...product} />
             ))}
           </div>
         </div>
