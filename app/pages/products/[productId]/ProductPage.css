@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+.product-not-found {
+  @apply flex items-center justify-center h-[84dvh];
+}
+
 .product-container {
   @apply min-h-screen bg-gray-50 text-gray-800;
 }
@@ -10,26 +14,6 @@
 
 .product-grid {
   @apply grid grid-cols-1 lg:grid-cols-2 gap-8;
-}
-
-.product-image-grid {
-  @apply lg:flex flex-row-reverse items-start gap-4;
-}
-
-.thumbnails-grid {
-  @apply grid grid-cols-3 gap-3 lg:flex lg:flex-col w-60 md:w-122 lg:max-w-18;
-}
-
-.product-main-image {
-  @apply aspect-square bg-white shadow-sm rounded-md overflow-hidden mb-4 lg:mb-0 lg:h-[468px];
-}
-
-.product-thumbnail-button {
-  @apply cursor-pointer aspect-square rounded-sm overflow-hidden transition-all;
-}
-
-.product-thumbnail-selected {
-  @apply ring-2 ring-blue-600;
 }
 
 .product-info {
@@ -82,16 +66,4 @@
 
 .add-to-favorites-button {
   @apply border border-gray-300 hover:bg-gray-50;
-}
-
-.additional-infos-grid {
-  @apply grid grid-cols-2 md:grid-cols-2 gap-4 w-full mt-6;
-}
-
-.additional-info-icon {
-  @apply h-5 w-5 text-blue-600 mr-3;
-}
-
-.additional-info-label {
-  @apply text-sm;
 }

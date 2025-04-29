@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.product-image-grid {
+    @apply lg:flex flex-row-reverse items-start gap-4;
+}
+
+.thumbnails-grid {
+    @apply grid grid-cols-3 gap-3 lg:flex lg:flex-col w-60 md:w-122 lg:max-w-18;
+}
+
+.product-main-image {
+    @apply aspect-square bg-white shadow-sm rounded-md overflow-hidden mb-4 lg:mb-0 lg:h-[468px];
+}
+
+.product-thumbnail-button {
+    @apply cursor-pointer aspect-square rounded-sm overflow-hidden transition-all;
+}
+
+.product-thumbnail-selected {
+    @apply ring-2 ring-blue-600;
+}

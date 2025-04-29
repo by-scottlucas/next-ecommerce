@@ -1,16 +1,15 @@
-import "./ProductDetailsTabs.css";
+import './ProductDetailsTabs.css';
+
+import { Spec } from '@/app/models/Product';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
-interface ProductSpec {
-    label: string;
-    value: string;
-}
 
 interface ProductDetailsTabsProps {
     product: {
-        specs: ProductSpec[];
+        specs?: Spec[];
     };
 }
+
 
 export default function ProductDetailsTabs({ product }: ProductDetailsTabsProps) {
     return (
@@ -25,10 +24,10 @@ export default function ProductDetailsTabs({ product }: ProductDetailsTabsProps)
                     <div className="tabs-box">
                         <h2 className="tabs-title">Especificações Técnicas</h2>
                         <div className="specs-grid">
-                            {product.specs.map((spec, index) => (
+                            {product.specs?.map((spec, index) => (
                                 <div
                                     key={index}
-                                    className={`spec-item ${index < product.specs.length - 1 ? "spec-item-bordered" : ""}`}
+                                    className={`spec-item ${index < product.specs!.length - 1 ? "spec-item-bordered" : ""}`}
                                 >
                                     <div className="spec-line">
                                         <span className="spec-label">{spec.label}</span>
@@ -42,7 +41,9 @@ export default function ProductDetailsTabs({ product }: ProductDetailsTabsProps)
 
                 <TabsContent value="reviews">
                     <div className="tabs-placeholder">
-                        <p className="tabs-placeholder-text">Avaliações dos clientes serão exibidas aqui.</p>
+                        <p className="tabs-placeholder-text">
+                            Avaliações dos clientes serão exibidas aqui.
+                        </p>
                     </div>
                 </TabsContent>
             </Tabs>

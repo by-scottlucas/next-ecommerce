@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.additional-infos-grid {
+    @apply grid grid-cols-2 md:grid-cols-2 gap-4 w-full mt-6;
+}
+
+.additional-info-icon {
+    @apply h-5 w-5 text-blue-600 mr-3;
+}
+
+.additional-info-label {
+    @apply text-sm;
+}

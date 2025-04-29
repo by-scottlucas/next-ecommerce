@@ -1,9 +1,5 @@
+import { Color } from '@/app/models/Product';
 import './ColorSelector.css';
-
-interface Color {
-    name: string;
-    value: string;
-}
 
 interface ColorSelectorProps {
     colors: Color[];
