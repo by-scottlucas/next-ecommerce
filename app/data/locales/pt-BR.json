@@ -5,7 +5,7 @@
     "navLinks": [
       { "title": "Home","link": "/" },
       { "title": "Produtos", "link": "/pages/products" },
-      { "title": "Minha Conta", "link": "#location" },
+      { "title": "Minha Conta", "link": "/pages/auth/login" },
       { "title": "Contato", "link": "#contact" }
     ]
   },

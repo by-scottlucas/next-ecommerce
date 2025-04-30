@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+.auth-form {
+    @apply space-y-4 md:space-y-6;
+}
+
+.auth-label {
+    @apply block mb-2 text-sm font-medium text-gray-900;
+}
+
+.auth-input {
+    @apply bg-gray-50 border border-gray-300 text-gray-900
+        rounded-md block w-full px-3 py-2;
+}
+
+.auth-options {
+    @apply flex items-center justify-between;
+}
+
+.auth-checkbox-wrapper {
+    @apply flex items-center gap-2;
+}
+
+.auth-checkbox {
+    @apply w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:outline-0;
+}
+
+.auth-checkbox-label {
+    @apply text-sm text-gray-500;
+}
+
+.auth-forgot-link {
+    @apply text-sm font-medium hover:underline text-blue-600;
+}
+
+.auth-button {
+    @apply cursor-pointer w-full text-white
+        focus:outline-none font-medium rounded-md text-sm px-5
+        py-2.5 text-center bg-blue-600 hover:bg-blue-700
+        transition-all ease-in-out duration-300;
+}
+
+.auth-register-prompt {
+    @apply text-sm text-center font-light text-gray-500;
+}
+
+.auth-register-link {
+    @apply font-medium hover:underline text-blue-600;
+}

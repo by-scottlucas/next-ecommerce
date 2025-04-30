@@ -13,7 +13,7 @@
       },
       {
         "title": "Mi Cuenta",
-        "link": "#location"
+        "link": "/pages/auth/login"
       },
       {
         "title": "Contacto",

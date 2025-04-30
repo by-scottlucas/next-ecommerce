@@ -1,0 +1,23 @@
+"use client";
+
+import '../Auth.css';
+
+import Header from '@/app/components/Header/Header';
+
+import AuthForm from '../components/AuthForm/AuthForm';
+
+export default function LoginPage() {
+    return (
+        <>
+            <Header />
+            <main className="auth-container">
+                <div className="auth-card">
+                    <div className="auth-card-content">
+                        <h1 className="auth-heading">Bem-vindo de volta</h1>
+                        <AuthForm type="login" />
+                    </div>
+                </div>
+            </main>
+        </>
+    );
+}
