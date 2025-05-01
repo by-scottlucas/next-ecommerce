@@ -1,6 +1,7 @@
 "use client";
-import './ProductPage.css';
 
+import './ProductPage.css';
+import { toast } from "sonner"
 import Header from '@/app/components/Header/Header';
 import { useProduct } from '@/app/hooks/useProduct';
 import { useState } from 'react';
@@ -9,12 +10,43 @@ import AdditionalInfo from './components/AdditionalInfo/AdditionalInfo';
 import ColorSelector from './components/ColorSelector/ColorSelector';
 import ProductDetailsTabs from './components/ProductDetailsTabs/ProductDetailsTabs';
 import { ProductImageGallery } from './components/ProductImageGallery/ProductImageGallery';
-import QuantitySelector from './components/QuantitySelector/QuantitySelector';
+import QuantitySelector from '../../../components/QuantitySelector/QuantitySelector';
+import { useCart } from '@/app/contexts/CartContext';
 
 export default function ProductPage() {
     const product = useProduct();
+    const [isFavorite, setIsFavorite] = useState(false);
     const [selectedImage, setSelectedImage] = useState(0);
     const [selectedColor, setSelectedColor] = useState(product?.colors?.[0] || null);
+    const [quantity, setQuantity] = useState(1);
+    const { addItem } = useCart();
+
+    const handleAddToCart = () => {
+        if (!product) return;
+
+        addItem({
+            id: product.id,
+            name: product.name,
+            image: product.images[0],
+            price: product.price,
+            quantity,
+            stock: product.stock as number,
+        });
+
+        toast.success(`${product.name} adicionado ao carrinho.`);
+    };
+
+    const handleAddToFavorites = () => {
+        const newValue = !isFavorite;
+        setIsFavorite(newValue);
+
+        if (newValue) {
+            toast.success(`${product!.name} adicionado aos favoritos.`);
+        } else {
+            toast.success(`${product!.name} removido dos favoritos.`);
+        }
+    };
+
 
     return (
         <>
@@ -57,18 +89,28 @@ export default function ProductPage() {
                                             <span className="stock-quantity">({product.stock ?? 0} disponíveis)</span>
                                         </div>
 
-                                        <QuantitySelector stock={product.stock ?? 0} />
+                                        <QuantitySelector
+                                            stock={product.stock ?? 0}
+                                            onChange={setQuantity}
+                                        />
                                     </div>
 
                                     <div className="buttons-group mt-4">
-                                        <button className="add-to-cart-button product-button">
+                                        <button
+                                            className="add-to-cart-button product-button"
+                                            onClick={handleAddToCart}
+                                        >
                                             <i className="bi bi-cart-plus text-lg"></i>
                                             Adicionar ao Carrinho
                                         </button>
-                                        <button className="add-to-favorites-button product-button">
+                                        <button
+                                            className={`product-button ${isFavorite ? 'favorited' : 'add-to-favorites-button'}`}
+                                            onClick={handleAddToFavorites}
+                                        >
                                             <i className="bi bi-heart text-lg"></i>
                                             Adicionar aos Favoritos
                                         </button>
+
                                     </div>
 
                                     <AdditionalInfo />

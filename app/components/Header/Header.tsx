@@ -1,13 +1,16 @@
 import './Header.css';
 
+import { useCart } from '@/app/contexts/CartContext';
 import { useLanguage } from '@/app/contexts/LanguageContext';
 import { ShoppingCart } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useCallback, useState } from 'react';
 
 export default function Header() {
     const { translations } = useLanguage();
     const { promoText, navLinks, logo } = translations.header;
+    const { totalItems } = useCart();
     const [menuIsOpen, setMenuIsOpen] = useState(false);
 
     const toggleMenu = useCallback(() => setMenuIsOpen(prev => !prev), []);
@@ -43,10 +46,14 @@ export default function Header() {
                 </a>
 
                 <div className='header-actions'>
-                    <button type="button" aria-label="Ver carrinho" className="header-cart-button">
+                    <Link href={"/pages/cart"} type="button" aria-label="Ver carrinho" className="header-cart-button">
                         <ShoppingCart className="header-cart-icon" />
-                        <span className="header-cart-badge">2</span>
-                    </button>
+                        {totalItems > 0 && (
+                            <span className="header-cart-badge">
+                                {totalItems}
+                            </span>
+                        )}
+                    </Link>
 
                     <div className={`header-items ${menuIsOpen ? "open" : "close"}`} id="navbar">
                         <ul className="header-list">

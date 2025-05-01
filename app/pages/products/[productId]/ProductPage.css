@@ -67,3 +67,7 @@
 .add-to-favorites-button {
   @apply border border-gray-300 hover:bg-gray-50;
 }
+
+.favorited {
+  @apply text-white border border-red-600 bg-red-600 hover:bg-red-600;
+}

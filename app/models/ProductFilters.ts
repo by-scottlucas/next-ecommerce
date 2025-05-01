@@ -1,3 +1,5 @@
+import { Color, ProductProps } from "./Product";
+
 export interface ProductFiltersProps {
     colors: Color[];
     brands: string[];

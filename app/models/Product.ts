@@ -16,8 +16,8 @@ export interface ProductProps {
   brand: string;
   images: string[];
   colors: Color[];
-  price: string;
-  originalPrice?: string | null;
+  price: number;
+  originalPrice?: number | null;
   specs?: Spec[];
   rating?: number;
   reviewCount?: number;

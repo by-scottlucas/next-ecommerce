@@ -29,7 +29,7 @@
 }
 
 .header-cart-button {
-    @apply cursor-pointer relative flex items-center justify-center h-10 w-10 rounded-md hover:bg-gray-100 transition-colors;
+    @apply cursor-pointer relative flex items-center justify-center h-10 w-10 rounded-md hover:bg-gray-50 transition-colors;
 }
 
 .header-cart-icon {
@@ -37,7 +37,7 @@
 }
 
 .header-cart-badge {
-    @apply absolute -top-0.5 -right-0.5 bg-red-500 text-white text-xs font-semibold rounded-full h-5 w-5 flex items-center justify-center;
+    @apply absolute -top-0.5 -right-0.5 bg-blue-500 text-white text-xs font-semibold rounded-full h-5 w-5 flex items-center justify-center;
 }
 
 .header-items {
@@ -57,5 +57,5 @@
 }
 
 .header-link {
-    @apply block py-3 lg:px-3 lg:py-1 text-gray-950 text-lg lg:text-base 2xl:text-2xl font-medium transition-all duration-300 ease-in-out hover:text-white hover:bg-[#38B6FF];
+    @apply block py-3 lg:px-3 lg:py-1 text-gray-950 text-lg lg:text-base 2xl:text-2xl font-medium transition-all duration-300 ease-in-out hover:text-blue-600;
 }

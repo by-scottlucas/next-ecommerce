@@ -1,14 +1,20 @@
-"use client";
-import { useState } from "react";
 import "./QuantitySelector.css";
+
+import { Minus, Plus } from "lucide-react";
+import { useState } from "react";
 
 interface QuantitySelectorProps {
   stock: number;
+  initialQuantity?: number;
   onChange?: (value: number) => void;
 }
 
-export default function QuantitySelector({ stock, onChange }: QuantitySelectorProps) {
-  const [quantity, setQuantity] = useState(1);
+export default function QuantitySelector({
+  stock,
+  initialQuantity = 1,
+  onChange,
+}: QuantitySelectorProps) {
+  const [quantity, setQuantity] = useState(initialQuantity);
   const min = 1;
   const max = stock;
 
@@ -47,7 +53,7 @@ export default function QuantitySelector({ stock, onChange }: QuantitySelectorPr
           aria-label="Diminuir"
           disabled={quantity <= min}
         >
-          <i className="bi bi-dash quantity-icon"></i>
+          <Minus size={16} className="quantity-icon" />
         </button>
 
         <input
@@ -66,7 +72,7 @@ export default function QuantitySelector({ stock, onChange }: QuantitySelectorPr
           aria-label="Aumentar"
           disabled={quantity >= max}
         >
-          <i className="bi bi-plus quantity-icon"></i>
+          <Plus size={16} className="quantity-icon" />
         </button>
       </div>
     </div>

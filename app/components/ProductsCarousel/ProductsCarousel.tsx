@@ -4,14 +4,7 @@ import './ProductsCarousel.css';
 import { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '@/app/contexts/LanguageContext';
 import ProductCard from '../ProductCard/ProductCard';
-
-// interface Product {
-//   image: string;
-//   title: string;
-//   price: number;
-//   link: string;
-//   labelButton: string;
-// }
+import Link from 'next/link';
 
 interface ProductsCarouselProps {
   products: any[];
@@ -28,7 +21,6 @@ export default function ProductsCarousel({ products, sectionKey }: ProductsCarou
 
   const headerTitle = sectionTranslations?.headerTitle;
   const headerButton = sectionTranslations?.headerButton;
-  const labelButton = sectionTranslations?.labelButton;
 
   const updateItemsToShow = () => {
     let count = 1;
@@ -95,13 +87,17 @@ export default function ProductsCarousel({ products, sectionKey }: ProductsCarou
     <div className="products-carousel-container">
       <div className="container-header">
         <h2 className="container-title">{headerTitle}</h2>
-        <a href="#" className="container-button">{headerButton}</a>
+        <Link href="/pages/products" className="container-button">{headerButton}</Link>
       </div>
 
       <div className="carousel-box relative">
-        <button onClick={goToPrev} className="carousel-arrow left" aria-label="Prev Button">
-          <i className="bi bi-chevron-left"></i>
-        </button>
+        {products.length > 4 && (
+          <>
+            <button onClick={goToPrev} className="carousel-arrow left" aria-label="Prev Button">
+              <i className="bi bi-chevron-left"></i>
+            </button>
+          </>
+        )}
 
         <div className="products-carousel-wrapper">
           <div className="products-carousel-content"
@@ -116,9 +112,13 @@ export default function ProductsCarousel({ products, sectionKey }: ProductsCarou
           </div>
         </div>
 
-        <button onClick={goToNext} className="carousel-arrow right" aria-label="Next Button">
-          <i className="bi bi-chevron-right"></i>
-        </button>
+        {products.length > 4 && (
+          <>
+            <button onClick={goToNext} className="carousel-arrow right" aria-label="Next Button">
+              <i className="bi bi-chevron-right"></i>
+            </button>
+          </>
+        )}
       </div>
 
       {maxCardIndex > 0 && (

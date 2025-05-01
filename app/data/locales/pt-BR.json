@@ -3,16 +3,32 @@
     "logo": "/brand-assets/logo-black.png",
     "promoText": "Frete grátis a partir de R$ 199",
     "navLinks": [
-      { "title": "Home","link": "/" },
-      { "title": "Produtos", "link": "/pages/products" },
-      { "title": "Minha Conta", "link": "/pages/auth/login" },
-      { "title": "Contato", "link": "#contact" }
+      {
+        "title": "Home",
+        "link": "/"
+      },
+      {
+        "title": "Produtos",
+        "link": "/pages/products"
+      },
+      {
+        "title": "Minha Conta",
+        "link": "/pages/auth/login"
+      },
+      {
+        "title": "Contato",
+        "link": "#contact"
+      }
     ]
   },
   "bannerCarousel": {
     "slides": [
-      { "image": "/banners/1.png" },
-      { "image": "/banners/2.png" }
+      {
+        "image": "/banners/1.png"
+      },
+      {
+        "image": "/banners/2.png"
+      }
     ]
   },
   "categoriesCards": [
@@ -60,8 +76,8 @@
             "value": "#000000"
           }
         ],
-        "price": "R$ 144,90",
-        "originalPrice": "R$ 169,90",
+        "price": 144.90,
+        "originalPrice": 169.90,
         "specs": [
           {
             "label": "Tipo",
@@ -100,8 +116,8 @@
             "value": "#FFFFFF"
           }
         ],
-        "price": "R$ 39,90",
-        "originalPrice": "R$ 59,90",
+        "price": 39.90,
+        "originalPrice": 59.90,
         "specs": [
           {
             "label": "Tipo",
@@ -139,8 +155,8 @@
             "value": "#000000"
           }
         ],
-        "price": "R$ 315,00",
-        "originalPrice": "R$ 349,00",
+        "price": 315.00,
+        "originalPrice": 349.00,
         "specs": [
           {
             "label": "Tipo",
@@ -178,7 +194,7 @@
             "value": "#000000"
           }
         ],
-        "price": "R$ 49,90",
+        "price": 49.90,
         "originalPrice": null,
         "specs": [
           {
@@ -215,8 +231,8 @@
             "value": "#000000"
           }
         ],
-        "price": "R$ 269,90",
-        "originalPrice": "R$ 299,90",
+        "price": 269.90,
+        "originalPrice": 299.90,
         "specs": [
           {
             "label": "Tipo",
@@ -254,8 +270,8 @@
             "value": "#F97316"
           }
         ],
-        "price": "R$ 267,00",
-        "originalPrice": "R$ 320,00",
+        "price": 267.00,
+        "originalPrice": 320.00,
         "specs": [
           {
             "label": "Tela",
@@ -291,7 +307,7 @@
             "value": "#000000"
           }
         ],
-        "price": "R$ 206,90",
+        "price": 206.90,
         "originalPrice": null,
         "specs": [
           {
@@ -338,8 +354,8 @@
             "value": "#000000"
           }
         ],
-        "price": "R$ 144,90",
-        "originalPrice": "R$ 169,90",
+        "price": 144.90,
+        "originalPrice": 169.90,
         "specs": [
           {
             "label": "Tipo",
@@ -378,8 +394,8 @@
             "value": "#FFFFFF"
           }
         ],
-        "price": "R$ 39,90",
-        "originalPrice": "R$ 59,90",
+        "price": 39.90,
+        "originalPrice": 59.90,
         "specs": [
           {
             "label": "Tipo",
@@ -417,8 +433,8 @@
             "value": "#000000"
           }
         ],
-        "price": "R$ 315,00",
-        "originalPrice": "R$ 349,00",
+        "price": 315.00,
+        "originalPrice": 349.00,
         "specs": [
           {
             "label": "Tipo",
@@ -456,7 +472,7 @@
             "value": "#000000"
           }
         ],
-        "price": "R$ 206,90",
+        "price": 206.90,
         "originalPrice": null,
         "specs": [
           {
@@ -597,8 +613,8 @@
             "value": "#000000"
           }
         ],
-        "price": "R$ 144,90",
-        "originalPrice": "R$ 169,90",
+        "price": 144.90,
+        "originalPrice": 169.90,
         "specs": [
           {
             "label": "Tipo",
@@ -637,8 +653,8 @@
             "value": "#FFFFFF"
           }
         ],
-        "price": "R$ 39,90",
-        "originalPrice": "R$ 59,90",
+        "price": 39.90,
+        "originalPrice": 59.90,
         "specs": [
           {
             "label": "Tipo",
@@ -676,8 +692,8 @@
             "value": "#000000"
           }
         ],
-        "price": "R$ 315,00",
-        "originalPrice": "R$ 349,00",
+        "price": 315.00,
+        "originalPrice": 349.00,
         "specs": [
           {
             "label": "Tipo",
@@ -715,7 +731,7 @@
             "value": "#000000"
           }
         ],
-        "price": "R$ 49,90",
+        "price": 49.90,
         "originalPrice": null,
         "specs": [
           {
@@ -752,8 +768,8 @@
             "value": "#000000"
           }
         ],
-        "price": "R$ 269,90",
-        "originalPrice": "R$ 299,90",
+        "price": 269.90,
+        "originalPrice": 299.90,
         "specs": [
           {
             "label": "Tipo",
@@ -791,8 +807,8 @@
             "value": "#F97316"
           }
         ],
-        "price": "R$ 267,00",
-        "originalPrice": "R$ 320,00",
+        "price": 267.00,
+        "originalPrice": 320.00,
         "specs": [
           {
             "label": "Tela",
@@ -828,7 +844,7 @@
             "value": "#000000"
           }
         ],
-        "price": "R$ 206,90",
+        "price": 206.90,
         "originalPrice": null,
         "specs": [
           {

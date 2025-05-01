@@ -1,12 +1,15 @@
-// app/layout.tsx
 import './globals.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
+import { Toaster } from '@/components/ui/sonner';
 import { Geist, Geist_Mono } from 'next/font/google';
-import type { Metadata } from 'next';
 import Head from 'next/head';
-import { LanguageProvider } from './contexts/LanguageContext'; // <= Adicione essa linha
 
+import { CartProvider } from './contexts/CartContext';
+import { LanguageProvider } from './contexts/LanguageContext';
+
+
+import type { Metadata } from 'next';
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
@@ -72,8 +75,11 @@ export default function RootLayout({
       </Head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <LanguageProvider>
-          {children}
+          <CartProvider>
+            {children}
+          </CartProvider>
         </LanguageProvider>
+        <Toaster />
       </body>
     </html>
   );
