@@ -63,7 +63,7 @@ export default function ContactInfo() {
                 <ContactItem
                     icon={MapPin}
                     title="Localização"
-                    info={["Av. Paulista, 1070", "São Paulo - SP, Brazil"]}
+                    info={["Av. Pres. Costa e Silva - Boqueirão, 7070", "Praia Grande - SP, Brazil"]}
                     subinfo="Visite nossa loja física"
                 />
             </div>

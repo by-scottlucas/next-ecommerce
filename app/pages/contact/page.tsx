@@ -1,15 +1,18 @@
 "use client";
-import "./ContactPage.css";
-import Header from "@/app/components/Header/Header";
 
-import ContactForm from "./components/ContactForm/ContactForm";
-import ContactInfo from "./components/ContactInfo/ContactInfo";
+import './ContactPage.css';
+
+import Header from '@/app/components/Header/Header';
+
+import ContactForm from './components/ContactForm/ContactForm';
+import ContactInfo from './components/ContactInfo/ContactInfo';
+import Map from './components/Map/Map';
 
 export default function ContactPage() {
     return (
-        <>
+        <div className="contact-page-container">
             <Header />
-            <div className="contact-page-container">
+            <div className="contact-page-content">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
                     <div id="contact-form">
                         <ContactForm />
@@ -19,6 +22,11 @@ export default function ContactPage() {
                     </div>
                 </div>
             </div>
-        </>
+
+            <div className="map-box">
+                <h2 className="map-box-title">Estamos localizados em</h2>
+                <Map />
+            </div>
+        </div>
     );
 }
