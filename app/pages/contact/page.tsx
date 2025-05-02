@@ -7,6 +7,7 @@ import Header from '@/app/components/Header/Header';
 import ContactForm from './components/ContactForm/ContactForm';
 import ContactInfo from './components/ContactInfo/ContactInfo';
 import Map from './components/Map/Map';
+import FAQ from '@/app/components/FAQ/FAQ';
 
 export default function ContactPage() {
     return (
@@ -26,6 +27,11 @@ export default function ContactPage() {
             <div className="map-box">
                 <h2 className="map-box-title">Estamos localizados em</h2>
                 <Map />
+            </div>
+
+            <div className="faq-box">
+                <h3 className="faq-box-title">Perguntas frequentes</h3>
+                <FAQ />
             </div>
         </div>
     );
