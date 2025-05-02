@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+.contact-info-contact-container {
+    @apply bg-white p-6 rounded-lg shadow-md h-full;
+}
+
+.contact-info-contact-title {
+    @apply text-xl font-semibold mb-6 text-gray-800;
+}
+
+.contact-info-contact-section {
+    @apply space-y-6;
+}
+
+.contact-info-contact-item {
+    @apply flex items-start;
+}
+
+.contact-info-icon-wrapper {
+    @apply bg-blue-100 p-3 rounded-full mr-4;
+}
+
+.contact-info-icon {
+    @apply h-6 w-6 text-blue-600;
+}
+
+.contact-info-item-title {
+    @apply font-semibold text-gray-800;
+}
+
+.contact-info-item-info {
+    @apply text-gray-600 mt-1;
+}
+
+.contact-info-item-subinfo {
+    @apply text-gray-500 text-sm mt-1;
+}
+
+.contact-info-social-section {
+    @apply mt-8;
+}
+
+.contact-info-social-icons {
+    @apply flex space-x-4 mt-2;
+}
+
+.contact-info-social-link {
+    @apply bg-gray-100 text-blue-600 text-xl h-10 w-10 flex flex-col items-center justify-center rounded-full hover:bg-blue-100 transition-colors;
+}
