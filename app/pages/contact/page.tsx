@@ -8,8 +8,12 @@ import ContactForm from './components/ContactForm/ContactForm';
 import ContactInfo from './components/ContactInfo/ContactInfo';
 import Map from './components/Map/Map';
 import FAQ from '@/app/components/FAQ/FAQ';
+import Footer from '@/app/components/Footer/Footer';
+import { useLanguage } from '@/app/contexts/LanguageContext';
 
 export default function ContactPage() {
+    const { translations } = useLanguage();
+
     return (
         <div className="contact-page-container">
             <Header />
@@ -33,6 +37,8 @@ export default function ContactPage() {
                 <h3 className="faq-box-title">Perguntas frequentes</h3>
                 <FAQ />
             </div>
+
+            <Footer footerData={translations.footer} />
         </div>
     );
 }

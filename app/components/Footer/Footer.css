@@ -1,33 +1,49 @@
 @import "tailwindcss";
 
 .footer-container {
-    @apply bg-white w-full flex items-baseline justify-center mt-3;
+    @apply bg-white w-full flex items-baseline justify-center mt-3 lg:mt-15 shadow;
 }
 
 .footer-content {
-    @apply w-full;
+    @apply container mx-auto px-4 py-10;
 }
 
-.footer-top {
-    @apply grid grid-cols-1 text-center md:text-start gap-8 px-4 py-6 lg:p-8 md:grid-cols-3 md:max-w-[90%] mx-auto;
+.brand-box {
+    @apply flex items-center mb-4;
 }
 
-.footer-list-title {
-    @apply mb-3 text-base font-extrabold text-blue-600 uppercase;
+.brand-description {
+    @apply text-gray-800 text-sm;
 }
 
-.footer-list {
-    @apply text-gray-500 dark:text-gray-400 font-medium flex flex-col gap-0.5;
+.list-title {
+    @apply mb-4 text-base font-extrabold text-blue-600 uppercase;
 }
 
-.footer-list-item {
-    @apply hover:underline hover:text-gray-600 duration-300 transition-all ease-in-out;
+.list-items {
+    @apply space-y-2;
+}
+
+.list-item {
+    @apply hover:text-blue-600 hover:underline duration-300 transition-all ease-in-out;
+}
+
+.contact-list {
+    @apply not-italic text-sm text-gray-700 space-y-2;
 }
 
 .footer-bottom {
-    @apply px-4 py-4 bg-blue-500 text-center;
+    @apply border-t border-gray-300 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center;
 }
 
-.footer-bottom-title {
-    @apply text-sm text-white sm:text-center lg:text-base;
+.footer-bottom-label {
+    @apply text-sm text-gray-800;
+}
+
+.social-icons {
+    @apply flex space-x-4 mt-4 md:mt-0;
+}
+
+.social-icon {
+    @apply text-gray-800 hover:text-blue-600 text-xl;
 }

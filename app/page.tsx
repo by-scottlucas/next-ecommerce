@@ -14,7 +14,7 @@ export default function HomePage() {
   const { locale, translations: data } = useLanguage();
 
   return (
-    <main className="bg-white">
+    <main className="bg-gray-50">
       <LanguageSelector />
       <Header />
       <BannerCarousel slidesData={data.bannerCarousel.slides} />

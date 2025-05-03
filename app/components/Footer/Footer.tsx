@@ -1,6 +1,7 @@
+import Link from 'next/link';
 import './Footer.css';
 
-import { useLanguage } from '@/app/contexts/LanguageContext';
+import Image from 'next/image';
 
 interface FooterLink {
   label: string;
@@ -13,6 +14,8 @@ interface FooterSection {
 }
 
 interface FooterData {
+  brandLogo: string;
+  brandDescription: string;
   sections: FooterSection[];
   bottomTitle: string;
 }
@@ -22,26 +25,24 @@ interface FooterProps {
 }
 
 export default function Footer({ footerData }: FooterProps) {
-  const { translations } = useLanguage();
-  const translatedSections = translations.footer.sections;
-  const translatedBottomTitle = translations.footer.bottomTitle;
-
   return (
     <footer className="footer-container">
       <div className="footer-content">
-        <div className="footer-top">
-          {footerData.sections.map((section, sectionIndex) => (
-            <div key={sectionIndex}>
-              <h2 className="footer-list-title">
-                {translatedSections[sectionIndex]?.title}
-              </h2>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <div className="brand-box">
+              <Image src={footerData.brandLogo} alt="TechPoint" width={160} height={80} />
+            </div>
+            <p className="brand-description">{footerData.brandDescription}</p>
+          </div>
 
-              <ul className="footer-list">
-                {section.list.map((item, itemIndex) => (
-                  <li className="mb-4" key={itemIndex}>
-                    <a href={item.path} className="footer-list-item">
-                      {translatedSections[sectionIndex]?.list?.[itemIndex]?.label}
-                    </a>
+          {footerData.sections.map((section, index) => (
+            <div key={index}>
+              <h4 className="list-title">{section.title}</h4>
+              <ul className="list-items">
+                {section.list.map((item, i) => (
+                  <li key={i}>
+                    <Link href={item.path} className="list-item">{item.label}</Link>
                   </li>
                 ))}
               </ul>
@@ -50,7 +51,12 @@ export default function Footer({ footerData }: FooterProps) {
         </div>
 
         <div className="footer-bottom">
-          <span className="footer-bottom-title">{translatedBottomTitle}</span>
+          <p className="footer-bottom-label">© {new Date().getFullYear()} {footerData.bottomTitle}</p>
+          <div className="social-icons">
+            <Link href="#" className="social-icon"><i className="bi bi-instagram"></i></Link>
+            <Link href="#" className="social-icon"><i className="bi bi-facebook"></i></Link>
+            <Link href="#" className="social-icon"><i className="bi bi-youtube"></i></Link>
+          </div>
         </div>
       </div>
     </footer>

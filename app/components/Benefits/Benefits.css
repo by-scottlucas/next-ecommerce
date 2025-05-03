@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .benefits-container{
-    @apply bg-gray-50;
+    @apply bg-white;
 }
 
 .benefits-content {

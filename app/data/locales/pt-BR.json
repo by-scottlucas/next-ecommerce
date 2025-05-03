@@ -524,60 +524,74 @@
     }
   ],
   "footer": {
+    "brandLogo":"/brand-assets/logo-black.png",
+    "brandDescription":"Descubra os melhores acessórios, eletrônicos e gadgets na TechPoint.",
     "sections": [
       {
-        "title": "Empresa",
+        "title": "Links Rápidos",
         "list": [
           {
+            "label": "Início",
+            "path": "/"
+          },
+          {
+            "label": "Produtos",
+            "path": "/pages/products"
+          },
+          {
             "label": "Sobre Nós",
-            "path": "#"
+            "path": "/"
           },
           {
             "label": "Contato",
+            "path": "/pages/contact"
+          }
+        ]
+      },
+      {
+        "title": "Categorias",
+        "list": [
+          {
+            "label": "Celulares",
             "path": "#"
           },
           {
-            "label": "Blog",
+            "label": "Acessórios",
+            "path": "#"
+          },
+          {
+            "label": "Carregadores",
+            "path": "#"
+          },
+          {
+            "label": "Películas",
             "path": "#"
           }
         ]
       },
       {
-        "title": "Redes Sociais",
+        "title": "Contato",
         "list": [
           {
-            "label": "Twitter",
+            "label": "Av. Pres. Costa e Silva, 7070",
             "path": "#"
           },
           {
-            "label": "Facebook",
+            "label": "Praia Grande - SP, Brasil",
             "path": "#"
           },
           {
-            "label": "Instagram",
-            "path": "#"
-          }
-        ]
-      },
-      {
-        "title": "Nossas Políticas",
-        "list": [
-          {
-            "label": "Política de Privacidade",
-            "path": "#"
+            "label": "Email: contato@techpoint.com.br",
+            "path": "mailto:contato@techpoint.com.br"
           },
           {
-            "label": "Trocas e Devoluções",
-            "path": "#"
-          },
-          {
-            "label": "Entrega e Prazos",
-            "path": "#"
+            "label": "Telefone: +55 (99) 99999-9999",
+            "path": "tel:+559999999999"
           }
         ]
       }
     ],
-    "bottomTitle": "© 2025 TechPoint. Todos os direitos reservados."
+    "bottomTitle": "TechPoint. Todos os direitos reservados."
   },
   "productsPage": {
     "titlePage": "Conheça nossos produtos",
