@@ -60,6 +60,7 @@
   "productsCarousel": {
     "headerTitle": "Mais Vendidos",
     "headerButton": "Ver Todos",
+    "sectionKey": "productsCarousel",
     "products": [
       {
         "id": 1,
@@ -338,6 +339,7 @@
   "headphones": {
     "headerTitle": "Fones de Ouvido",
     "headerButton": "Ver Todos",
+    "sectionKey": "headphones",
     "products": [
       {
         "id": 1,
@@ -524,8 +526,9 @@
     }
   ],
   "footer": {
-    "brandLogo":"/brand-assets/logo-black.png",
-    "brandDescription":"Descubra os melhores acessórios, eletrônicos e gadgets na TechPoint.",
+    "brandLogo": "/brand-assets/logo-black.png",
+    "brandLogoLabel": "TechPoint",
+    "brandDescription": "Descubra os melhores acessórios, eletrônicos e gadgets na TechPoint.",
     "sections": [
       {
         "title": "Links Rápidos",
@@ -881,5 +884,27 @@
         "link": "/pages/products/7"
       }
     ]
-  }
+  },
+  "faqs": [
+    {
+      "question": "Quais são os horários de funcionamento da loja?",
+      "answer": "Nosso atendimento online funciona 24 horas por dia, 7 dias por semana. Já o atendimento físico ocorre de segunda a sexta, das 9h às 18h, e aos sábados, das 9h às 13h."
+    },
+    {
+      "question": "Vocês fazem entregas internacionais?",
+      "answer": "Sim, realizamos entregas para diversos países. Os prazos e os valores do frete variam de acordo com o destino."
+    },
+    {
+      "question": "Qual é a política de devolução?",
+      "answer": "Você pode devolver seu produto em até 30 dias após a compra, desde que esteja sem uso e na embalagem original."
+    },
+    {
+      "question": "Os produtos têm garantia?",
+      "answer": "Sim, todos os nossos acessórios possuem garantia mínima de 1 ano. Alguns itens premium contam com garantia estendida."
+    },
+    {
+      "question": "Como acompanho o status do meu pedido?",
+      "answer": "Assim que o pedido for enviado, você receberá por e-mail um código de rastreamento para acompanhar a entrega em tempo real."
+    }
+  ]
 }

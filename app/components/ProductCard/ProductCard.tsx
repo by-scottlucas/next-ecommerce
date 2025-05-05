@@ -1,21 +1,15 @@
-import { ProductProps } from '@/app/models/Product';
 import './ProductCard.css';
 
+import { useCart } from '@/app/contexts/CartContext';
+import { ProductProps } from '@/app/models/Product';
+import { formatCurrencyBRL } from '@/app/utils/utils';
 import Image from 'next/image';
 import Link from 'next/link';
-import {  toast } from "sonner"
-import { useCart } from '@/app/contexts/CartContext';
 import { useCallback } from 'react';
+import { toast } from 'sonner';
 
 export default function ProductCard(props: ProductProps) {
     const { addItem } = useCart();
-
-    const formatCurrencyBRL = (value: number) => {
-        return new Intl.NumberFormat("pt-BR", {
-            style: "currency",
-            currency: "BRL",
-        }).format(value);
-    };
 
     const handleAddToCart = useCallback(() => {
         const item = {
@@ -23,7 +17,7 @@ export default function ProductCard(props: ProductProps) {
             name: props.name,
             price: props.price,
             quantity: 1,
-            stock: props.stock,
+            stock: props.stock!,
             image: props.images[0],
         };
 
@@ -32,21 +26,19 @@ export default function ProductCard(props: ProductProps) {
     }, [addItem, props]);
 
     return (
-        <div className="product-card">
-            <Link href={String(props.link)}>
-                <Image
-                    width={1000}
-                    height={1000}
-                    src={props.images[0]}
-                    alt={props.name || ''}
-                    priority
-                />
-            </Link>
+        <Link href={props.link} className="product-card">
+            <Image
+                width={1000}
+                height={1000}
+                src={props.images[0]}
+                alt={props.name}
+                priority
+            />
 
             <div className="px-5 pb-5">
-                <Link href={String(props.link)}>
-                    <h5 className="product-title">{props.name}</h5>
-                </Link>
+                <h5 className="product-title">
+                    {props.name}
+                </h5>
                 <span className="product-price">
                     {formatCurrencyBRL(props.price)}
                 </span>
@@ -55,6 +47,6 @@ export default function ProductCard(props: ProductProps) {
             <button onClick={handleAddToCart} className="add-cart-button">
                 Adicionar ao Carrinho
             </button>
-        </div>
+        </Link>
     );
 };

@@ -45,8 +45,17 @@ export default function Header() {
                     />
                 </a>
 
+                <Link href={"/pages/cart"} type="button" aria-label="Ver carrinho" className="mobile-cart-button header-cart-button lg:hidden">
+                    <ShoppingCart className="header-cart-icon" />
+                    {totalItems > 0 && (
+                        <span className="header-cart-badge">
+                            {totalItems}
+                        </span>
+                    )}
+                </Link>
+
                 <div className='header-actions'>
-                    <Link href={"/pages/cart"} type="button" aria-label="Ver carrinho" className="header-cart-button">
+                    <Link href={"/pages/cart"} type="button" aria-label="Ver carrinho" className="desktop-cart-button header-cart-button">
                         <ShoppingCart className="header-cart-icon" />
                         {totalItems > 0 && (
                             <span className="header-cart-badge">

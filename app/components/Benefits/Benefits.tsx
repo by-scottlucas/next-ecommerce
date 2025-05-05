@@ -2,32 +2,36 @@ import './Benefits.css';
 
 import { useLanguage } from '@/app/contexts/LanguageContext';
 
-interface Benefits {
-    icon: string;
-    title: string;
-    subtitle: string;
-}
+import { BenefitProp } from './models/Benefits';
 
 interface BenefitsProps {
-    benefitsProps: Benefits[];
+    benefitsData: BenefitProp[];
 }
 
-export default function Benefits({ benefitsProps }: BenefitsProps) {
+export default function Benefits({ benefitsData }: BenefitsProps) {
     const { translations } = useLanguage();
 
     return (
-        <div className="benefits-container">
+        <section className="benefits-container">
             <div className="benefits-content">
-                {benefitsProps.map((card, index) => (
+                {benefitsData.map((card, index) => (
                     <div key={index} className="benefit-card">
-                        <i aria-hidden="true" className={`benefit-icon ${card.icon}`}></i>
+                        <i
+                            aria-hidden="true"
+                            className={`benefit-icon ${card.icon}`}
+                        ></i>
+
                         <div>
-                            <h5 className="benefit-title">{translations.benefitsCards[index].title}</h5>
-                            <p className="benefit-subtitle">{translations.benefitsCards[index].subtitle}</p>
+                            <h5 className="benefit-title">
+                                {translations.benefitsCards[index].title}
+                            </h5>
+                            <p className="benefit-subtitle">
+                                {translations.benefitsCards[index].subtitle}
+                            </p>
                         </div>
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 }

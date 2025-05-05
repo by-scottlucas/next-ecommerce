@@ -1,25 +1,20 @@
 import './Banner.css';
 
+import { BannerProps } from '@/app/models/Banner';
 import Image from 'next/image';
+import Link from 'next/link';
 
-interface BannerProps {
-    width: number;
-    height: number;
-    image: string;
-    label: string;
-}
-
-export default function Banner({width, height, image, label}: BannerProps) {
+export default function Banner(props: BannerProps) {
     return (
-        <a href="#" className="banner-container">
+        <Link href={"/"}>
             <Image
-                width={width}
-                height={height}
-                alt={label}
-                src={image}
+                width={1280}
+                height={720}
+                alt={props.label!}
+                src={props.image}
                 className="banner-image"
                 priority
             />
-        </a>
+        </Link>
     );
 }

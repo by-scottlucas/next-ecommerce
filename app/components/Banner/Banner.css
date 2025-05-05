@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-.banner-content {
-    @apply w-[100%] flex items-center justify-center bg-white;
-}
-
 .banner-image {
     @apply object-cover w-full rounded-sm md:rounded-lg shadow-sm hover:shadow-md hover:scale-101 transition-all duration-300 ease-in-out;
 }

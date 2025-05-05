@@ -1,18 +1,13 @@
 'use client';
 
-import Image from "next/image";
+import './BannerCarousel.css';
 
-import "./BannerCarousel.css";
-
+import { BannerProps } from '@/app/models/Banner';
+import Image from 'next/image';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-interface Slide {
-    image: string;
-    label?: string;
-}
-
 interface BannerCarouselProps {
-    slidesData: Slide[];
+    slidesData: BannerProps[];
 }
 
 export default function BannerCarousel({ slidesData }: BannerCarouselProps) {
@@ -53,8 +48,11 @@ export default function BannerCarousel({ slidesData }: BannerCarouselProps) {
     };
 
     return (
-        <div className="carousel-container">
-            <div className="carousel-image-container" style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
+        <section className="carousel-container">
+            <div
+                className="carousel-image-container"
+                style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+            >
                 {slidesData.map((slide, index) => (
                     <div key={index} className="carousel-image-box">
                         <Image
@@ -75,22 +73,35 @@ export default function BannerCarousel({ slidesData }: BannerCarouselProps) {
                         type="button"
                         onClick={() => goToSlide(index)}
                         aria-label={`Slide ${index + 1}`}
-                        className={`carousel-indicators-button ${index === activeIndex ? 'bg-white' : 'bg-gray-400'}`}
+                        className={`
+                            carousel-indicators-button
+                            ${index === activeIndex ? 'bg-white' : 'bg-gray-400'}
+                        `}
                     ></button>
                 ))}
             </div>
 
-            <button type="button" onClick={prevSlide} className="carousel-control-button left-3 md:left-10" aria-label="Prev Button">
+            <button
+                type="button"
+                onClick={prevSlide}
+                className="carousel-control-button left-3 md:left-10"
+                aria-label="Prev Button"
+            >
                 <span className="carousel-control-content">
                     <i className="bi bi-chevron-left"></i>
                 </span>
             </button>
 
-            <button type="button" onClick={nextSlide} className="carousel-control-button right-3 md:right-10" aria-label="Next Button">
+            <button
+                type="button"
+                onClick={nextSlide}
+                className="carousel-control-button right-3 md:right-10"
+                aria-label="Next Button"
+            >
                 <span className="carousel-control-content">
                     <i className="bi bi-chevron-right"></i>
                 </span>
             </button>
-        </div>
+        </section>
     );
 }

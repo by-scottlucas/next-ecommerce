@@ -3,21 +3,14 @@ import './Categories.css';
 import { useLanguage } from '@/app/contexts/LanguageContext';
 import Image from 'next/image';
 
-interface Card {
-    image: string;
-    title: string;
-}
+import { CategoriesProps } from './models/CategorieCard';
 
-interface CategoriesProps {
-    cardsData: Card[];
-}
-
-export default function Categories({ cardsData }: CategoriesProps) {
+export default function Categories({ categoriesData }: CategoriesProps) {
     const { translations } = useLanguage();
 
     return (
         <section className="categories-container">
-            {cardsData.map((card, index) => (
+            {categoriesData.map((card, index) => (
                 <div key={index} className="text-center">
                     <Image
                         width={170}
@@ -27,6 +20,7 @@ export default function Categories({ cardsData }: CategoriesProps) {
                         className="category-image"
                         priority={index === 0}
                     />
+                    
                     <span className="category-label">
                         {translations.categoriesCards[index]?.title}
                     </span>

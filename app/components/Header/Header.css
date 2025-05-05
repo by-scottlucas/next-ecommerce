@@ -25,11 +25,19 @@
 }
 
 .header-actions {
-    @apply w-10 lg:w-auto lg:gap-3 lg:flex lg:items-center lg:justify-between lg:flex-row-reverse;
+    @apply w-full lg:w-auto lg:gap-3 lg:flex lg:items-center lg:justify-between lg:flex-row-reverse;
 }
 
 .header-cart-button {
-    @apply cursor-pointer relative flex items-center justify-center h-10 w-10 rounded-md hover:bg-gray-50 transition-colors;
+    @apply cursor-pointer text-center relative flex items-center justify-center h-10 w-10 rounded-md hover:bg-gray-50 transition-colors;
+}
+
+.mobile-cart-button {
+    @apply lg:hidden;
+}
+
+.desktop-cart-button{
+    @apply hidden lg:flex;
 }
 
 .header-cart-icon {

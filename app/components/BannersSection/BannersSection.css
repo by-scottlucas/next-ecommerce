@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+
+.banners-section-content{
+    @apply w-full;
+}

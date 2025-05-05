@@ -31,8 +31,12 @@ a {
   }
 }
 
-.banner-container {
-  @apply w-full px-2 py-6 md:px-6 lg:px-13 2xl:px-16;
+.banner-section {
+  @apply w-full px-2 py-6 md:px-6 lg:px-11 2xl:px-16;
+}
+
+.banners-section {
+  @apply flex flex-col md:flex-row md:justify-center gap-7;
 }
 
 @theme inline {
@@ -146,6 +150,7 @@ a {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }

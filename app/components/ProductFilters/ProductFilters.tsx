@@ -1,21 +1,6 @@
 import { useState } from "react";
 import "./ProductFilters.css";
-
-type ProductFiltersProps = {
-    colors: Color[];
-    brands: string[];
-    categories: string[];
-    prices: number[];
-    products: ProductProps[];
-    selectedCategory: string | null;
-    setSelectedCategory: (value: string | null) => void;
-    selectedBrand: string | null;
-    setSelectedBrand: (value: string | null) => void;
-    selectedColor: string | null;
-    setSelectedColor: (value: string | null) => void;
-    maxPrice: number;
-    setMaxPrice: (value: number) => void;
-};
+import { ProductFiltersProps } from "./models/product-filter";
 
 export default function ProductFilters(props: ProductFiltersProps) {
     const minPrice = props.prices[0] || 0;
