@@ -900,6 +900,10 @@
       "Compartilhar produto"
     ]
   },
+  "colorSelectorComponent":{
+    "title":"Cor",
+    "label":"Cor selecionada"
+  },
   "faqs": [
     {
       "question": "Quais são os horários de funcionamento da loja?",
