@@ -16,6 +16,10 @@
     @apply cursor-pointer aspect-square rounded-sm overflow-hidden transition-all;
 }
 
+.product-thumbnail-image {
+    @apply w-full h-full object-cover;
+}
+
 .product-thumbnail-selected {
     @apply ring-2 ring-blue-600;
 }
