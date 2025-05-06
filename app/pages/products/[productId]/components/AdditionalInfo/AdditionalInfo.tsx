@@ -1,26 +1,24 @@
 import './AdditionalInfo.css';
-
 import { Award, RotateCcw, Share2, Truck } from 'lucide-react';
+import { useLanguage } from '@/app/contexts/LanguageContext';
+
+const icons = [Truck, RotateCcw, Award, Share2];
 
 export default function AdditionalInfo() {
+    const { translations } = useLanguage();
+    const labels = translations.additionalInfoComponent.items;
+
     return (
         <div className="additional-infos-grid">
-            <div className="flex items-center">
-                <Truck className="additional-info-icon" />
-                <span className="additional-info-label">Entrega rápida</span>
-            </div>
-            <div className="flex items-center">
-                <RotateCcw className="additional-info-icon" />
-                <span className="additional-info-label">7 dias para devolução</span>
-            </div>
-            <div className="flex items-center">
-                <Award className="additional-info-icon" />
-                <span className="additional-info-label">Produto com Garantia</span>
-            </div>
-            <div className="flex items-center">
-                <Share2 className="additional-info-icon" />
-                <span className="additional-info-label">Compartilhar produto</span>
-            </div>
+            {labels.map((label: string, index: number) => {
+                const Icon = icons[index];
+                return (
+                    <div key={label} className="flex items-center">
+                        <Icon className="additional-info-icon" />
+                        <span className="additional-info-label">{label}</span>
+                    </div>
+                );
+            })}
         </div>
-    )
+    );
 }

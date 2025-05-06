@@ -892,6 +892,14 @@
     "addToCartButton": "Adicionar ao Carrinho",
     "addToFavoriteButton": "Adicionar aos Favoritos"
   },
+  "additionalInfoComponent": {
+    "items": [
+      "Entrega rápida",
+      "7 dias para devolução",
+      "Produto com Garantia",
+      "Compartilhar produto"
+    ]
+  },
   "faqs": [
     {
       "question": "Quais são os horários de funcionamento da loja?",
