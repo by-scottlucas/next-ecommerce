@@ -3,97 +3,70 @@
 import './ProductsPage.css';
 
 import Header from '@/app/components/Header/Header';
-import LanguageSelector from '@/app/components/LanguageSelector/LanguageSelector';
 import ProductCard from '@/app/components/ProductCard/ProductCard';
 import ProductFilters from '@/app/components/ProductFilters/ProductFilters';
 import Searchbar from '@/app/components/Searchbar/Searchbar';
 import { useLanguage } from '@/app/contexts/LanguageContext';
-import { Color, ProductProps } from '@/app/models/Product';
-import { getUniqueColors, getUniqueValues, parsePrice } from '@/app/utils/products.utils';
+import { useFilteredProducts } from '@/app/hooks/useFilteredProducts';
+import { prepareProductData } from '@/app/utils/prepareProductData';
 import { useEffect, useState } from 'react';
-
 
 export default function ProductsPage() {
     const { translations } = useLanguage();
-    const productsData: ProductProps[] = translations?.productsPage?.products || [];
+    const products = translations.productsPage.products;
 
-    const uniqueColors: Color[] = getUniqueColors(productsData);
-    const brands: string[] = getUniqueValues(productsData, 'brand').filter(Boolean) as string[];
-    const categories: string[] = getUniqueValues(productsData, 'category').filter(Boolean) as string[];
-
-    const prices: number[] = productsData
-        .map(p => parsePrice(p.price))
-        .filter((price): price is number => typeof price === 'number')
-        .sort((a, b) => a - b);
-
-    const colorMap: Record<string, string> = translations?.productsPage?.colorMap || {};
+    const { uniqueColors, brands, categories, prices } = prepareProductData(products);
+    const highestPrice = prices[prices.length - 1] || 0;
 
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [selectedBrand, setSelectedBrand] = useState<string | null>(null);
     const [selectedColor, setSelectedColor] = useState<string | null>(null);
-    const [maxPrice, setMaxPrice] = useState<number>(prices[prices.length - 1] || 0);
+    const [maxPrice, setMaxPrice] = useState<number>(highestPrice);
     const [searchTerm, setSearchTerm] = useState<string>('');
 
-    const filterProps = {
-        colors: uniqueColors,
-        brands,
-        categories,
-        colorMap,
-        prices,
-        products: productsData,
-        selectedCategory,
-        setSelectedCategory,
-        selectedBrand,
-        setSelectedBrand,
-        selectedColor,
-        setSelectedColor,
+    const filteredProducts = useFilteredProducts(products, {
+        category: selectedCategory,
+        brand: selectedBrand,
+        color: selectedColor,
         maxPrice,
-        setMaxPrice,
-    };
-
-    const filteredProducts = productsData.filter(product => {
-        const matchesSearchTerm = product.name.toLowerCase().includes(searchTerm.toLowerCase());
-        const productPrice = parsePrice(product.price);
-        const productColorName = product.colors[0]?.name;
-
-        return (
-            matchesSearchTerm &&
-            (!selectedCategory || product.category === selectedCategory) &&
-            (!selectedBrand || product.brand === selectedBrand) &&
-            (!selectedColor || productColorName === selectedColor) &&
-            productPrice <= maxPrice
-        );
+        searchTerm,
     });
 
     useEffect(() => {
-        if (translations?.productsPage) {
-            setSelectedCategory(null);
-            setSelectedBrand(null);
-            setSelectedColor(null);
-
-            const currentPrices = translations.productsPage.products
-                .map(p => parsePrice(p.price))
-                .filter((price): price is number => typeof price === 'number')
-                .sort((a, b) => a - b);
-
-            setMaxPrice(currentPrices[currentPrices.length - 1] || 0);
-        }
+        setSelectedCategory(null);
+        setSelectedBrand(null);
+        setSelectedColor(null);
+        setMaxPrice(highestPrice);
     }, [translations]);
 
     return (
         <div className="products-container">
             <Header />
-            <LanguageSelector />
+
             <div className="content-page">
                 <div className="products-header">
                     <h2 className="products-header-title">
-                        {translations?.productsPage?.titlePage}
+                        {translations.productsPage.titlePage}
                     </h2>
                     <Searchbar setSearchTerm={setSearchTerm} />
                 </div>
 
                 <div className="products-content">
-                    <ProductFilters {...filterProps} />
+                    <ProductFilters
+                        colors={uniqueColors}
+                        brands={brands}
+                        categories={categories}
+                        prices={prices}
+                        products={products}
+                        selectedCategory={selectedCategory}
+                        setSelectedCategory={setSelectedCategory}
+                        selectedBrand={selectedBrand}
+                        setSelectedBrand={setSelectedBrand}
+                        selectedColor={selectedColor}
+                        setSelectedColor={setSelectedColor}
+                        maxPrice={maxPrice}
+                        setMaxPrice={setMaxPrice}
+                    />
 
                     {filteredProducts.length > 0 ? (
                         <section className="products-cards">
@@ -103,7 +76,9 @@ export default function ProductsPage() {
                         </section>
                     ) : (
                         <div className="not-found-container">
-                            <span className="text-black">Nenhum produto encontrado</span>
+                            <span className="text-black">
+                                {translations.productsPage.productsNotFound}
+                            </span>
                         </div>
                     )}
                 </div>
