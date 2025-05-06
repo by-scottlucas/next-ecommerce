@@ -900,9 +900,21 @@
       "Compartilhar produto"
     ]
   },
-  "colorSelectorComponent":{
-    "title":"Cor",
-    "label":"Cor selecionada"
+  "colorSelectorComponent": {
+    "title": "Cor",
+    "label": "Cor selecionada"
+  },
+  "productDetailsComponent": {
+    "tabs": {
+      "specs": "Especificações",
+      "reviews": "Avaliações"
+    },
+    "titles": {
+      "technicalSpecifications": "Especificações Técnicas"
+    },
+    "placeholders": {
+      "reviews": "Avaliações dos clientes serão exibidas aqui."
+    }
   },
   "faqs": [
     {

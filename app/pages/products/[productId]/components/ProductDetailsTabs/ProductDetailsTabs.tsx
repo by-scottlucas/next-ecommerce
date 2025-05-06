@@ -1,28 +1,31 @@
 import './ProductDetailsTabs.css';
 
-import { Spec } from '@/app/models/Product';
+import { useLanguage } from '@/app/contexts/LanguageContext';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
-
-interface ProductDetailsTabsProps {
-    product: {
-        specs?: Spec[];
-    };
-}
-
+import { ProductDetailsTabsProps } from './models/product-details';
 
 export default function ProductDetailsTabs({ product }: ProductDetailsTabsProps) {
+    const { translations } = useLanguage();
+    const data = translations.productDetailsComponent;
+
     return (
         <div className="product-details-container">
             <Tabs defaultValue="specs">
                 <TabsList className="tabs-list">
-                    <TabsTrigger className="tab-button" value="specs">Especificações</TabsTrigger>
-                    <TabsTrigger className="tab-button" value="reviews">Avaliações</TabsTrigger>
+                    <TabsTrigger className="tab-button" value="specs">
+                        {data.tabs.specs}
+                    </TabsTrigger>
+                    <TabsTrigger className="tab-button" value="reviews">
+                        {data.tabs.reviews}
+                    </TabsTrigger>
                 </TabsList>
 
                 <TabsContent value="specs" className="tabs-content">
                     <div className="tabs-box">
-                        <h2 className="tabs-title">Especificações Técnicas</h2>
+                        <h2 className="tabs-title">
+                            {data.titles.technicalSpecifications}
+                        </h2>
                         <div className="specs-grid">
                             {product.specs?.map((spec, index) => (
                                 <div
@@ -42,7 +45,7 @@ export default function ProductDetailsTabs({ product }: ProductDetailsTabsProps)
                 <TabsContent value="reviews">
                     <div className="tabs-placeholder">
                         <p className="tabs-placeholder-text">
-                            Avaliações dos clientes serão exibidas aqui.
+                            {data.placeholders.reviews}
                         </p>
                     </div>
                 </TabsContent>
