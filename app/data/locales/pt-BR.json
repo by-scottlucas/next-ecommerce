@@ -916,6 +916,30 @@
       "reviews": "Avaliações dos clientes serão exibidas aqui."
     }
   },
+  "authPage": {
+    "authForm": {
+      "emailLabel": "Seu e-mail",
+      "emailPlaceholder": "nome@email.com",
+      "passwordLabel": "Sua senha",
+      "passwordPlaceholder": "••••••••",
+      "confirmPasswordLabel": "Confirme sua senha",
+      "confirmPasswordPlaceholder": "••••••••",
+      "rememberMe": "Lembre-me",
+      "forgotPassword": "Esqueceu a senha?",
+      "loginButton": "Entrar",
+      "registerButton": "Cadastrar",
+      "noAccountPrompt": "Não tem uma conta?",
+      "registerLink": "Cadastre-se",
+      "hasAccountPrompt": "Já tem uma conta?",
+      "loginLink": "Entrar"
+    },
+    "loginPage": {
+      "title": "Bem-vindo de volta"
+    },
+    "registerPage": {
+      "title": "Crie sua conta"
+    }
+  },
   "faqs": [
     {
       "question": "Quais são os horários de funcionamento da loja?",

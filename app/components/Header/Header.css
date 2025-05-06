@@ -17,7 +17,7 @@
 }
 
 .header-logo {
-    @apply h-8 2xl:h-10;
+    @apply h-8 2xl:h-10 w-full;
 }
 
 .header-burger-button {

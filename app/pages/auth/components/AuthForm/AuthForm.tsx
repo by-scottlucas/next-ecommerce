@@ -1,4 +1,5 @@
 import "./AuthForm.css";
+import { useLanguage } from "@/app/contexts/LanguageContext";
 
 interface AuthFormProps {
     type: "login" | "register";
@@ -6,28 +7,34 @@ interface AuthFormProps {
 
 export default function AuthForm({ type }: AuthFormProps) {
     const isLogin = type === "login";
+    const { translations } = useLanguage();
+    const data = translations.authPage.authForm;
 
     return (
         <form className="auth-form" action="#">
             <div>
-                <label htmlFor="email" className="auth-label">Seu e-mail</label>
+                <label htmlFor="email" className="auth-label">
+                    {data.emailLabel}
+                </label>
                 <input
                     id="email"
                     type="email"
                     name="email"
-                    placeholder="nome@email.com"
+                    placeholder={data.emailPlaceholder}
                     className="auth-input"
                     required
                 />
             </div>
 
             <div>
-                <label htmlFor="password" className="auth-label">Sua senha</label>
+                <label htmlFor="password" className="auth-label">
+                    {data.passwordLabel}
+                </label>
                 <input
                     id="password"
                     type="password"
                     name="password"
-                    placeholder="••••••••"
+                    placeholder={data.passwordPlaceholder}
                     className="auth-input"
                     required
                 />
@@ -35,12 +42,14 @@ export default function AuthForm({ type }: AuthFormProps) {
 
             {!isLogin && (
                 <div>
-                    <label htmlFor="confirm-password" className="auth-label">Confirme sua senha</label>
+                    <label htmlFor="confirm-password" className="auth-label">
+                        {data.confirmPasswordLabel}
+                    </label>
                     <input
                         id="confirm-password"
                         type="password"
                         name="confirmPassword"
-                        placeholder="••••••••"
+                        placeholder={data.confirmPasswordPlaceholder}
                         className="auth-input"
                         required
                     />
@@ -51,26 +60,34 @@ export default function AuthForm({ type }: AuthFormProps) {
                 <div className="auth-options">
                     <div className="auth-checkbox-wrapper">
                         <input id="remember" type="checkbox" className="auth-checkbox" />
-                        <label htmlFor="remember" className="auth-checkbox-label">Lembre-me</label>
+                        <label htmlFor="remember" className="auth-checkbox-label">
+                            {data.rememberMe}
+                        </label>
                     </div>
-                    <a href="#" className="auth-forgot-link">Esqueceu a senha?</a>
+                    <a href="#" className="auth-forgot-link">
+                        {data.forgotPassword}
+                    </a>
                 </div>
             )}
 
             <button type="submit" className="auth-button">
-                {isLogin ? "Entrar" : "Cadastrar"}
+                {isLogin ? data.loginButton : data.registerButton}
             </button>
 
             <p className="auth-register-prompt">
                 {isLogin ? (
                     <>
-                        Não tem uma conta?{" "}
-                        <a href="/pages/auth/register" className="auth-register-link">Cadastre-se</a>
+                        {data.noAccountPrompt}{" "}
+                        <a href="/pages/auth/register" className="auth-register-link">
+                            {data.registerLink}
+                        </a>
                     </>
                 ) : (
                     <>
-                        Já tem uma conta?{" "}
-                        <a href="/pages/auth/login" className="auth-register-link">Entrar</a>
+                        {data.hasAccountPrompt}{" "}
+                        <a href="/pages/auth/login" className="auth-register-link">
+                            {data.loginLink}
+                        </a>
                     </>
                 )}
             </p>
