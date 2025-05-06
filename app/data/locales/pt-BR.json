@@ -886,6 +886,12 @@
     ],
     "productsNotFound": "Nenhum produto encontrado"
   },
+  "productPage": {
+    "productNotFound": "Produto não encontrado",
+    "quantityLabel": "Quantidade",
+    "addToCartButton": "Adicionar ao Carrinho",
+    "addToFavoriteButton": "Adicionar aos Favoritos"
+  },
   "faqs": [
     {
       "question": "Quais são os horários de funcionamento da loja?",
