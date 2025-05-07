@@ -940,7 +940,100 @@
       "title": "Crie sua conta"
     }
   },
-  "faqs": [
+  "contactPage": {
+    "mapBoxTitle": "Estamos localizados em",
+    "faqBoxTitle": "Perguntas frequentes"
+  },
+  "contactInfo": {
+    "title": "Informações de Contato",
+    "items": {
+      "phone": {
+        "title": "Telefone",
+        "info": "+55 (13) 99999-9999",
+        "subinfo": "Segunda à Sexta, das 9h às 18h"
+      },
+      "email": {
+        "title": "E-mail",
+        "info": "contato@techpoint.com",
+        "subinfo": "Responderemos o mais breve possível"
+      },
+      "location": {
+        "title": "Localização",
+        "info": [
+          "Av. Pres. Costa e Silva - Boqueirão, 7070",
+          "Praia Grande - SP, Brazil"
+        ],
+        "subinfo": "Visite nossa loja física"
+      }
+    },
+    "social": {
+      "title": "Nos Siga nas Redes Sociais",
+      "links": [
+        {
+          "href": "#",
+          "iconClass": "bi bi-facebook"
+        },
+        {
+          "href": "#",
+          "iconClass": "bi bi-instagram"
+        },
+        {
+          "href": "#",
+          "iconClass": "bi bi-tiktok"
+        },
+        {
+          "href": "#",
+          "iconClass": "bi bi-youtube"
+        }
+      ]
+    }
+  },
+  "contactForm": {
+    "title": "Nos envie uma mensagem",
+    "submitLabel": "Enviar",
+    "toast": {
+      "title": "Mensagem Enviada!",
+      "description": "Entraremos em contato com você o mais breve possível!"
+    },
+    "errors": {
+      "name": "O nome é obrigatório",
+      "emailRequired": "O e-mail é obrigatório",
+      "emailInvalid": "O e-mail é inválido",
+      "message": "A mensagem é obrigatória"
+    },
+    "fields": [
+      {
+        "id": "name",
+        "label": "Seu Nome",
+        "placeholder": "Seu nome aqui",
+        "icon": "User",
+        "textarea": false
+      },
+      {
+        "id": "email",
+        "type": "email",
+        "label": "Seu E-mail",
+        "placeholder": "nome@email.com",
+        "icon": "Mail",
+        "textarea": false
+      },
+      {
+        "id": "subject",
+        "label": "Assunto",
+        "placeholder": "Como podemos ajudar você?",
+        "icon": "ClipboardCheck",
+        "textarea": false
+      },
+      {
+        "id": "message",
+        "label": "Sua Mensagem",
+        "placeholder": "Sua mensagem aqui...",
+        "icon": "MessageSquare",
+        "textarea": true
+      }
+    ]
+  },
+  "faqComponent": [
     {
       "question": "Quais são os horários de funcionamento da loja?",
       "answer": "Nosso atendimento online funciona 24 horas por dia, 7 dias por semana. Já o atendimento físico ocorre de segunda a sexta, das 9h às 18h, e aos sábados, das 9h às 13h."

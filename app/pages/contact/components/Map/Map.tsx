@@ -1,8 +1,5 @@
 import "./Map.css";
-
-interface MapProps {
-    address?: string;
-}
+import { MapProps } from "./models/map";
 
 const defaultAddress: string = "Avenida Costa e Silva, Boqueirão";
 
