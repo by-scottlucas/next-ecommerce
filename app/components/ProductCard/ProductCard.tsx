@@ -26,27 +26,29 @@ export default function ProductCard(props: ProductProps) {
     }, [addItem, props]);
 
     return (
-        <Link href={props.link} className="product-card">
-            <Image
-                width={1000}
-                height={1000}
-                src={props.images[0]}
-                alt={props.name}
-                priority
-            />
+        <div className="product-card">
+            <Link href={props.link} >
+                <Image
+                    width={1000}
+                    height={1000}
+                    src={props.images[0]}
+                    alt={props.name}
+                    priority
+                />
 
-            <div className="px-5 pb-5">
-                <h5 className="product-title">
-                    {props.name}
-                </h5>
-                <span className="product-price">
-                    {formatCurrencyBRL(props.price)}
-                </span>
-            </div>
+                <div className="px-5 pb-5">
+                    <h5 className="product-title">
+                        {props.name}
+                    </h5>
+                    <span className="product-price">
+                        {formatCurrencyBRL(props.price)}
+                    </span>
+                </div>
+            </Link>
 
             <button onClick={handleAddToCart} className="add-cart-button">
                 Adicionar ao Carrinho
             </button>
-        </Link>
+        </div>
     );
 };

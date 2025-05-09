@@ -1,16 +1,15 @@
 'use client';
 
 import './CartItem.css';
-import { toast } from "sonner";
+
 import QuantitySelector from '@/app/components/QuantitySelector/QuantitySelector';
 import { X } from 'lucide-react';
 import Image from 'next/image';
+import { toast } from 'sonner';
 
-import { CartItem as CartItemType, useCart } from '../../../../contexts/CartContext';
-
-interface CartItemProps {
-    item: CartItemType;
-}
+import { CartItemProps } from './models/cart-item';
+import { useCart } from '@/app/contexts/CartContext';
+import { formatCurrencyBRL } from '@/app/utils/utils';
 
 export default function CartItem({ item }: CartItemProps) {
     const { updateQuantity, removeItem } = useCart();
@@ -33,15 +32,20 @@ export default function CartItem({ item }: CartItemProps) {
                     <Image
                         width={300}
                         height={300}
-                        src={item.image}
                         alt={item.name}
+                        src={item.image}
                         className="cart-item-img"
                         priority
                     />
                 </div>
+
                 <div className="cart-item-details">
-                    <h3 className="cart-item-title">{item.name}</h3>
-                    <p className="cart-item-price">R$ {item.price}</p>
+                    <h3 className="cart-item-title">
+                        {item.name}
+                    </h3>
+                    <p className="cart-item-price">
+                        {formatCurrencyBRL(item.price)}
+                    </p>
                 </div>
             </div>
 
@@ -52,11 +56,17 @@ export default function CartItem({ item }: CartItemProps) {
                     initialQuantity={item.quantity}
                 />
 
-                <div className="cart-subtotal">R$ {subtotal}</div>
+                <div className="cart-subtotal">
+                    {formatCurrencyBRL(Number(subtotal))}
+                </div>
 
-                <button onClick={handleDeleteItem} className="cart-remove-button">
+                <button
+                    type='button'
+                    aria-label='Remover'
+                    onClick={handleDeleteItem}
+                    className="cart-remove-button"
+                >
                     <X size={18} />
-                    <span className="sr-only">Remover</span>
                 </button>
             </div>
         </div>
