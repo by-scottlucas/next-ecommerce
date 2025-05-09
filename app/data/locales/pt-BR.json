@@ -1054,5 +1054,14 @@
       "question": "Como acompanho o status do meu pedido?",
       "answer": "Assim que o pedido for enviado, você receberá por e-mail um código de rastreamento para acompanhar a entrega em tempo real."
     }
-  ]
+  ],
+  "cartPage": {
+    "title": "Seu Carrinho",
+    "clearCartLabel": "Limpar carrinho"
+  },
+  "emptyCartComponent": {
+    "title": "Seu carrinho está vazio",
+    "description": "Parece que você ainda não adicionou nada ao seu carrinho. Comece a comprar para encontrar produtos incríveis!",
+    "viewProductsButton": "Procurar produtos"
+  }
 }

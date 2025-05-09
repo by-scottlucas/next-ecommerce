@@ -7,8 +7,10 @@ import { useCart } from '@/app/contexts/CartContext';
 import EmptyCart from './components/EmptyCart/EmptyCart';
 import CartItem from './components/CartItem/CartItem';
 import CartSummary from './components/CartSummary/CartSummary';
+import { useLanguage } from '@/app/contexts/LanguageContext';
 
 export default function CartPage() {
+    const { translations } = useLanguage();
     const { cartItems, clearCart } = useCart();
 
     const handleClearCart = () => {
@@ -32,9 +34,9 @@ export default function CartPage() {
             <Header />
             <div className="cart-container">
                 <div className="cart-header">
-                    <h1 className="cart-title">Seu Carrinho</h1>
+                    <h1 className="cart-title">{translations.cartPage.title}</h1>
                     <button onClick={handleClearCart} className="cart-clear-btn">
-                        Limpar carrinho
+                        {translations.cartPage.clearCartLabel}
                     </button>
                 </div>
 
