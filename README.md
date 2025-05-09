@@ -6,6 +6,7 @@ Este projeto é uma plataforma de e-commerce desenvolvida com **Next.js**. O obj
 - Navegar por carrosséis de produtos;
 - Filtrar e explorar produtos na loja;
 - Acessar páginas individuais de produtos;
+- Acessar a página de autenticação e entrar ou criar uma conta;
 - Adicionar e gerenciar itens no carrinho de compras.
 
 ## **Funcionalidades**
@@ -27,19 +28,22 @@ Este projeto é uma plataforma de e-commerce desenvolvida com **Next.js**. O obj
 - Exibe informações como imagens, preço, descrição e avaliações (se implementado).
 - Oferece a opção de adicionar o item ao carrinho.
 
+### **Página de Autenticação**
+
+- Apresenta o formulário de Login e ao clicar em criar conta exibe o formulário de registro.
+
 ### **Carrinho de Compras**
 
 - Exibe todos os produtos adicionados pelo usuário.
 - Permite alterar a quantidade ou remover produtos.
 - Exibe o valor total da compra e direciona para finalização (checkout).
 
-
 ## **Estrutura do Projeto**
 
 - **/app/pages/**: Contém as rotas do projeto, como index (home), produtos, carrinho e detalhes de produto.
 - **/app/components/**: Componentes reutilizáveis de UI, como carrosséis, cards de produto, header e footer.
 - **/app/utils/**: Funções utilitárias e auxiliares do projeto.
-- **/app/data/** (se presente): Dados mockados ou estáticos para simulação de produtos.
+- **/app/data/** : Dados mockados ou estáticos para simulação de produtos.
 - **/public/**: Imagens, ícones e outros arquivos públicos.
 - **next.config.js**: Configurações do Next.js.
 - **package.json**: Arquivo de dependências e scripts do projeto.
@@ -93,10 +97,13 @@ http://localhost:3000
 
 ## **Tecnologias Utilizadas**
 
-- **[Next.js](https://nextjs.org/)**: Framework React para aplicações web com renderização híbrida (SSR e SSG).
-- **[Tailwind CSS](https://tailwindcss.com/)**: Framework utilitário para estilos rápidos e responsivos.
-- **[Bootstrap Icons](https://icons.getbootstrap.com/)**: Ícones vetoriais para uso direto em HTML/CSS.
-- **[TypeScript](https://www.typescriptlang.org/)**: Superset de JavaScript com tipagem estática opcional.
+- **Next.js**: Framework React para aplicações web com renderização híbrida (SSR e SSG).
+- **Tailwind CSS**: Framework utilitário para estilos rápidos e responsivos.
+- **Bootstrap Icons**: Ícones vetoriais para uso direto em HTML/CSS.
+- **TypeScript**: Superset de JavaScript com tipagem estática opcional.
+- **Sonner**: Biblioteca leve e acessível para exibição de notificações (toasts) elegantes e configuráveis.
+- **Lucide React**: Conjunto de ícones em SVG para React, com design consistente e inspirado no Feather Icons.
+- **Radix UI**: Biblioteca de componentes acessíveis e com comportamento controlado para construção de interfaces modernas no React.
 
 ## **Autor**
 
