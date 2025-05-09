@@ -1,10 +1,14 @@
 import './CartSummary.css';
-import { toast } from "sonner";
+
 import { useCart } from '@/app/contexts/CartContext';
+import { useLanguage } from '@/app/contexts/LanguageContext';
+import { formatCurrencyBRL } from '@/app/utils/utils';
 import { useRouter } from 'next/navigation';
+import { toast } from 'sonner';
 
 export default function CartSummary() {
   const router = useRouter();
+  const { translations } = useLanguage();
   const { totalItems, totalPrice, clearCart } = useCart();
 
   const handleCheckout = () => {
@@ -19,34 +23,42 @@ export default function CartSummary() {
 
   return (
     <div className="cart-summary-container">
-      <h2 className="cart-summary-title">Resumo do Pedido</h2>
+      <h2 className="cart-summary-title">
+        {translations.cartSummaryComponent.title}
+      </h2>
 
       <div className="cart-summary-content">
         <div className="cart-summary-line">
-          <span className="cart-summary-label">Total de Items ({totalItems})</span>
-          <span>R$ {totalPrice.toFixed(2)}</span>
+          <span className="cart-summary-label">
+            {translations.cartSummaryComponent.totalItems} ({totalItems})
+          </span>
+          <span>{formatCurrencyBRL(totalPrice)}</span>
         </div>
 
         <div className="cart-summary-line">
-          <span className="cart-summary-label">Frete</span>
-          <span className="cart-summary-free">Grátis</span>
+          <span className="cart-summary-label">
+            {translations.cartSummaryComponent.deliverLabel}
+          </span>
+          <span className="cart-summary-free">
+            {translations.cartSummaryComponent.deliverValue}
+          </span>
         </div>
 
         <div className="cart-summary-divider" />
 
         <div className="cart-summary-total">
-          <span>Total</span>
-          <span>R$ {totalPrice.toFixed(2)}</span>
+          <span>{translations.cartSummaryComponent.totalPriceLabel}</span>
+          <span>{formatCurrencyBRL(totalPrice)}</span>
         </div>
       </div>
 
       <div className="cart-summary-buttons">
         <button onClick={handleCheckout} className="cart-checkout-button">
-          Finalizar a Compra
+          {translations.cartSummaryComponent.checkoutButton}
         </button>
 
         <button onClick={goToProducts} className="cart-continue-button">
-          Continue Comprando
+          {translations.cartSummaryComponent.continueButton}
         </button>
       </div>
     </div>

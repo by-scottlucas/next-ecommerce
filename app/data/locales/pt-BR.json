@@ -1063,5 +1063,14 @@
     "title": "Seu carrinho está vazio",
     "description": "Parece que você ainda não adicionou nada ao seu carrinho. Comece a comprar para encontrar produtos incríveis!",
     "viewProductsButton": "Procurar produtos"
+  },
+  "cartSummaryComponent": {
+    "title": "Resumo do Pedido",
+    "totalItems": "Total de Items",
+    "deliverLabel": "Frete",
+    "deliverValue": "Grátis",
+    "totalPriceLabel": "Total",
+    "checkoutButton": "Finalizar a Compra",
+    "continueButton": "Continue Comprando"
   }
 }
